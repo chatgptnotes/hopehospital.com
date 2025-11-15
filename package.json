@@ -1,0 +1,35 @@
+{
+  "name": "hopehospital-website",
+  "version": "1.0.0",
+  "description": "Hope Hospital - Central India's Premier Super Specialty Healthcare Center",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --no-browser --ignore=node_modules",
+    "build": "node scripts/build.js",
+    "version-bump": "node scripts/version-bump.js",
+    "lint": "npx htmlhint index.html && npx stylelint '**/*.css'",
+    "lint:fix": "npx prettier --write '**/*.{html,css,js}'",
+    "deploy": "npm run build && vercel --prod",
+    "test": "echo \"Tests pending\" && exit 0"
+  },
+  "keywords": [
+    "hospital",
+    "healthcare",
+    "nagpur",
+    "medical",
+    "hope-hospital"
+  ],
+  "author": "Dr. B.K. Murali",
+  "license": "MIT",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "prettier": "^3.1.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chatgptnotes/hopehospital.com.git"
+  }
+}

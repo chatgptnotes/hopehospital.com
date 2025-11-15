@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Hospital - Dr. Murali | Central India's Premier Super Specialty Healthcare Center</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Hope Hospital is Central India's first NABH-accredited super specialty healthcare center in Nagpur. Led by Dr. B.K. Murali, offering orthopedics, neurosurgery, cardiology, and comprehensive medical care with 100-bed facility.">
+    <meta name="keywords" content="Hope Hospital, Nagpur hospital, Dr Murali, orthopedic surgeon, NABH accredited hospital, super specialty hospital, Nagpur healthcare, joint replacement, neurosurgery, cardiology, critical care">
+    <meta name="author" content="Dr. B.K. Murali - Hope Hospital">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hopehospital.com/">
+    <meta property="og:title" content="Hope Hospital - Central India's Premier Super Specialty Healthcare Center">
+    <meta property="og:description" content="NABH-accredited hospital in Nagpur offering world-class medical care across multiple specialties. 19+ years of excellence in healthcare.">
+    <meta property="og:image" content="https://hopehospital.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hopehospital.com/">
+    <meta property="twitter:title" content="Hope Hospital - Dr. Murali | Premier Healthcare in Nagpur">
+    <meta property="twitter:description" content="NABH-accredited super specialty hospital offering comprehensive medical services in Nagpur, Maharashtra.">
+    <meta property="twitter:image" content="https://hopehospital.com/images/twitter-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hospital",
+      "name": "Hope Hospital",
+      "image": "https://hopehospital.com/images/hospital.jpg",
+      "description": "Central India's first NABH-accredited comprehensive super specialty healthcare center",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Beside Gogas Auto LPG, Kamptee Road, Teka Naka",
+        "addressLocality": "Nagpur",
+        "addressRegion": "Maharashtra",
+        "postalCode": "440017",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-9373111709",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "priceRange": "$$",
+      "medicalSpecialty": ["Orthopedics", "Neurosurgery", "Cardiology", "Critical Care", "Oncology"],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "21.1458",
+        "longitude": "79.0882"
+      },
+      "url": "https://hopehospital.com"
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #dc2626;
+            --dark-red: #991b1b;
+            --light-red: #ef4444;
+            --accent-red: #f87171;
+            --text-white: #ffffff;
+            --text-light: #f3f4f6;
+            --text-gray: #9ca3af;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            overflow-x: hidden;
+            color: var(--text-white);
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-white);
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--light-red), var(--primary-red));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-red);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-white);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a0505 0%, #4a0404 25%, #7f1d1d 50%, #991b1b 75%, #dc2626 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(239, 68, 68, 0.2) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.2) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            width: 100%;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-content h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+            color: var(--text-white);
+        }
+
+        .hero-content h1 .gradient-text {
+            background: linear-gradient(135deg, var(--accent-red), var(--text-white));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--text-white);
+            color: var(--dark-red);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-image-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image-container::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        .hero-doctor-image {
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+                        0 0 80px rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 2;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-doctor-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Floating elements */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 70%;
+            left: 5%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            right: 15%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-30px) rotate(180deg);
+            }
+        }
+
+        /* General Section Styles */
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        .section {
+            padding: 6rem 2rem;
+            background: #ffffff;
+            color: #1f2937;
+        }
+
+        .section-dark {
+            background: #111827;
+            color: var(--text-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .section-dark .section-title {
+            color: var(--text-white);
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .section-dark .section-description {
+            color: var(--text-gray);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Material Icons */
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: 'liga';
+        }
+
+        .material-icons.md-18 { font-size: 18px; }
+        .material-icons.md-24 { font-size: 24px; }
+        .material-icons.md-36 { font-size: 36px; }
+        .material-icons.md-48 { font-size: 48px; }
+        .material-icons.md-64 { font-size: 64px; }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #111827;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .feature-text h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #111827;
+        }
+
+        .feature-text p {
+            font-size: 0.95rem;
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .about-image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .about-image-box {
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(153, 27, 27, 0.1));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-image-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(220, 38, 38, 0.05) 100%);
+        }
+
+        /* Statistics Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-red), var(--text-white));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        /* Departments Section */
+        .departments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .department-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid #f3f4f6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .department-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--light-red), var(--primary-red));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .department-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.15);
+            border-color: var(--primary-red);
+        }
+
+        .department-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .department-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .department-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .department-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+
+        .department-card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .department-card li {
+            padding: 0.5rem 0;
+            color: #4b5563;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .department-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-red);
+            font-weight: 700;
+        }
+
+        /* Hospitals Section */
+        .hospitals-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .hospital-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .hospital-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .hospital-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-white);
+        }
+
+        .hospital-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-text {
+            flex: 1;
+        }
+
+        .info-text strong {
+            display: block;
+            margin-bottom: 0.3rem;
+            color: var(--text-white);
+        }
+
+        .info-text span {
+            color: var(--text-gray);
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #111827;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: #f9fafb;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            background: #f3f4f6;
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .contact-details strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #111827;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-details span {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            background: #f9fafb;
+            padding: 3rem;
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-red);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            color: var(--text-gray);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            color: var(--text-white);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-red);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #1f2937;
+            padding-top: 2rem;
+            text-align: center;
+            color: #6b7280;
+        }
+
+        .emergency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 4rem;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .hero-image-container {
+                height: 400px;
+            }
+
+            .hero-doctor-image {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                background: rgba(0, 0, 0, 0.98);
+                width: 100%;
+                padding: 2rem;
+                gap: 1.5rem;
+                transition: left 0.3s ease;
+                align-items: flex-start;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-doctor-image {
+                width: 280px;
+                height: 280px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .departments-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hospitals-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">HOPE HOSPITAL</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#departments">Our Departments</a></li>
+                <li><a href="#hospitals">Hospitals</a></li>
+                <li><a href="#empanelments">Empanelments</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>
+                    Hope.<br>
+                    <span class="gradient-text">Healing.</span><br>
+                    Healthcare.
+                </h1>
+                <p class="hero-subtitle">Where compassionate care meets medical excellence</p>
+                <div class="cta-buttons">
+                    <a href="#departments" class="btn btn-primary">
+                        <span>Explore Our Services</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Book Appointment</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <img src="/Users/murali/Muralibk 19 sept/muralibk/public/images/dr-murali-bk.jpg" alt="Dr. Murali BK" class="hero-doctor-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">About Hope Hospital</div>
+                <h2 class="section-title">Central India's Premier Super Specialty Healthcare Center</h2>
+                <p class="section-description">Delivering world-class medical care with compassion and excellence for over 19 years</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>NABH Accredited Excellence Since 2012</h3>
+                    <p>Hope Hospital stands as Central India's first NABH-accredited comprehensive super specialty center, providing exceptional healthcare services to over 5 million people within a 500 km radius.</p>
+                    <p>Led by the renowned Dr. B.K. Murali, an esteemed orthopedic and spine surgeon, our facility combines cutting-edge medical technology with compassionate patient care across our 100-bed, 24,000 sq ft state-of-the-art facility.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">emoji_events</span></div>
+                            <div class="feature-text">
+                                <h4>NABH Accredited</h4>
+                                <p>Certified excellence in healthcare quality standards</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">medical_services</span></div>
+                            <div class="feature-text">
+                                <h4>Expert Team</h4>
+                                <p>Highly qualified specialists and consultants</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">biotech</span></div>
+                            <div class="feature-text">
+                                <h4>Advanced Technology</h4>
+                                <p>Latest medical equipment and facilities</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">favorite</span></div>
+                            <div class="feature-text">
+                                <h4>Compassionate Care</h4>
+                                <p>Patient-centered approach to healing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-grid">
+                    <div class="about-image-box"><span class="material-icons md-64">local_hospital</span></div>
+                    <div class="about-image-box"><span class="material-icons md-64">health_and_safety</span></div>
+                    <div class="about-image-box"><span class="material-icons md-64">monitor_heart</span></div>
+                    <div class="about-image-box"><span class="material-icons md-64">medication</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Impact</div>
+                <h2 class="section-title">Trusted by Thousands</h2>
+                <p class="section-description">Numbers that reflect our commitment to excellence in healthcare</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">19+</div>
+                    <div class="stat-label">Years of Service</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100</div>
+                    <div class="stat-label">Bed Facility</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">ICU Beds</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Emergency Care</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="section" id="departments">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Specialties</div>
+                <h2 class="section-title">Comprehensive Medical Services</h2>
+                <p class="section-description">World-class care across multiple specialties under one roof</p>
+            </div>
+            <div class="departments-grid">
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">accessibility_new</span></div>
+                    <h3>Orthopedics</h3>
+                    <p>Advanced orthopedic care and joint replacement surgery with cutting-edge techniques.</p>
+                    <ul>
+                        <li>Total Knee Replacement</li>
+                        <li>Total Hip Replacement</li>
+                        <li>Arthroscopy Surgery</li>
+                        <li>Spine Surgery</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">psychology</span></div>
+                    <h3>Neurosurgery</h3>
+                    <p>Expert neurological care and advanced neurosurgical procedures.</p>
+                    <ul>
+                        <li>Brain Surgery</li>
+                        <li>Spine Neurosurgery</li>
+                        <li>Epilepsy Treatment</li>
+                        <li>Neurological Rehabilitation</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">favorite</span></div>
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive cardiac care and advanced cardiovascular surgery.</p>
+                    <ul>
+                        <li>Cardiac Surgery</li>
+                        <li>Interventional Cardiology</li>
+                        <li>Heart Disease Treatment</li>
+                        <li>Cardiac Rehabilitation</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">emergency</span></div>
+                    <h3>Critical Care</h3>
+                    <p>State-of-the-art ICU facilities with 24/7 expert monitoring.</p>
+                    <ul>
+                        <li>30 ICU Beds</li>
+                        <li>Advanced Monitoring</li>
+                        <li>Ventilator Support</li>
+                        <li>Emergency Response</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">science</span></div>
+                    <h3>Oncology</h3>
+                    <p>Comprehensive cancer care with modern treatment protocols.</p>
+                    <ul>
+                        <li>Chemotherapy</li>
+                        <li>Radiation Therapy</li>
+                        <li>Surgical Oncology</li>
+                        <li>Palliative Care</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">pregnant_woman</span></div>
+                    <h3>Mother & Child Care</h3>
+                    <p>Complete maternal and pediatric healthcare services.</p>
+                    <ul>
+                        <li>Obstetrics & Gynecology</li>
+                        <li>Neonatal Care</li>
+                        <li>Pediatric Services</li>
+                        <li>Maternity Ward</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">healing</span></div>
+                    <h3>Minimal Invasive Surgery</h3>
+                    <p>Advanced laparoscopic and minimally invasive procedures.</p>
+                    <ul>
+                        <li>Laparoscopic Surgery</li>
+                        <li>Endoscopic Procedures</li>
+                        <li>Faster Recovery</li>
+                        <li>Minimal Scarring</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">coronavirus</span></div>
+                    <h3>Gastroenterology</h3>
+                    <p>Expert digestive system care and treatment.</p>
+                    <ul>
+                        <li>Endoscopy</li>
+                        <li>Liver Disease Treatment</li>
+                        <li>GI Surgery</li>
+                        <li>Nutritional Support</li>
+                    </ul>
+                </div>
+                <div class="department-card">
+                    <div class="department-icon"><span class="material-icons md-48">water_drop</span></div>
+                    <h3>Nephrology & Urology</h3>
+                    <p>Advanced kidney and urological care services.</p>
+                    <ul>
+                        <li>Dialysis Services</li>
+                        <li>Kidney Stone Treatment</li>
+                        <li>Urological Surgery</li>
+                        <li>Renal Transplant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitals Section -->
+    <section class="section section-dark" id="hospitals">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Locations</div>
+                <h2 class="section-title">Serving Nagpur with Two State-of-the-Art Facilities</h2>
+                <p class="section-description">Accessible, world-class healthcare closer to you</p>
+            </div>
+            <div class="hospitals-grid">
+                <div class="hospital-card">
+                    <h3>Hope Hospital - Teka Naka</h3>
+                    <div class="hospital-info">
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">location_on</span></div>
+                            <div class="info-text">
+                                <strong>Address</strong>
+                                <span>Beside Gogas Auto LPG, Kamptee Road, Teka Naka, Nagpur - 440017</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">local_hospital</span></div>
+                            <div class="info-text">
+                                <strong>Facilities</strong>
+                                <span>100-Bed Super Specialty Hospital | 30 ICU Beds | 3 Modular OTs | 24,000 sq ft</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">call</span></div>
+                            <div class="info-text">
+                                <strong>Emergency Hotline</strong>
+                                <span>09373111709 (Available 24/7)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hospital-card">
+                    <h3>Hope Hospital - Ramdaspeth</h3>
+                    <div class="hospital-info">
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">location_on</span></div>
+                            <div class="info-text">
+                                <strong>Address</strong>
+                                <span>City Center Location, Ramdaspeth, Nagpur</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">local_hospital</span></div>
+                            <div class="info-text">
+                                <strong>Facilities</strong>
+                                <span>Modern Healthcare Facility | Specialist Consultations | Diagnostic Services</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">schedule</span></div>
+                            <div class="info-text">
+                                <strong>Convenience</strong>
+                                <span>Easily accessible city center location for outpatient services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empanelments Section -->
+    <section class="section" id="empanelments">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Insurance & Empanelments</div>
+                <h2 class="section-title">Accepted Insurance & Government Schemes</h2>
+                <p class="section-description">Making quality healthcare accessible and affordable</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Cashless Treatment Available</h3>
+                    <p>Hope Hospital is empaneled with major insurance companies and government health schemes, ensuring you receive the best medical care without financial stress.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">account_balance</span></div>
+                            <div class="feature-text">
+                                <h4>Ayushman Bharat</h4>
+                                <p>PM-JAY beneficiary hospital</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">local_hospital</span></div>
+                            <div class="feature-text">
+                                <h4>CGHS & ECHS</h4>
+                                <p>Government health schemes accepted</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">train</span></div>
+                            <div class="feature-text">
+                                <h4>Railway Empanelment</h4>
+                                <p>Approved for railway employees</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><span class="material-icons md-36">business_center</span></div>
+                            <div class="feature-text">
+                                <h4>Corporate Empanelments</h4>
+                                <p>TPA and major insurers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-grid">
+                    <div class="about-image-box"><span class="material-icons md-64">credit_card</span></div>
+                    <div class="about-image-box"><span class="material-icons md-64">account_balance</span></div>
+                    <div class="about-image-box"><span class="material-icons md-64">local_hospital</span></div>
+                    <div class="about-image-box"><span class="material-icons md-64">business_center</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Get In Touch</div>
+                <h2 class="section-title">Contact Hope Hospital</h2>
+                <p class="section-description">We're here to help you 24/7. Reach out to us for appointments or emergencies.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Reach Out to Us</h3>
+                    <p>Whether you need an appointment, have questions about our services, or require emergency care, our team is always ready to assist you.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon"><span class="material-icons">call</span></div>
+                            <div class="contact-details">
+                                <strong>Emergency Hotline</strong>
+                                <span>09373111709 (24/7)</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon"><span class="material-icons">business_center</span></div>
+                            <div class="contact-details">
+                                <strong>MSME Line</strong>
+                                <span>9881820857</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon"><span class="material-icons">location_on</span></div>
+                            <div class="contact-details">
+                                <strong>Main Hospital</strong>
+                                <span>Beside Gogas Auto LPG, Kamptee Road, Nagpur - 440017</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon"><span class="material-icons">schedule</span></div>
+                            <div class="contact-details">
+                                <strong>Emergency Services</strong>
+                                <span>Available 24 Hours, 7 Days a Week</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="emergency-badge">
+                        <span class="material-icons">warning</span> Emergency? Call 09373111709 Now
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem; color: #111827;">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea id="message" name="message" placeholder="How can we help you?" required minlength="10"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div id="formSuccess" style="display: none; background: #10b981; color: white; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;">
+                        Thank you! Your message has been received. We'll contact you soon.
+                    </div>
+                    <div id="formError" style="display: none; background: #ef4444; color: white; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;">
+                        Please fill all required fields correctly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HOPE HOSPITAL</h3>
+                <p>Central India's premier NABH-accredited super specialty healthcare center, delivering excellence in medical care since 2004.</p>
+                <p style="margin-top: 1.5rem;"><strong style="color: var(--text-white);">Emergency: 09373111709</strong></p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#departments">Our Departments</a></li>
+                    <li><a href="#hospitals">Hospitals</a></li>
+                    <li><a href="#empanelments">Empanelments</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Departments</h3>
+                <ul class="footer-links">
+                    <li><a href="#departments">Orthopedics</a></li>
+                    <li><a href="#departments">Neurosurgery</a></li>
+                    <li><a href="#departments">Cardiology</a></li>
+                    <li><a href="#departments">Critical Care</a></li>
+                    <li><a href="#departments">Oncology</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <ul class="footer-links">
+                    <li>Beside Gogas Auto LPG</li>
+                    <li>Kamptee Road, Teka Naka</li>
+                    <li>Nagpur - 440017</li>
+                    <li>Maharashtra, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hope Hospital. All rights reserved. | NABH Accredited Super Specialty Center</p>
+            <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 0.75rem; color: #6b7280;">
+                Version 1.0.0 | Last updated: Nov 15, 2024 | hopehospital.com
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contact form validation and submission
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+        const formError = document.getElementById('formError');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Hide previous messages
+            formSuccess.style.display = 'none';
+            formError.style.display = 'none';
+
+            // Validate form
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name.length < 2) {
+                formError.textContent = 'Please enter a valid name.';
+                formError.style.display = 'block';
+                return;
+            }
+
+            if (!/^[0-9]{10}$/.test(phone)) {
+                formError.textContent = 'Please enter a valid 10-digit phone number.';
+                formError.style.display = 'block';
+                return;
+            }
+
+            if (message.length < 10) {
+                formError.textContent = 'Message must be at least 10 characters long.';
+                formError.style.display = 'block';
+                return;
+            }
+
+            // Form is valid - show success message
+            formSuccess.style.display = 'block';
+            contactForm.reset();
+
+            // Scroll to success message
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            // In production, send data to server here
+            console.log('Form submitted:', { name, phone, message });
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
