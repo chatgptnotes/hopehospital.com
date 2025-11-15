@@ -15,8 +15,24 @@ const indexDest = path.join(buildDir, 'index.html');
 fs.copyFileSync(indexSrc, indexDest);
 console.log('✓ Copied index.html');
 
+// Copy sitemap.xml
+const sitemapSrc = path.join(__dirname, '..', 'sitemap.xml');
+const sitemapDest = path.join(buildDir, 'sitemap.xml');
+if (fs.existsSync(sitemapSrc)) {
+  fs.copyFileSync(sitemapSrc, sitemapDest);
+  console.log('✓ Copied sitemap.xml');
+}
+
+// Copy robots.txt
+const robotsSrc = path.join(__dirname, '..', 'robots.txt');
+const robotsDest = path.join(buildDir, 'robots.txt');
+if (fs.existsSync(robotsSrc)) {
+  fs.copyFileSync(robotsSrc, robotsDest);
+  console.log('✓ Copied robots.txt');
+}
+
 // Copy assets if they exist
-const assetsDirs = ['images', 'css', 'js'];
+const assetsDirs = ['images', 'css', 'js', 'blog'];
 assetsDirs.forEach(dir => {
   const srcDir = path.join(__dirname, '..', dir);
   if (fs.existsSync(srcDir)) {

@@ -1,0 +1,22 @@
+# robots.txt for Hope Hospital - Best Hospital in Nagpur
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hopehospital.com/sitemap.xml
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow all images
+Allow: /images/
+
+# Allow all blog content
+Allow: /blog/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
