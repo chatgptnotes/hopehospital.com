@@ -18,5 +18,8 @@ Allow: /images/
 # Allow all blog content
 Allow: /blog/
 
+# Allow disease information pages
+Allow: /diseases/
+
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

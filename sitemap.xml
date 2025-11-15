@@ -29,14 +29,42 @@
     </url>
 
     <url>
-        <loc>https://hopehospital.com/#hospitals</loc>
+        <loc>https://hopehospital.com/#diseases</loc>
+        <lastmod>2025-11-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://hopehospital.com/#health-checkup</loc>
         <lastmod>2025-11-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://hopehospital.com/#empanelments</loc>
+        <loc>https://hopehospital.com/#facilities</loc>
+        <lastmod>2025-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://hopehospital.com/#consultants</loc>
+        <lastmod>2025-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://hopehospital.com/#gallery</loc>
+        <lastmod>2025-11-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://hopehospital.com/#empanelment</loc>
         <lastmod>2025-11-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -45,8 +73,30 @@
     <url>
         <loc>https://hopehospital.com/#contact</loc>
         <lastmod>2025-11-15</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>yearly</changefreq>
         <priority>0.7</priority>
+    </url>
+
+    <!-- Disease Detail Pages -->
+    <url>
+        <loc>https://hopehospital.com/diseases/arthritis.html</loc>
+        <lastmod>2025-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://hopehospital.com/diseases/diabetes.html</loc>
+        <lastmod>2025-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://hopehospital.com/diseases/hypertension.html</loc>
+        <lastmod>2025-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
 
     <!-- Blog Posts -->
