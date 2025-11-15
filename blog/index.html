@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Blog - Hope Hospital Nagpur | Expert Medical Insights</title>
+
+    <meta name="description" content="Read expert healthcare articles from Hope Hospital Nagpur. Get insights on orthopedic surgery, knee replacement, hip replacement, and choosing the best hospital in Nagpur from Dr. B.K. Murali.">
+    <meta name="keywords" content="healthcare blog Nagpur, orthopedic surgery articles, knee replacement guide, hip replacement information, best hospital Nagpur, Dr B.K. Murali articles, medical blog India">
+
+    <link rel="canonical" href="https://hopehospital.com/blog/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #dc2626;
+            --dark-red: #991b1b;
+            --light-red: #ef4444;
+            --accent-red: #f87171;
+            --dark-gray: #1f2937;
+            --text-gray: #6b7280;
+            --light-gray: #f3f4f6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+        }
+
+        /* Blog Grid */
+        .blog-section {
+            padding: 5rem 0;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.15);
+            border-color: var(--primary-red);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .blog-image .material-icons {
+            font-size: 80px;
+            opacity: 0.3;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-category {
+            display: inline-block;
+            background: #fef3f3;
+            color: var(--primary-red);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card h2 {
+            font-size: 1.5rem;
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .blog-excerpt {
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .blog-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .blog-meta .material-icons {
+            font-size: 18px;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: 600;
+            transition: gap 0.3s;
+        }
+
+        .read-more:hover {
+            gap: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-gray);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        footer a {
+            color: var(--accent-red);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .blog-card h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-link">
+                <span class="material-icons">arrow_back</span>
+                Back to Hope Hospital
+            </a>
+            <h1>Healthcare Insights Blog</h1>
+            <p>Expert medical advice and comprehensive guides from Dr. B.K. Murali and the Hope Hospital team</p>
+        </div>
+    </header>
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span class="material-icons">accessibility_new</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Orthopedic Surgery</span>
+                        <h2>Knee Replacement Surgery in Nagpur: Complete Guide</h2>
+                        <div class="blog-meta">
+                            <span>
+                                <span class="material-icons">person</span>
+                                Dr. B.K. Murali
+                            </span>
+                            <span>
+                                <span class="material-icons">schedule</span>
+                                15 min read
+                            </span>
+                        </div>
+                        <p class="blog-excerpt">
+                            Comprehensive guide to knee replacement surgery by Nagpur's best orthopedic surgeon. Learn about the procedure, recovery, costs, and why Hope Hospital is the best choice for total knee replacement.
+                        </p>
+                        <a href="knee-replacement-surgery-nagpur-guide.html" class="read-more">
+                            Read Full Article
+                            <span class="material-icons">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span class="material-icons">healing</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Joint Replacement</span>
+                        <h2>Hip Replacement: When Do You Need It?</h2>
+                        <div class="blog-meta">
+                            <span>
+                                <span class="material-icons">person</span>
+                                Dr. B.K. Murali
+                            </span>
+                            <span>
+                                <span class="material-icons">schedule</span>
+                                12 min read
+                            </span>
+                        </div>
+                        <p class="blog-excerpt">
+                            Expert advice from the best orthopedic surgeon in Nagpur on hip replacement surgery. Understand the symptoms, procedure, recovery timeline, and how to choose the right hospital for hip replacement.
+                        </p>
+                        <a href="hip-replacement-when-do-you-need-it.html" class="read-more">
+                            Read Full Article
+                            <span class="material-icons">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span class="material-icons">local_hospital</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Patient Guide</span>
+                        <h2>Choosing the Best Hospital in Nagpur: A Patient's Guide</h2>
+                        <div class="blog-meta">
+                            <span>
+                                <span class="material-icons">person</span>
+                                Hope Hospital Team
+                            </span>
+                            <span>
+                                <span class="material-icons">schedule</span>
+                                10 min read
+                            </span>
+                        </div>
+                        <p class="blog-excerpt">
+                            Essential factors to consider when selecting a hospital in Nagpur. Learn about NABH accreditation, specialist availability, facilities, insurance acceptance, and why Hope Hospital stands out.
+                        </p>
+                        <a href="choosing-best-hospital-in-nagpur.html" class="read-more">
+                            Read Full Article
+                            <span class="material-icons">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hope Hospital - Best Hospital in Nagpur. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="../index.html">Home</a> |
+                <a href="../index.html#about">About</a> |
+                <a href="../index.html#departments">Services</a> |
+                <a href="../index.html#contact">Contact</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                Emergency: <strong>+91-9373111709</strong> (24/7 Available)
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

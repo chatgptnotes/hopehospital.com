@@ -1242,6 +1242,275 @@
             }
         }
 
+        /* Quick Stats Banner */
+        .stats-banner {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            padding: 3rem 0;
+            margin-top: -2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            color: white;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            color: white;
+            opacity: 0.9;
+        }
+
+        .stat-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-content p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Surgeon Who Codes Section */
+        .surgeon-coder-section {
+            background: linear-gradient(135deg, #f9fafb 0%, #fff 100%);
+        }
+
+        .surgeon-coder-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .surgeon-coder-image {
+            position: relative;
+        }
+
+        .code-icon-bg {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            border-radius: 20px;
+            padding: 4rem 3rem;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
+        }
+
+        .code-icon-bg .material-icons {
+            color: white;
+            opacity: 0.9;
+        }
+
+        .coder-features {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .coder-feature {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-red);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .coder-feature:hover {
+            box-shadow: 0 8px 16px rgba(220, 38, 38, 0.1);
+            transform: translateX(5px);
+        }
+
+        .coder-feature .material-icons {
+            color: var(--primary-red);
+            font-size: 32px;
+        }
+
+        .coder-feature h4 {
+            color: var(--dark-gray);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .coder-feature p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Raftaar Emergency Seva Section */
+        .raftaar-section {
+            background: linear-gradient(135deg, #fef3f3 0%, #fff 50%, #f9fafb 100%);
+        }
+
+        .raftaar-highlight {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: linear-gradient(135deg, var(--dark-red), var(--primary-red));
+            color: white;
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 24px rgba(220, 38, 38, 0.25);
+        }
+
+        .raftaar-highlight .material-icons {
+            color: white;
+        }
+
+        .raftaar-highlight h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .raftaar-highlight p {
+            opacity: 0.95;
+            font-size: 1.05rem;
+        }
+
+        .raftaar-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .raftaar-feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .raftaar-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(220, 38, 38, 0.15);
+        }
+
+        .raftaar-icon {
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .raftaar-icon .material-icons {
+            color: white;
+            font-size: 32px;
+        }
+
+        .raftaar-feature h4 {
+            color: var(--dark-gray);
+            margin-bottom: 0.75rem;
+            font-size: 1.15rem;
+        }
+
+        .raftaar-feature p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        .raftaar-fleet h3 {
+            color: var(--dark-gray);
+            font-size: 1.5rem;
+        }
+
+        .fleet-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .fleet-type {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid var(--light-gray);
+            transition: all 0.3s ease;
+        }
+
+        .fleet-type:hover {
+            border-color: var(--primary-red);
+            background: #fef3f3;
+        }
+
+        .fleet-type .material-icons {
+            color: var(--primary-red);
+        }
+
+        .raftaar-cta {
+            margin-top: 3rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .raftaar-cta .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-red);
+            transform: translateY(-3px);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+        }
+
+        .social-links a svg {
+            width: 20px;
+            height: 20px;
+        }
+
         /* Awards & Certifications Section */
         .section-awards {
             background: linear-gradient(135deg, #fef3f3 0%, #fff 100%);
@@ -1812,6 +2081,53 @@
             .betserlife-features {
                 grid-template-columns: 1fr;
             }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stat-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .surgeon-coder-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .code-icon-bg {
+                padding: 3rem 2rem;
+            }
+
+            .raftaar-highlight {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .raftaar-highlight h3 {
+                font-size: 1.5rem;
+            }
+
+            .raftaar-features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .fleet-types {
+                grid-template-columns: 1fr;
+            }
+
+            .raftaar-cta {
+                flex-direction: column;
+            }
+
+            .raftaar-cta .btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
         @media (max-width: 640px) {
@@ -1845,6 +2161,7 @@
                 <li><a href="#departments">Our Departments</a></li>
                 <li><a href="#hospitals">Hospitals</a></li>
                 <li><a href="#empanelments">Empanelments</a></li>
+                <li><a href="./blog/">Blog</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -1877,6 +2194,42 @@
             <div class="hero-image">
                 <div class="hero-image-container">
                     <img src="./images/dr-murali-bk.jpg" alt="Dr. Murali BK" class="hero-doctor-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Banner -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon"><span class="material-icons md-48">verified</span></div>
+                    <div class="stat-content">
+                        <h3>NABH Accredited</h3>
+                        <p>Since 2012</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><span class="material-icons md-48">emoji_events</span></div>
+                    <div class="stat-content">
+                        <h3>6+ National Awards</h3>
+                        <p>Healthcare Excellence</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><span class="material-icons md-48">groups</span></div>
+                    <div class="stat-content">
+                        <h3>5M+ Patients</h3>
+                        <p>Served Across Central India</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><span class="material-icons md-48">schedule</span></div>
+                    <div class="stat-content">
+                        <h3>24/7 Emergency</h3>
+                        <p>Always Available</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1939,6 +2292,139 @@
                     <div class="mvv-icon"><span class="material-icons md-48">diamond</span></div>
                     <h3>VALUE</h3>
                     <p>We value our Patients first: We achieve this by putting their health at the centre of everything we do and we achieve this by listening to their needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dr. Murali - Surgeon Who Codes Section -->
+    <section class="section surgeon-coder-section">
+        <div class="container">
+            <div class="surgeon-coder-content">
+                <div class="surgeon-coder-image">
+                    <div class="code-icon-bg">
+                        <span class="material-icons md-120">code</span>
+                    </div>
+                </div>
+                <div class="surgeon-coder-text">
+                    <div class="section-label" style="color: var(--primary-red);">Innovation in Healthcare</div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Dr. B.K. Murali - The Surgeon Who Codes</h2>
+                    <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Dr. B.K. Murali is not just the <strong>best orthopedic surgeon in Nagpur</strong> - he's a pioneering healthcare innovator who bridges the worlds of medicine and technology. As a surgeon who codes, Dr. Murali developed <strong>DrMHope Hospital Information System (HIS)</strong>, a comprehensive hospital management software that revolutionizes patient care delivery.
+                    </p>
+                    <div class="coder-features">
+                        <div class="coder-feature">
+                            <span class="material-icons">developer_mode</span>
+                            <div>
+                                <h4>Software Developer & Surgeon</h4>
+                                <p>Unique combination of medical expertise and software development skills</p>
+                            </div>
+                        </div>
+                        <div class="coder-feature">
+                            <span class="material-icons">laptop_mac</span>
+                            <div>
+                                <h4>DrMHope HIS - Award-Winning Software</h4>
+                                <p>Developed and piloted at Hope Hospital, winning national innovation awards</p>
+                            </div>
+                        </div>
+                        <div class="coder-feature">
+                            <span class="material-icons">analytics</span>
+                            <div>
+                                <h4>ISO 9001-2008 Certified</h4>
+                                <p>DrMHope software recognized for excellence in hospital management systems</p>
+                            </div>
+                        </div>
+                        <div class="coder-feature">
+                            <span class="material-icons">lightbulb</span>
+                            <div>
+                                <h4>Top 50 Healthcare Innovators</h4>
+                                <p>Finalist in India Innovation Growth Programme for healthcare technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem; padding: 1.5rem; background: var(--light-gray); border-left: 4px solid var(--primary-red); border-radius: 8px;">
+                        <strong>About DrMHope:</strong> This hospital information system streamlines patient registration, medical records, billing, pharmacy management, and clinical workflows - all designed by a practicing surgeon who understands the real-world needs of healthcare providers and patients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Raftaar Emergency Seva Section -->
+    <section class="section raftaar-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Emergency Medical Services</div>
+                <h2 class="section-title">Raftaar Emergency Seva - AI-Powered Ambulance Network</h2>
+                <p class="section-description">24/7 emergency response with cutting-edge technology for rapid medical assistance across Nagpur and Central India</p>
+            </div>
+            <div class="raftaar-content">
+                <div class="raftaar-info">
+                    <div class="raftaar-highlight">
+                        <span class="material-icons md-64">emergency</span>
+                        <div>
+                            <h3>Emergency Hotline: +91-8412030400</h3>
+                            <p>Available 24/7 for immediate ambulance dispatch</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin: 2rem 0;">
+                        <strong>Raftaar Emergency Seva</strong> (powered by Emergency Seva AI) is India's first AI-driven medical logistics aggregator on ONDC, providing rapid emergency response with advanced ambulance services across Nagpur and beyond.
+                    </p>
+
+                    <div class="raftaar-features-grid">
+                        <div class="raftaar-feature">
+                            <div class="raftaar-icon"><span class="material-icons">speed</span></div>
+                            <h4>Response Time < 10 Minutes</h4>
+                            <p>AI-powered dispatch system ensures fastest ambulance arrival</p>
+                        </div>
+                        <div class="raftaar-feature">
+                            <div class="raftaar-icon"><span class="material-icons">sensors</span></div>
+                            <h4>AI Crash Detection</h4>
+                            <p>Automated accident detection with instant command center alerts</p>
+                        </div>
+                        <div class="raftaar-feature">
+                            <div class="raftaar-icon"><span class="material-icons">gps_fixed</span></div>
+                            <h4>Real-Time GPS Tracking</h4>
+                            <p>Live tracking connects victims to nearest smart ambulances and hospitals</p>
+                        </div>
+                        <div class="raftaar-feature">
+                            <div class="raftaar-icon"><span class="material-icons">record_voice_over</span></div>
+                            <h4>Anohra AI Voice Dispatch</h4>
+                            <p>Voice-based system alerts hospitals and first responders in seconds</p>
+                        </div>
+                        <div class="raftaar-feature">
+                            <div class="raftaar-icon"><span class="material-icons">local_hospital</span></div>
+                            <h4>Hospital Coordination</h4>
+                            <p>Seamless integration with 104+ hospitals for immediate care</p>
+                        </div>
+                        <div class="raftaar-feature">
+                            <div class="raftaar-icon"><span class="material-icons">notifications_active</span></div>
+                            <h4>Family Notifications</h4>
+                            <p>WhatsApp alerts keep families informed throughout emergency</p>
+                        </div>
+                    </div>
+
+                    <div class="raftaar-fleet">
+                        <h3 style="margin: 2rem 0 1.5rem;">Ambulance Fleet Types</h3>
+                        <div class="fleet-types">
+                            <div class="fleet-type"><span class="material-icons">check_circle</span> Basic Life Support Ambulances</div>
+                            <div class="fleet-type"><span class="material-icons">check_circle</span> Advanced Life Support with Oxygen</div>
+                            <div class="fleet-type"><span class="material-icons">check_circle</span> Mobile ICU with Ventilator</div>
+                            <div class="fleet-type"><span class="material-icons">check_circle</span> Air Ambulance Services</div>
+                            <div class="fleet-type"><span class="material-icons">check_circle</span> Mortuary Freezer Vans</div>
+                        </div>
+                    </div>
+
+                    <div class="raftaar-cta">
+                        <a href="tel:+918412030400" class="btn btn-primary" style="margin-right: 1rem;">
+                            <span class="material-icons">call</span>
+                            <span>Call Emergency: 8412030400</span>
+                        </a>
+                        <a href="https://emergencyseva.in" target="_blank" class="btn btn-secondary">
+                            <span>Download Raftaar App</span>
+                            <span class="material-icons">arrow_forward</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2316,19 +2802,124 @@
             <!-- Dr. B.K. Murali Highlight -->
             <div class="doctor-highlight">
                 <div class="doctor-highlight-image">
-                    <img src="./images/dr-murali-bk.jpg" alt="Dr. B.K. Murali - Best Orthopedic Surgeon in Nagpur">
+                    <img src="./images/dr-murali-bk.jpg" alt="Dr. Murali Balasundaram (Dr. B.K. Murali) - Best Orthopedic Surgeon in Nagpur">
                 </div>
                 <div class="doctor-highlight-content">
-                    <h3>DR. B.K. MURALI</h3>
-                    <p class="doctor-title">MANAGING DIRECTOR | M.S. (Ortho) | Joint Replacement Surgeon</p>
-                    <p class="doctor-desc">Recognized as the <strong>best orthopedic surgeon in Nagpur and Central India</strong>, Dr. B.K. Murali is frequently featured for expertise in joint replacements, sports medicine, and trauma care. Winner of the Lokmat Visionary & Innovator Healthcare Award and finalist for India Innovation Growth Programme.</p>
-                    <div class="doctor-specialties">
-                        <span><span class="material-icons">check_circle</span> Total Knee Replacement</span>
-                        <span><span class="material-icons">check_circle</span> Total Hip Replacement</span>
-                        <span><span class="material-icons">check_circle</span> Spine Surgery</span>
-                        <span><span class="material-icons">check_circle</span> Arthroscopy</span>
-                        <span><span class="material-icons">check_circle</span> Sports Medicine</span>
-                        <span><span class="material-icons">check_circle</span> Trauma Care</span>
+                    <h3>DR. MURALI BALASUNDARAM (DR. B.K. MURALI)</h3>
+                    <p class="doctor-title">CHAIRMAN & MANAGING DIRECTOR | M.S. (Ortho) | MBBS</p>
+                    <p class="doctor-subtitle" style="font-size: 1.05rem; color: var(--primary-red); margin-bottom: 1rem; font-weight: 600;">
+                        Orthopedic Surgeon | Healthcare Entrepreneur | The Surgeon Who Codes | AI Enthusiast
+                    </p>
+                    <p class="doctor-desc">
+                        With over <strong>20 years of experience in the medical field</strong>, Dr. Murali Balasundaram's journey has been driven by an unwavering commitment to patient care and innovation in healthcare. Recognized as the <strong>best orthopedic surgeon in Nagpur and Central India</strong>, his mission is to harness industry knowledge and expertise to deliver outstanding orthopedic treatment, complemented by cutting-edge solutions like AI-driven diagnostics.
+                    </p>
+                    <p class="doctor-desc">
+                        As a <strong>healthcare entrepreneur</strong>, Dr. Murali has been pivotal in revolutionizing emergency medical services as founder of <strong>Bachao, Emergency Seva (Raftaar Help)</strong>, and <strong>Insta Aid</strong>. His entrepreneurial spirit, coupled with exceptional problem-solving skills, has created systems that enhance communication and foster collaboration among healthcare professionals.
+                    </p>
+                    <p class="doctor-desc">
+                        A unique distinction: <strong>The Surgeon Who Codes</strong> - Dr. Murali has successfully built and delivered <strong>100+ web and mobile application projects</strong> using React and Supabase across diverse industries, from healthcare to civic tech and AI-powered solutions. This blend of medical expertise and software development enables rapid innovation and digital transformation in healthcare.
+                    </p>
+
+                    <div style="margin: 2rem 0;">
+                        <h4 style="color: var(--dark-gray); margin-bottom: 1rem; font-size: 1.15rem;">Education & Qualifications:</h4>
+                        <div style="display: grid; gap: 0.75rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red);">school</span>
+                                <span><strong>M.S. (Master of Surgery) in Orthopaedics</strong> - JSS Medical College, Mysore (1994-1997) | Grade: First Class</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red);">school</span>
+                                <span><strong>MBBS (Bachelor of Medicine, Bachelor of Surgery)</strong> - Government Medical College, Nagpur (1986)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <h4 style="color: var(--dark-gray); margin-bottom: 1rem; font-size: 1.15rem;">Current Positions & Founded Organizations:</h4>
+                        <div style="display: grid; gap: 0.75rem;">
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red); margin-top: 2px;">business</span>
+                                <span><strong>Orthopaedic Surgeon & CMD</strong> - Hope Hospitals (Aug 2005 - Present, 20+ years)</span>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red); margin-top: 2px;">business</span>
+                                <span><strong>Managing Director</strong> - Ayushman Nagpur Hospital (Aug 2018 - Present, 7+ years)</span>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red); margin-top: 2px;">code</span>
+                                <span><strong>Chief Technology Officer</strong> - Bettroi - Better Business (Jun 2025 - Present)</span>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red); margin-top: 2px;">computer</span>
+                                <span><strong>Founder</strong> - DrMHope Softwares Pvt. Ltd. (Jan 2011 - Present, 14+ years) | Award-winning hospital management software</span>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red); margin-top: 2px;">emergency</span>
+                                <span><strong>Founder</strong> - Raftaar Help Emergency Seva (Aug 2024 - Present) | AI-powered ambulance network</span>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: var(--primary-red); margin-top: 2px;">web</span>
+                                <span><strong>Founder</strong> - Vibe Coding Masterclass (codeyourvibe.tech) | Teaching healthcare professionals to code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <h4 style="color: var(--dark-gray); margin-bottom: 1rem; font-size: 1.15rem;">Surgical Specializations:</h4>
+                        <div class="doctor-specialties">
+                            <span><span class="material-icons">check_circle</span> Total Knee Replacement</span>
+                            <span><span class="material-icons">check_circle</span> Total Hip Replacement</span>
+                            <span><span class="material-icons">check_circle</span> Spine Surgery</span>
+                            <span><span class="material-icons">check_circle</span> Arthroscopy</span>
+                            <span><span class="material-icons">check_circle</span> Sports Medicine</span>
+                            <span><span class="material-icons">check_circle</span> Trauma Care</span>
+                        </div>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <h4 style="color: var(--dark-gray); margin-bottom: 1rem; font-size: 1.15rem;">Awards & Recognition:</h4>
+                        <div style="display: grid; gap: 0.75rem;">
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: #f59e0b; margin-top: 2px;">emoji_events</span>
+                                <span><strong>Lokmat Visionary & Innovator Healthcare Award</strong> - For outstanding contributions to emergency care and orthopedic innovations</span>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: #f59e0b; margin-top: 2px;">computer</span>
+                                <span><strong>Best Innovation in Healthcare IT Award</strong> - For DrMHope hospital software technology</span>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span class="material-icons" style="color: #f59e0b; margin-top: 2px;">trending_up</span>
+                                <span><strong>India Innovation Growth Programme Finalist</strong> - Among top 50 innovators for technology in healthcare</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <h4 style="color: var(--dark-gray); margin-bottom: 1rem; font-size: 1.15rem;">Technology & Innovation:</h4>
+                        <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1rem;">
+                            Dr. Murali's unique combination of surgical excellence and software development expertise has resulted in groundbreaking healthcare innovations:
+                        </p>
+                        <ul style="margin-left: 1.5rem; color: var(--text-gray);">
+                            <li style="margin-bottom: 0.5rem;"><strong>100+ Digital Projects:</strong> Successfully built web and mobile applications using React and Supabase for healthcare, civic tech, and AI-powered solutions</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>DrMHope HIS:</strong> Award-winning Hospital Information System for patient management, medical records, billing, and clinical workflows</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Digihealthtwin:</strong> AI-driven diagnostic systems for improved patient outcomes</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>IAPS System:</strong> Innovative patient care and communication platform</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Raftaar Emergency Seva:</strong> India's first AI-driven medical logistics aggregator on ONDC</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #fef3f3, #fff); border-left: 4px solid var(--primary-red); border-radius: 8px;">
+                        <p style="color: var(--dark-gray); font-style: italic; line-height: 1.8;">
+                            "With over 19 years of experience in the medical field, my journey has been driven by an unwavering commitment to patient care and innovation in healthcare. At Hope Hospitals, my mission is to harness industry knowledge and expertise to deliver outstanding orthopedic treatment, complemented by cutting-edge solutions like AI-driven diagnostics. Our team is devoted to improving lives through excellence in surgical outcomes and patient experience."
+                        </p>
+                        <p style="margin-top: 1rem; color: var(--text-gray); font-weight: 600;">- Dr. Murali Balasundaram (Dr. B.K. Murali)</p>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="https://www.linkedin.com/in/murali1" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #0077b5; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <span>Connect on LinkedIn</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -2461,7 +3052,7 @@
                 <div class="consultants-list">
                     <div class="consultant-item">
                         <strong>Dr. Vinod Borkar</strong>
-                        <span>(M.B.B.S)</span>
+                        <span>(MBBS, MD Anaesthesia)</span>
                     </div>
                     <div class="consultant-item">
                         <strong>Dr. Rohan Soitkar</strong>
@@ -3027,6 +3618,7 @@
                     <li><a href="#departments">Our Departments</a></li>
                     <li><a href="#hospitals">Hospitals</a></li>
                     <li><a href="#empanelments">Empanelments</a></li>
+                    <li><a href="./blog/">Blog</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -3049,11 +3641,35 @@
                     <li>Maharashtra, India</li>
                 </ul>
             </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p style="margin-bottom: 1.5rem; opacity: 0.9; font-size: 0.95rem;">Stay connected for health tips, updates & more</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/hopehospitalnagpur" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Follow us on Facebook">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/hopehospitalnagpur" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Follow us on Instagram">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/hope-hospital-nagpur" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="Connect on LinkedIn">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@hopehospitalnagpur" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="Subscribe on YouTube">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://twitter.com/hopehospitalnag" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Follow us on Twitter">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://wa.me/919373111709" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="Message us on WhatsApp">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Hope Hospital. All rights reserved. | NABH Accredited Super Specialty Center</p>
             <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 0.75rem; color: #6b7280;">
-                Version 1.6.0 | Last updated: Nov 15, 2025 | hopehospital.com
+                Version 1.7.0 | Last updated: Nov 15, 2025 | hopehospital.com
             </p>
         </div>
     </footer>
