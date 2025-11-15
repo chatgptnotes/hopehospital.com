@@ -4,7 +4,7 @@
   "description": "Hope Hospital - Central India's Premier Super Specialty Healthcare Center",
   "main": "index.html",
   "scripts": {
-    "dev": "npx live-server --port=3000 --no-browser --ignore=node_modules",
+    "dev": "npx live-server --port=8080 --no-browser --ignore=node_modules",
     "build": "node scripts/build.js",
     "version-bump": "node scripts/version-bump.js",
     "lint": "npx htmlhint index.html && npx stylelint '**/*.css'",
