@@ -695,9 +695,15 @@
         /* Hospitals Section */
         .hospitals-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
             margin-top: 3rem;
+        }
+
+        @media (max-width: 1200px) {
+            .hospitals-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .hospital-card {
@@ -1041,6 +1047,7 @@
 
             .hospitals-grid {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
             .contact-container {
@@ -1316,7 +1323,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-label">Our Locations</div>
-                <h2 class="section-title">Serving Nagpur with Two State-of-the-Art Facilities</h2>
+                <h2 class="section-title">Serving Central India with Three Healthcare Facilities</h2>
                 <p class="section-description">Accessible, world-class healthcare closer to you</p>
             </div>
             <div class="hospitals-grid">
@@ -1376,6 +1383,40 @@
                             <div class="info-text">
                                 <strong>Specialties</strong>
                                 <span>Expert Ortho Surgeon | Government Health Schemes | First-Class Medical Care</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hospital-card">
+                    <h3>Ayushman Polyclinic Pandurna</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1.5rem; font-size: 1rem;">Healthcare Services in Pandurna</p>
+                    <div class="hospital-info">
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">location_on</span></div>
+                            <div class="info-text">
+                                <strong>Address</strong>
+                                <span>Pandurna, Chhindwara District, Madhya Pradesh</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">local_hospital</span></div>
+                            <div class="info-text">
+                                <strong>Services</strong>
+                                <span>Polyclinic Services | General Medicine | Specialist Consultations</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">schedule</span></div>
+                            <div class="info-text">
+                                <strong>Availability</strong>
+                                <span>Serving the Pandurna community</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><span class="material-icons">verified</span></div>
+                            <div class="info-text">
+                                <strong>Care</strong>
+                                <span>Quality healthcare for local communities</span>
                             </div>
                         </div>
                     </div>
@@ -1556,7 +1597,7 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Hope Hospital. All rights reserved. | NABH Accredited Super Specialty Center</p>
             <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 0.75rem; color: #6b7280;">
-                Version 1.2.0 | Last updated: Nov 15, 2025 | hopehospital.com
+                Version 1.3.0 | Last updated: Nov 15, 2025 | hopehospital.com
             </p>
         </div>
     </footer>
