@@ -5412,7 +5412,15 @@
                 </div>
                 <div class="contact-form">
                     <h3 style="margin-bottom: 1.5rem; color: #111827;">Send Us a Message</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <!-- Redirect to same page after submission -->
+                        <input type="hidden" name="redirect" value="https://hopehospital.com/#contact">
+                        <!-- Email recipient -->
+                        <input type="hidden" name="from_name" value="Hope Hospital Contact Form">
+                        <input type="hidden" name="subject" value="New Contact Form Submission - Hope Hospital">
+
                         <div class="form-group">
                             <label>Full Name *</label>
                             <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2">
@@ -5554,7 +5562,7 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Hope Hospital. All rights reserved. | NABH Accredited Super Specialty Center</p>
             <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 0.75rem; color: #6b7280;">
-                Version 1.28.0 | Last updated: Nov 16, 2025 | hopehospital.com
+                Version 1.29.0 | Last updated: Nov 16, 2025 | hopehospital.com
             </p>
         </div>
     </footer>
@@ -5597,56 +5605,14 @@
             });
         });
 
-        // Contact form validation and submission
+        // Contact form handling with Web3Forms
         const contactForm = document.getElementById('contactForm');
         const formSuccess = document.getElementById('formSuccess');
         const formError = document.getElementById('formError');
 
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Hide previous messages
-            formSuccess.style.display = 'none';
-            formError.style.display = 'none';
-
-            // Validate form
-            const name = document.getElementById('name').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const message = document.getElementById('message').value.trim();
-
-            if (name.length < 2) {
-                formError.textContent = 'Please enter a valid name.';
-                formError.style.display = 'block';
-                return;
-            }
-
-            if (!/^[0-9]{10}$/.test(phone)) {
-                formError.textContent = 'Please enter a valid 10-digit phone number.';
-                formError.style.display = 'block';
-                return;
-            }
-
-            if (message.length < 10) {
-                formError.textContent = 'Message must be at least 10 characters long.';
-                formError.style.display = 'block';
-                return;
-            }
-
-            // Form is valid - show success message
-            formSuccess.style.display = 'block';
-            contactForm.reset();
-
-            // Scroll to success message
-            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-            // In production, send data to server here
-            console.log('Form submitted:', { name, phone, message });
-
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                formSuccess.style.display = 'none';
-            }, 5000);
-        });
+        // Note: Form will be submitted via Web3Forms API
+        // HTML5 validation will run automatically before submission
+        // Web3Forms will send the email to the configured recipient
 
         // Diseases & Conditions Database
         const diseasesDatabase = {
