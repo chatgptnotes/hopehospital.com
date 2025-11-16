@@ -460,14 +460,16 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(220, 53, 69, 0.1);
         }
 
         nav.scrolled {
-            background: rgba(0, 0, 0, 0.95);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(220, 53, 69, 0.15);
         }
 
         .nav-container {
@@ -504,7 +506,7 @@
         }
 
         .nav-links a {
-            color: var(--text-light);
+            color: var(--dark-gray);
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95rem;
@@ -541,7 +543,7 @@
         .menu-toggle span {
             width: 25px;
             height: 3px;
-            background: var(--text-white);
+            background: var(--dark-gray);
             transition: all 0.3s ease;
             border-radius: 2px;
         }
@@ -1368,12 +1370,14 @@
                 top: 70px;
                 left: -100%;
                 flex-direction: column;
-                background: rgba(0, 0, 0, 0.98);
+                background: rgba(255, 255, 255, 0.98);
                 width: 100%;
                 padding: 2rem;
                 gap: 1.5rem;
                 transition: left 0.3s ease;
                 align-items: flex-start;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                border-top: 1px solid rgba(220, 53, 69, 0.15);
             }
 
             .nav-links.active {
@@ -5548,7 +5552,7 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Hope Hospital. All rights reserved. | NABH Accredited Super Specialty Center</p>
             <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 0.75rem; color: #6b7280;">
-                Version 1.26.0 | Last updated: Nov 16, 2025 | hopehospital.com
+                Version 1.27.0 | Last updated: Nov 16, 2025 | hopehospital.com
             </p>
         </div>
     </footer>
