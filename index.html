@@ -286,7 +286,7 @@
         "url": "https://hopehospital.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://hopehospital.com/images/logo.png"
+          "url": "https://hopehospital.com/images/hope-hospital-logo.png"
         }
       },
       "reviewedBy": {
@@ -473,14 +473,20 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text-white);
-            letter-spacing: -0.5px;
-            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
         }
 
         .nav-links {
@@ -1369,6 +1375,10 @@
 
             .menu-toggle {
                 display: flex;
+            }
+
+            .logo-img {
+                height: 40px;
             }
 
             .hero-content h1 {
@@ -3041,7 +3051,9 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">HOPE HOSPITAL</div>
+            <a href="#home" class="logo">
+                <img src="images/hope-hospital-logo.png" alt="Hope Hospital Logo" class="logo-img">
+            </a>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -5529,7 +5541,7 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Hope Hospital. All rights reserved. | NABH Accredited Super Specialty Center</p>
             <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 0.75rem; color: #6b7280;">
-                Version 1.23.0 | Last updated: Nov 16, 2025 | hopehospital.com
+                Version 1.24.0 | Last updated: Nov 16, 2025 | hopehospital.com
             </p>
         </div>
     </footer>
