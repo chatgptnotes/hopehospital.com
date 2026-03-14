@@ -3059,13 +3059,356 @@
             }
         }
     </style>
+
+    <!-- ═══════════════════════════════════════════════════
+         PHOENIX THEME OVERRIDE - Hope Hospital
+         Light, warm, glassmorphism with golden phoenix palette
+    ════════════════════════════════════════════════════ -->
+    <style>
+        /* ── Google Fonts ─────────────────────────────── */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        /* ── Phoenix Palette ─────────────────────────── */
+        :root {
+            --ph-gold: #F4A623;
+            --ph-amber: #E8821A;
+            --ph-deep: #C0440A;
+            --ph-light: #FFF8F0;
+            --ph-cream: #FFFDF8;
+            --ph-charcoal: #1A1A2E;
+            --ph-glass-bg: rgba(255,255,255,0.78);
+            --ph-glass-border: rgba(244,166,35,0.22);
+            --ph-shadow: 0 8px 32px rgba(244,166,35,0.12);
+            --ph-glow: 0 0 20px rgba(244,166,35,0.3);
+        }
+
+        /* ── Base Reset ──────────────────────────────── */
+        body {
+            background: linear-gradient(160deg, #FFF8F0 0%, #FFFDF8 50%, #FFF3E0 100%) !important;
+            color: var(--ph-charcoal) !important;
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        /* ── Floating Ember Particles ────────────────── */
+        @keyframes emberFloat {
+            0%   { transform: translateY(0)   rotate(0deg)   scale(1);   opacity: 0.7; }
+            33%  { transform: translateY(-40px) rotate(120deg) scale(1.1); opacity: 1;   }
+            66%  { transform: translateY(-80px) rotate(240deg) scale(0.9); opacity: 0.5; }
+            100% { transform: translateY(-130px) rotate(360deg) scale(0.6); opacity: 0; }
+        }
+        .ph-ember {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: emberFloat linear infinite;
+        }
+
+        /* ── Navigation ──────────────────────────────── */
+        #navbar, nav {
+            background: rgba(255,252,245,0.88) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            border-bottom: 1px solid rgba(244,166,35,0.18) !important;
+            box-shadow: 0 2px 20px rgba(244,166,35,0.08) !important;
+        }
+        .nav-links a { color: var(--ph-charcoal) !important; font-family: 'Inter', sans-serif !important; }
+        .nav-links a:hover { color: var(--ph-amber) !important; }
+        .nav-links a::after { background: linear-gradient(90deg, var(--ph-gold), var(--ph-amber)) !important; }
+
+        /* Phoenix logo in nav */
+        .logo-img { content: url('images/phoenix-logo.png'); height: 48px !important; }
+
+        /* ── Hero Section ────────────────────────────── */
+        .hero {
+            background: url('images/phoenix-hero.png') center center / cover no-repeat !important;
+            animation: none !important;
+            position: relative;
+        }
+        .hero::before {
+            content: '' !important;
+            position: absolute !important;
+            inset: 0 !important;
+            background: linear-gradient(135deg,
+                rgba(255,248,240,0.55) 0%,
+                rgba(244,166,35,0.08) 50%,
+                rgba(255,252,245,0.45) 100%) !important;
+            pointer-events: none !important;
+            z-index: 0 !important;
+        }
+        .hero-container { position: relative; z-index: 1; }
+        .hero-content {
+            background: var(--ph-glass-bg) !important;
+            backdrop-filter: blur(14px) !important;
+            -webkit-backdrop-filter: blur(14px) !important;
+            border: 1.5px solid var(--ph-glass-border) !important;
+            border-radius: 20px !important;
+            box-shadow: var(--ph-shadow) !important;
+            padding: 2.5rem 3rem !important;
+        }
+        .hero-content h1 {
+            font-family: 'Cinzel', serif !important;
+            color: var(--ph-charcoal) !important;
+            font-size: 3.6rem !important;
+            letter-spacing: -1px !important;
+        }
+        .hero-content h1 .gradient-text {
+            background: linear-gradient(135deg, var(--ph-amber), var(--ph-deep)) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+        }
+        .hero-subtitle { color: var(--ph-charcoal) !important; opacity: 0.85 !important; }
+        .hero-content p { color: var(--ph-charcoal) !important; }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--ph-gold), var(--ph-amber)) !important;
+            color: #fff !important;
+            box-shadow: 0 8px 24px rgba(244,166,35,0.35) !important;
+        }
+        .btn-primary:hover { box-shadow: var(--ph-glow) !important; }
+        .btn-secondary {
+            background: rgba(255,255,255,0.7) !important;
+            color: var(--ph-charcoal) !important;
+            border: 2px solid var(--ph-glass-border) !important;
+        }
+
+        /* ── Headings everywhere ─────────────────────── */
+        h1, h2, h3, .section-title {
+            font-family: 'Cinzel', serif !important;
+        }
+        .section-title {
+            background: linear-gradient(135deg, var(--ph-charcoal) 40%, var(--ph-amber) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: var(--ph-charcoal) !important;
+        }
+        .section-label {
+            color: var(--ph-amber) !important;
+            font-weight: 700 !important;
+        }
+
+        /* ── Stats Banner ────────────────────────────── */
+        .stats-banner {
+            background: linear-gradient(135deg, rgba(244,166,35,0.12) 0%, rgba(232,130,26,0.08) 100%) !important;
+            backdrop-filter: blur(10px) !important;
+            border-top: 1px solid var(--ph-glass-border) !important;
+            border-bottom: 1px solid var(--ph-glass-border) !important;
+        }
+        .stats-banner .stat-item h3, .stats-banner .stat-item p,
+        .stats-banner .stat-content h3, .stats-banner .stat-content p {
+            color: var(--ph-charcoal) !important;
+        }
+        .stats-banner .stat-icon { color: var(--ph-amber) !important; }
+        .stats-banner .material-icons { color: var(--ph-amber) !important; }
+
+        /* ── All Cards / Service Cards / Department Cards ── */
+        .award-card, .mvv-card, .department-card, .service-card,
+        .coder-feature, .raftaar-feature, .fleet-type, .stat-item,
+        .about-image-box, .about-features .feature-item,
+        .consultant-card, .facility-card, .opd-card,
+        .blog-card, .gallery-item, .checkup-card,
+        .empanelment-card, .scheme-card, .insurance-card,
+        [class*="-card"], [class*="card-"] {
+            background: var(--ph-glass-bg) !important;
+            backdrop-filter: blur(10px) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
+            border: 1px solid var(--ph-glass-border) !important;
+            border-radius: 16px !important;
+            box-shadow: var(--ph-shadow) !important;
+            color: var(--ph-charcoal) !important;
+            transition: box-shadow 0.3s, transform 0.3s !important;
+        }
+        [class*="-card"]:hover, [class*="card-"]:hover,
+        .department-card:hover, .award-card:hover, .service-card:hover {
+            box-shadow: 0 0 0 2px var(--ph-gold), var(--ph-glow) !important;
+            transform: translateY(-4px) !important;
+        }
+        [class*="-card"] h3, [class*="-card"] h4, [class*="-card"] p,
+        .department-card h3, .department-card p, .award-card h3, .award-card p,
+        .mvv-card h3, .mvv-card p {
+            color: var(--ph-charcoal) !important;
+        }
+        [class*="-card"] ul li, .department-card ul li {
+            color: #444 !important;
+        }
+
+        /* ── Icon colors ─────────────────────────────── */
+        .department-icon .material-icons,
+        .award-icon .material-icons,
+        .mvv-icon .material-icons,
+        .service-icon .material-icons,
+        .feature-icon .material-icons,
+        .raftaar-icon .material-icons,
+        .stat-icon .material-icons,
+        .coder-feature .material-icons {
+            color: var(--ph-amber) !important;
+        }
+        .service-icon {
+            background: linear-gradient(135deg, var(--ph-gold), var(--ph-amber)) !important;
+        }
+        .service-icon .material-icons { color: #fff !important; }
+
+        /* ── Section backgrounds ─────────────────────── */
+        .section, section {
+            background: transparent !important;
+        }
+        .section-dark {
+            background: linear-gradient(135deg,
+                rgba(255,248,240,0.95) 0%,
+                rgba(255,243,224,0.98) 100%) !important;
+        }
+        .section-dark .section-title { -webkit-text-fill-color: var(--ph-charcoal) !important; }
+        .section-dark .section-description { color: #555 !important; }
+        .section-dark .stat-number { color: var(--ph-amber) !important; }
+        .section-dark .stat-label { color: #666 !important; }
+
+        /* Services section with phoenix infographic bg */
+        #departments .container, .section-facilities .container {
+            position: relative;
+        }
+
+        /* ── Surgeon Coder Section ───────────────────── */
+        .surgeon-coder-section {
+            background: url('images/phoenix-services.png') center center / cover no-repeat !important;
+            position: relative !important;
+        }
+        .surgeon-coder-section::before {
+            content: '' !important;
+            position: absolute !important;
+            inset: 0 !important;
+            background: rgba(255,252,245,0.88) !important;
+            pointer-events: none !important;
+        }
+        .surgeon-coder-section .container { position: relative; z-index: 1; }
+        .surgeon-coder-text { background: var(--ph-glass-bg) !important; backdrop-filter: blur(12px) !important; border: 1px solid var(--ph-glass-border) !important; border-radius: 16px !important; padding: 2.5rem !important; box-shadow: var(--ph-shadow) !important; }
+        .surgeon-coder-text p, .surgeon-coder-text strong { color: var(--ph-charcoal) !important; }
+        .surgeon-coder-text a { color: var(--ph-amber) !important; }
+        .code-icon-bg { background: linear-gradient(135deg, rgba(244,166,35,0.15), rgba(232,130,26,0.1)) !important; border: 2px solid var(--ph-glass-border) !important; border-radius: 50% !important; }
+        .code-icon-bg .material-icons { color: var(--ph-amber) !important; }
+
+        /* ── Raftaar Section ─────────────────────────── */
+        .raftaar-section {
+            background: linear-gradient(135deg, rgba(255,248,240,0.97), rgba(255,243,224,0.97)) !important;
+        }
+        .raftaar-highlight {
+            background: linear-gradient(135deg, var(--ph-gold), var(--ph-amber)) !important;
+            border-radius: 16px !important;
+            color: #fff !important;
+        }
+        .raftaar-highlight h3, .raftaar-highlight p { color: #fff !important; }
+        .raftaar-highlight .material-icons { color: #fff !important; }
+
+        /* Emergency CTA button */
+        .raftaar-cta .btn-primary {
+            background: linear-gradient(135deg, var(--ph-deep), var(--ph-amber)) !important;
+        }
+
+        /* ── AI Section ──────────────────────────────── */
+        section[style*="background: linear-gradient(135deg, #0a0a0a"] {
+            background: linear-gradient(135deg, rgba(255,248,240,0.97) 0%, rgba(255,243,224,0.97) 100%) !important;
+        }
+        /* Override inline dark backgrounds in AI section */
+        .service-card[style*="background: linear-gradient(135deg, rgba(220, 53, 69"] {
+            background: var(--ph-glass-bg) !important;
+            border-color: var(--ph-glass-border) !important;
+        }
+
+        /* Stats numbers in AI summary */
+        div[style*="font-size: 3rem"][style*="color: var(--accent-red)"] {
+            color: var(--ph-amber) !important;
+        }
+
+        /* ── About section ───────────────────────────── */
+        .about-content { color: var(--ph-charcoal) !important; }
+        .about-text h3, .about-text p { color: var(--ph-charcoal) !important; }
+        .about-image-box .material-icons { color: var(--ph-amber) !important; }
+
+        /* ── Statistics Section ──────────────────────── */
+        .stat-number {
+            background: linear-gradient(135deg, var(--ph-amber), var(--ph-deep)) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+        }
+
+        /* ── Footer ──────────────────────────────────── */
+        footer, .footer {
+            background: rgba(255,248,240,0.95) !important;
+            backdrop-filter: blur(10px) !important;
+            border-top: 2px solid var(--ph-glass-border) !important;
+            color: var(--ph-charcoal) !important;
+        }
+        footer h3, footer h4, .footer h3, .footer h4,
+        .footer-section h3 { color: var(--ph-amber) !important; }
+        footer p, footer a, .footer p, .footer a,
+        .footer-section p { color: #555 !important; }
+        footer a:hover { color: var(--ph-amber) !important; }
+
+        /* ── Emergency banner / CTA strips ──────────────*/
+        [class*="emergency"], [id*="emergency"],
+        .emergency-banner, .cta-banner {
+            background: linear-gradient(135deg, var(--ph-gold), var(--ph-deep)) !important;
+            color: #fff !important;
+        }
+
+        /* ── Form elements ───────────────────────────── */
+        input, textarea, select {
+            background: rgba(255,255,255,0.85) !important;
+            border: 1px solid var(--ph-glass-border) !important;
+            color: var(--ph-charcoal) !important;
+            border-radius: 10px !important;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--ph-gold) !important;
+            box-shadow: 0 0 0 3px rgba(244,166,35,0.15) !important;
+            outline: none !important;
+        }
+
+        /* ── Inline dark override cleanup ────────────── */
+        /* Force any inline black/dark backgrounds to be light */
+        [style*="background: linear-gradient(135deg, #1a0505"],
+        [style*="background: linear-gradient(135deg, #0a0a0a"],
+        [style*="background: linear-gradient(135deg, rgba(220, 53, 69, 0.2), rgba(220, 53, 69, 0.1))"] {
+            background: rgba(255,248,240,0.95) !important;
+            color: var(--ph-charcoal) !important;
+        }
+        /* Section description text */
+        .section-description { color: #555 !important; }
+        /* Text that was white on dark bg — now needs to be charcoal */
+        [style*="color: var(--text-white)"] { color: var(--ph-charcoal) !important; }
+        [style*="color: var(--text-gray)"] { color: #666 !important; }
+        [style*="color: var(--text-light)"] { color: #555 !important; }
+        [style*="color: var(--accent-red)"] { color: var(--ph-amber) !important; }
+        [style*="color: var(--primary-red)"] { color: var(--ph-deep) !important; }
+        [style*="color: var(--light-red)"] { color: var(--ph-amber) !important; }
+
+        /* ── Scrollbar ───────────────────────────────── */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--ph-light); }
+        ::-webkit-scrollbar-thumb { background: var(--ph-gold); border-radius: 4px; }
+
+        /* ── Keyframe: hero title fade-in ────────────── */
+        @keyframes phHeroFadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .hero-content { animation: phHeroFadeUp 0.9s ease-out both !important; }
+
+        /* ── Responsive adjustments ──────────────────── */
+        @media (max-width: 768px) {
+            .hero-content { padding: 1.5rem !important; }
+            .hero-content h1 { font-size: 2.4rem !important; }
+        }
+    </style>
+
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">
-                <img src="images/hope-hospital-logo-horizontal.png" alt="Hope Hospital Logo" class="logo-img">
+            <a href="#home" class="logo" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+                <img src="images/phoenix-logo.png" alt="Hope Hospital Phoenix Logo" style="height:48px;width:auto;object-fit:contain;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                <span style="font-family:'Cinzel',serif;font-weight:700;font-size:1.15rem;background:linear-gradient(135deg,#E8821A,#C0440A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;">Hope<br><span style="font-size:0.8rem;font-weight:400;letter-spacing:2px;">HOSPITAL</span></span>
             </a>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <span></span>
@@ -3087,9 +3430,29 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
+        <!-- Phoenix Ember Particles -->
+        <div id="ph-embers" style="position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;"></div>
+        <script>
+        (function(){
+            var c=['#F4A623','#E8821A','#FFD166','#C0440A','#FFB347'];
+            var container=document.getElementById('ph-embers');
+            for(var i=0;i<22;i++){
+                var e=document.createElement('div');
+                e.className='ph-ember';
+                var s=Math.random()*8+4;
+                e.style.cssText=[
+                    'width:'+s+'px','height:'+s+'px',
+                    'left:'+(Math.random()*100)+'%',
+                    'top:'+(60+Math.random()*40)+'%',
+                    'background:'+c[Math.floor(Math.random()*c.length)],
+                    'opacity:'+(0.4+Math.random()*0.5),
+                    'animation-duration:'+(4+Math.random()*6)+'s',
+                    'animation-delay:'-'+(Math.random()*6)+'s'
+                ].join(';');
+                container.appendChild(e);
+            }
+        })();
+        </script>
 
         <div class="hero-container">
             <div class="hero-content">
