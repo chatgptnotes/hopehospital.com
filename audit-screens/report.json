@@ -1,0 +1,690 @@
+[
+  {
+    "page": "home",
+    "device": "iphone-se",
+    "viewportW": 375,
+    "viewportH": 667,
+    "docWidth": 375,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 19,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 199,
+        "h": 21,
+        "text": "Learn More arrow_forward"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 58,
+        "h": 39,
+        "text": "All"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 127,
+        "h": 39,
+        "text": "Infrastructure"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 165,
+        "h": 39,
+        "text": "Medical Equipment"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 166,
+        "h": 39,
+        "text": "Operation Theaters"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "iphone-13",
+    "viewportW": 390,
+    "viewportH": 844,
+    "docWidth": 390,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 19,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 109,
+        "h": 21,
+        "text": "Learn More arrow_forward"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 58,
+        "h": 39,
+        "text": "All"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 127,
+        "h": 39,
+        "text": "Infrastructure"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 165,
+        "h": 39,
+        "text": "Medical Equipment"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 166,
+        "h": 39,
+        "text": "Operation Theaters"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "pixel-7",
+    "viewportW": 412,
+    "viewportH": 915,
+    "docWidth": 412,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 19,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 109,
+        "h": 21,
+        "text": "Learn More arrow_forward"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 58,
+        "h": 39,
+        "text": "All"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 127,
+        "h": 39,
+        "text": "Infrastructure"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 165,
+        "h": 39,
+        "text": "Medical Equipment"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 166,
+        "h": 39,
+        "text": "Operation Theaters"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "galaxy-s22",
+    "viewportW": 360,
+    "viewportH": 780,
+    "docWidth": 360,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 19,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 109,
+        "h": 21,
+        "text": "Learn More arrow_forward"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 58,
+        "h": 39,
+        "text": "All"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 127,
+        "h": 39,
+        "text": "Infrastructure"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 165,
+        "h": 39,
+        "text": "Medical Equipment"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 166,
+        "h": 39,
+        "text": "Operation Theaters"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "ipad-mini",
+    "viewportW": 768,
+    "viewportH": 1024,
+    "docWidth": 768,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 19,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 109,
+        "h": 21,
+        "text": "Learn More arrow_forward"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 58,
+        "h": 39,
+        "text": "All"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 127,
+        "h": 39,
+        "text": "Infrastructure"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 165,
+        "h": 39,
+        "text": "Medical Equipment"
+      },
+      {
+        "tag": "BUTTON",
+        "w": 166,
+        "h": 39,
+        "text": "Operation Theaters"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "ipad-pro",
+    "viewportW": 1024,
+    "viewportH": 1366,
+    "docWidth": 1024,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 21,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 43,
+        "h": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 44,
+        "h": 39,
+        "text": "About Us"
+      },
+      {
+        "tag": "A",
+        "w": 96,
+        "h": 39,
+        "text": "Our Departments"
+      },
+      {
+        "tag": "A",
+        "w": 69,
+        "h": 19,
+        "text": "Hospitals"
+      },
+      {
+        "tag": "A",
+        "w": 109,
+        "h": 19,
+        "text": "Empanelments"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "desktop-1280",
+    "viewportW": 1280,
+    "viewportH": 800,
+    "docWidth": 1280,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 21,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 43,
+        "h": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 68,
+        "h": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "A",
+        "w": 126,
+        "h": 19,
+        "text": "Our Departments"
+      },
+      {
+        "tag": "A",
+        "w": 69,
+        "h": 19,
+        "text": "Hospitals"
+      },
+      {
+        "tag": "A",
+        "w": 109,
+        "h": 19,
+        "text": "Empanelments"
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "desktop-1920",
+    "viewportW": 1920,
+    "viewportH": 1080,
+    "docWidth": 1920,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 21,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 43,
+        "h": 19,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 68,
+        "h": 19,
+        "text": "About Us"
+      },
+      {
+        "tag": "A",
+        "w": 126,
+        "h": 19,
+        "text": "Our Departments"
+      },
+      {
+        "tag": "A",
+        "w": 69,
+        "h": 19,
+        "text": "Hospitals"
+      },
+      {
+        "tag": "A",
+        "w": 109,
+        "h": 19,
+        "text": "Empanelments"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "iphone-se",
+    "viewportW": 375,
+    "viewportH": 667,
+    "docWidth": 375,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "iphone-13",
+    "viewportW": 390,
+    "viewportH": 844,
+    "docWidth": 390,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "pixel-7",
+    "viewportW": 412,
+    "viewportH": 915,
+    "docWidth": 412,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "galaxy-s22",
+    "viewportW": 360,
+    "viewportH": 780,
+    "docWidth": 360,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "ipad-mini",
+    "viewportW": 768,
+    "viewportH": 1024,
+    "docWidth": 768,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "ipad-pro",
+    "viewportW": 1024,
+    "viewportH": 1366,
+    "docWidth": 1024,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "desktop-1280",
+    "viewportW": 1280,
+    "viewportH": 800,
+    "docWidth": 1280,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  },
+  {
+    "page": "nagpur",
+    "device": "desktop-1920",
+    "viewportW": 1920,
+    "viewportH": 1080,
+    "docWidth": 1920,
+    "hasHorizontalScroll": false,
+    "smallFontsCount": 0,
+    "smallFontsSample": [],
+    "smallTapsCount": 8,
+    "smallTapsSample": [
+      {
+        "tag": "A",
+        "w": 139,
+        "h": 34,
+        "text": "Hope Hospital"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 121,
+        "h": 20,
+        "text": "1800-233-0000"
+      },
+      {
+        "tag": "A",
+        "w": 40,
+        "h": 17,
+        "text": "Home"
+      },
+      {
+        "tag": "A",
+        "w": 41,
+        "h": 17,
+        "text": "About"
+      }
+    ]
+  }
+]

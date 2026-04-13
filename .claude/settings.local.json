@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(command -v vercel)",
+      "Bash(npm install:*)",
+      "Bash(vercel whoami:*)",
+      "Bash(taskkill //F //FI \"IMAGENAME eq node.exe\" //FI \"WINDOWTITLE eq vercel*\")",
+      "Bash(vercel:*)",
+      "Bash(ls:*)",
+      "Bash(node:*)",
+      "Bash(npm run:*)",
+      "Bash(curl:*)",
+      "Read(//tmp/**)",
+      "Bash(grep -n \"nav\\\\s*{\\\\|nav,\\\\|#navbar\\\\|\\\\.nav-container\\\\|nav>\" C:/Users/hope4/Documents/hopehospital/hopehospital.com/index.html)",
+      "Bash(npx --yes lighthouse http://localhost:8080/ --only-categories=performance --output=json --output-path=./audit-screens/lh.json --chrome-flags=\"--headless --no-sandbox\" --preset=desktop --quiet)",
+      "Bash(npx --yes lighthouse http://localhost:8080/ --only-categories=accessibility --output=json --output-path=./audit-screens/a11y.json --chrome-flags=\"--headless --no-sandbox\" --preset=desktop --quiet)",
+      "Bash(npx --yes lighthouse http://localhost:8080/ --only-categories=accessibility --output=json --output-path=./audit-screens/a11y2.json --chrome-flags=\"--headless --no-sandbox\" --preset=desktop --quiet)",
+      "Bash(npx --yes lighthouse http://localhost:8080/ --only-categories=accessibility,best-practices,performance,seo --output=json --output-path=./audit-screens/final.json --chrome-flags=\"--headless --no-sandbox\" --preset=desktop --quiet)",
+      "Bash(npx --yes lighthouse http://localhost:8080/ --only-categories=performance --output=json --output-path=./audit-screens/mobile.json --chrome-flags=\"--headless --no-sandbox\" --form-factor=mobile --quiet)",
+      "Bash(npx --yes lighthouse http://localhost:8080/ --only-categories=performance --output=json --output-path=./audit-screens/mobile2.json --chrome-flags=\"--headless --no-sandbox\" --form-factor=mobile --quiet)",
+      "Bash(npx --yes html-minifier-terser index.html --collapse-whitespace --remove-comments --minify-css --minify-js --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --output index.min.html)",
+      "Bash(cp C:/Users/hope4/Documents/hopehospital/hopehospital.com/index.min.html /tmp/hh-min/index.html)",
+      "Bash(npx --yes http-server -p 8090 -s)",
+      "Bash(npx --yes lighthouse http://127.0.0.1:8092/ --only-categories=performance --output=json --output-path=./audit-screens/mobile-min.json --chrome-flags=\"--headless --no-sandbox\" --form-factor=mobile --quiet)",
+      "Bash(pkill -f \"http-server -p 8092\")",
+      "Bash(rm -rf /tmp/hh-min)"
+    ]
+  }
+}
