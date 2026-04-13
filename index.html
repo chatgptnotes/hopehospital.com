@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4J5W7V2Z8"></script>
+    <!-- Google tag (gtag.js) - deferred for mobile performance -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-R4J5W7V2Z8');
+      // Load gtag.js after first user interaction or 2.5s, whichever comes first
+      (function(){
+        var loaded = false;
+        function loadGA(){
+          if (loaded) return; loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R4J5W7V2Z8';
+          document.head.appendChild(s);
+        }
+        ['scroll','mousemove','touchstart','keydown','click'].forEach(function(ev){
+          window.addEventListener(ev, loadGA, {once:true, passive:true});
+        });
+        setTimeout(loadGA, 2500);
+      })();
     </script>
 
-    <title>Best Hospital in Nagpur | Hope Hospital - Dr. B.K. Murali</title>
+    <title>Best Hospital in Nagpur | Hope Hospital – NABH Accredited</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
@@ -22,7 +35,7 @@
     <link rel="shortcut icon" href="favicon.png">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Best Hospital in Nagpur - Hope Hospital, NABH-accredited super specialty center led by Dr. B.K. Murali. 24/7 emergency care. Call 1800-233-0000.">
+    <meta name="description" content="Looking for the best hospital in Nagpur? Hope Hospital offers NABH-accredited multispeciality care, expert doctors & 24/7 emergency. Call 1800-233-0000.">
     <meta name="keywords" content="AI hospital Nagpur, AI healthcare Nagpur, artificial intelligence hospital, machine learning healthcare, AI-powered diagnostics Nagpur, DrMHope AI platform, NLP medical records, predictive healthcare analytics, AI emergency response, best hospital in Nagpur, best orthopedic surgeon in Nagpur, Dr B.K. Murali AI pioneer, Hope Hospital Nagpur, AI surgeon who codes, healthcare AI innovation, medical imaging AI, computer vision diagnostics, AI chatbot healthcare, virtual health assistant, predictive patient care, smart hospital Nagpur, intelligent healthcare system, AI clinical decision support, machine learning diagnostics, natural language processing medical, AI ambulance dispatch, Raftaar Emergency Seva AI, Digihealthtwin AI, kidney transplant Nagpur, kidney transplant center, recognized transplant center, NephroPlus dialysis Nagpur, dialysis center Nagpur, nephrology Nagpur, kidney disease treatment, renal transplant center, chronic kidney disease, hemodialysis Nagpur, kidney specialists Nagpur, knee replacement Nagpur, hip replacement surgery, spine surgeon Nagpur, NABH hospital, super specialty hospital Nagpur, orthopedic hospital, AI-powered hospital management, 24x7 emergency hospital Nagpur, AI fracture detection, AI tumor detection, AI readmission prevention, predictive bed management, cardiology Nagpur, neurosurgery Nagpur, oncology center Nagpur, AI medication safety, drug interaction AI, AI treatment recommendations, healthcare technology Nagpur, medical software development, AI healthcare entrepreneur, top 50 healthcare innovators India, DrMHope hospital software, Lokmat healthcare award, central India hospital, Maharashtra super specialty hospital, AI health checkup, cashless treatment Nagpur, government scheme hospital, Nick Orton advisor, commercial strategy advisor, Hope Hospital advisory board, healthcare business strategy, strategic advisors Nagpur, healthcare market expansion, hospital growth strategy, colorectal surgeon Nagpur, Dr Akshay Akulwar, colorectal surgery Nagpur, laparoscopic colorectal surgery, minimal access surgery Nagpur, proctology Nagpur, piles treatment Nagpur, fissure surgery Nagpur, fistula treatment Nagpur, IBD treatment Nagpur, inflammatory bowel disease Nagpur, pelvic floor disorders Nagpur, colorectal cancer Nagpur, colon cancer surgery, rectal cancer treatment, UK trained colorectal surgeon, best laparoscopic surgeon Nagpur, minimally invasive surgery Nagpur, advanced colorectal care, proctologist Nagpur, hemorrhoid treatment Nagpur">
     <meta name="geo.region" content="IN-MH">
     <meta name="geo.placename" content="Nagpur">
@@ -35,8 +48,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hopehospital.com/">
-    <meta property="og:title" content="Best Hospital in Nagpur | Dr. B.K. Murali - Top Orthopedic Surgeon | Hope Hospital">
-    <meta property="og:description" content="AI-Powered Best Hospital in Nagpur - Hope Hospital. Dr. B.K. Murali, AI Healthcare Pioneer & best orthopedic surgeon. DrMHope AI Platform, NLP medical records, predictive diagnostics, machine learning. 24/7 emergency: 1800-233-0000">
+    <meta property="og:title" content="Best Hospital in Nagpur | Hope Hospital – NABH Accredited">
+    <meta property="og:description" content="Looking for the best hospital in Nagpur? Hope Hospital offers NABH-accredited multispeciality care, expert doctors & 24/7 emergency. Call 1800-233-0000.">
     <meta property="og:image" content="https://hopehospital.com/images/hope-hospital-og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -46,12 +59,17 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hopehospital.com/">
-    <meta property="twitter:title" content="Best Hospital in Nagpur | Dr. B.K. Murali - Top Orthopedic Surgeon">
-    <meta property="twitter:description" content="Best Hospital in Nagpur. Dr. B.K. Murali - renowned orthopedic surgeon. Expert in joint replacement & spine surgery. 24/7 care: 1800-233-0000">
+    <meta property="twitter:title" content="Best Hospital in Nagpur | Hope Hospital – NABH Accredited">
+    <meta property="twitter:description" content="Looking for the best hospital in Nagpur? Hope Hospital offers NABH-accredited multispeciality care, expert doctors & 24/7 emergency. Call 1800-233-0000.">
     <meta property="twitter:image" content="https://hopehospital.com/images/hope-hospital-og.png">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://hopehospital.com/" />
+
+    <!-- Hreflang - Language & Region Targeting -->
+    <link rel="alternate" hreflang="en-in" href="https://hopehospital.com/" />
+    <link rel="alternate" hreflang="en" href="https://hopehospital.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://hopehospital.com/" />
 
     <!-- Structured Data - Hospital -->
     <script type="application/ld+json">
@@ -63,10 +81,10 @@
       "description": "Best Hospital in Nagpur - Central India's first NABH-accredited super specialty healthcare center. Led by Dr. B.K. Murali, the best orthopedic surgeon in Nagpur",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Beside Gogas Auto LPG, Kamptee Road, Teka Naka",
+        "streetAddress": "Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road",
         "addressLocality": "Nagpur",
         "addressRegion": "Maharashtra",
-        "postalCode": "440017",
+        "postalCode": "440026",
         "addressCountry": "IN"
       },
       "telephone": "+91-1800-233-0000",
@@ -124,10 +142,10 @@
         "name": "Hope Hospital",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Beside Gogas Auto LPG, Kamptee Road",
+          "streetAddress": "Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road",
           "addressLocality": "Nagpur",
           "addressRegion": "Maharashtra",
-          "postalCode": "440017",
+          "postalCode": "440026",
           "addressCountry": "IN"
         }
       },
@@ -166,10 +184,10 @@
       "description": "Best Hospital in Nagpur for orthopedic surgery, neurosurgery, cardiology and all super specialty services",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Beside Gogas Auto LPG, Kamptee Road, Teka Naka",
+        "streetAddress": "Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road",
         "addressLocality": "Nagpur",
         "addressRegion": "MH",
-        "postalCode": "440017",
+        "postalCode": "440026",
         "addressCountry": "IN"
       },
       "geo": {
@@ -256,7 +274,7 @@
           "name": "What are the locations of Hope Hospital in Nagpur?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hope Hospital operates three healthcare facilities: 1) Hope Hospital - Teka Naka: Beside Gogas Auto LPG, Kamptee Road, Teka Naka, Nagpur - 440017 (Main 100-bed super specialty hospital with 30 ICU beds and 3 modular OTs), 2) Ayushman Nagpur Hospital: 3rd Floor, Shrivardhan Complex, Lokmat Square, Ramdaspeth, Nagpur - 440012 (Phone: 070309 74619), and 3) Ayushman Polyclinic Pandurna: Pandurna, Chhindwara District, Madhya Pradesh. All locations are open 24/7 for emergency services."
+            "text": "Hope Hospital operates three healthcare facilities: 1) Hope Hospital - Teka Naka: Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur - 440026 (Main 100-bed super specialty hospital with 30 ICU beds and 3 modular OTs), 2) Ayushman Nagpur Hospital: 3rd Floor, Shrivardhan Complex, Lokmat Square, Ramdaspeth, Nagpur - 440012 (Phone: 070309 74619), and 3) Ayushman Polyclinic Pandurna: Pandurna, Chhindwara District, Madhya Pradesh. All locations are open 24/7 for emergency services."
           }
         }
       ]
@@ -439,8 +457,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Combined Google Fonts (Inter + Cinzel) - single request, font-display:swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons - non-blocking load -->
+    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></noscript>
+
+    <!-- Preload LCP images -->
+    <link rel="preload" as="image" href="images/phoenix-hero.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="./images/dr-murali-bk.webp" fetchpriority="high">
     <style>
         * {
             margin: 0;
@@ -460,10 +487,25 @@
             --text-black: #000000;
         }
 
-        body {
+        html, body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             overflow-x: hidden;
+            max-width: 100vw;
             color: var(--text-white);
+        }
+        nav, .nav-container, section, footer { max-width: 100vw; }
+        img, video, iframe { max-width: 100%; height: auto; }
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden; clip: rect(0,0,0,0);
+            white-space: nowrap; border: 0;
+        }
+        /* Defer offscreen rendering for mobile performance */
+        main > section:not(.hero):not(.stats-banner) {
+            content-visibility: auto;
+            contain-intrinsic-size: 1px 800px;
         }
 
         /* Navigation Bar */
@@ -718,8 +760,9 @@
         .hero-image-container::before {
             content: '';
             position: absolute;
-            width: 400px;
-            height: 400px;
+            width: min(400px, 85vw);
+            height: min(400px, 85vw);
+            max-width: 100%;
             background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
             border-radius: 50%;
             animation: pulse 3s ease-in-out infinite;
@@ -737,8 +780,9 @@
         }
 
         .hero-doctor-image {
-            width: 450px;
-            height: 450px;
+            width: min(450px, 85vw);
+            height: min(450px, 85vw);
+            max-width: 100%;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid rgba(255, 255, 255, 0.3);
@@ -1385,12 +1429,26 @@
                 flex-direction: column;
                 background: rgba(255, 255, 255, 0.98);
                 width: 100%;
-                padding: 2rem;
-                gap: 1.5rem;
+                padding: 1rem 1.5rem;
+                gap: 0.25rem;
                 transition: left 0.3s ease;
-                align-items: flex-start;
+                align-items: stretch;
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
                 border-top: 1px solid rgba(220, 53, 69, 0.15);
+            }
+            .nav-links li { width: 100%; }
+            .nav-links a {
+                display: block;
+                padding: 14px 8px;
+                min-height: 48px;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+            }
+            .menu-toggle {
+                min-width: 48px;
+                min-height: 48px;
+                justify-content: center;
+                align-items: center;
             }
 
             .nav-links.active {
@@ -1423,9 +1481,37 @@
                 justify-content: center;
             }
 
+            .hero-image {
+                order: 1; /* show below text on mobile */
+            }
+
             .hero-doctor-image {
-                width: 280px;
-                height: 280px;
+                width: 200px;
+                height: 200px;
+                object-position: center top;
+            }
+
+            .hero-image-container {
+                height: 220px;
+            }
+
+            .hero-image-container::before {
+                width: 220px;
+                height: 220px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem !important;
+                margin-bottom: 0.75rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem !important;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 90px 0 2rem;
             }
 
             .about-content {
@@ -1921,10 +2007,11 @@
         }
 
         .doctor-desc {
-            color: var(--text-gray);
+            color: #374151;
             line-height: 1.7;
             margin-bottom: 1.5rem;
         }
+        .doctor-desc strong { color: #991b1b; }
 
         .doctor-specialties {
             display: grid;
@@ -1984,7 +2071,7 @@
         }
 
         .consultant-item span {
-            color: var(--text-gray);
+            color: #4b5563;
             font-size: 0.9rem;
             margin-left: 0.5rem;
         }
@@ -3076,8 +3163,7 @@
          Light, warm, glassmorphism with golden phoenix palette
     ════════════════════════════════════════════════════ -->
     <style>
-        /* ── Google Fonts ─────────────────────────────── */
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+        /* Fonts (Cinzel + Inter) loaded in document head via single <link> for performance */
 
         /* ── Phoenix Palette ─────────────────────────── */
         :root {
@@ -3418,14 +3504,14 @@
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-                <img src="images/phoenix-logo.webp" alt="Hope Hospital Phoenix Logo" width="48" height="48" style="height:48px;width:auto;object-fit:contain;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="images/phoenix-logo.webp" alt="Hope Hospital Phoenix Logo" width="48" height="48" fetchpriority="high" style="height:48px;width:auto;object-fit:contain;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
                 <span style="font-family:'Cinzel',serif;font-weight:700;font-size:1.15rem;background:linear-gradient(135deg,#E8821A,#C0440A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;">Hope<br><span style="font-size:0.8rem;font-weight:400;letter-spacing:2px;">HOSPITAL</span></span>
             </a>
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks" type="button" style="background:none;border:none;padding:0;">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -3438,6 +3524,8 @@
             </ul>
         </div>
     </nav>
+
+    <main id="main-content">
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -3458,7 +3546,7 @@
                     'background:'+c[Math.floor(Math.random()*c.length)],
                     'opacity:'+(0.4+Math.random()*0.5),
                     'animation-duration:'+(4+Math.random()*6)+'s',
-                    'animation-delay:'-'+(Math.random()*6)+'s'
+                    'animation-delay:-'+(Math.random()*6)+'s'
                 ].join(';');
                 container.appendChild(e);
             }
@@ -3487,15 +3575,16 @@
             </div>
             <div class="hero-image">
                 <div class="hero-image-container">
-                    <img src="./images/dr-murali-bk.webp" alt="Dr. Murali BK" class="hero-doctor-image" width="450" height="450" fetchpriority="high">
+                    <img src="./images/dr-murali-bk.webp" alt="Dr. B.K. Murali – Lead Orthopedic Surgeon at Hope Hospital, Nagpur" class="hero-doctor-image" width="900" height="600" fetchpriority="high">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Quick Stats Banner -->
-    <section class="stats-banner">
+    <section class="stats-banner" aria-labelledby="stats-banner-title">
         <div class="container">
+            <h2 id="stats-banner-title" class="visually-hidden">Hospital Highlights</h2>
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-icon"><span class="material-icons md-48">verified</span></div>
@@ -3613,42 +3702,42 @@
                         <div class="coder-feature">
                             <span class="material-icons">psychology</span>
                             <div>
-                                <h4>AI Healthcare Innovator & Surgeon</h4>
+                                <h3>AI Healthcare Innovator & Surgeon</h3>
                                 <p>Unique combination of medical expertise, software development, and AI/ML implementation</p>
                             </div>
                         </div>
                         <div class="coder-feature">
                             <span class="material-icons">smart_toy</span>
                             <div>
-                                <h4>DrMHope HIS - AI-Powered Hospital Software</h4>
+                                <h3>DrMHope HIS - AI-Powered Hospital Software</h3>
                                 <p>Award-winning AI system with predictive analytics, automated workflows, and intelligent diagnostics</p>
                             </div>
                         </div>
                         <div class="coder-feature">
                             <span class="material-icons">model_training</span>
                             <div>
-                                <h4>Machine Learning Diagnostic Systems</h4>
+                                <h3>Machine Learning Diagnostic Systems</h3>
                                 <p>AI algorithms analyze patient data for early disease detection and personalized treatment plans</p>
                             </div>
                         </div>
                         <div class="coder-feature">
                             <span class="material-icons">auto_awesome</span>
                             <div>
-                                <h4>NLP-Powered Patient Care</h4>
+                                <h3>NLP-Powered Patient Care</h3>
                                 <p>Natural Language Processing for automated medical records, voice-to-text, and intelligent chatbots</p>
                             </div>
                         </div>
                         <div class="coder-feature">
                             <span class="material-icons">analytics</span>
                             <div>
-                                <h4>Predictive Healthcare Analytics</h4>
+                                <h3>Predictive Healthcare Analytics</h3>
                                 <p>AI-driven insights predict patient readmissions, optimize bed allocation, and reduce wait times</p>
                             </div>
                         </div>
                         <div class="coder-feature">
                             <span class="material-icons">lightbulb</span>
                             <div>
-                                <h4>Top 50 AI Healthcare Innovators</h4>
+                                <h3>Top 50 AI Healthcare Innovators</h3>
                                 <p>Finalist in India Innovation Growth Programme for AI-powered healthcare technology</p>
                             </div>
                         </div>
@@ -3685,7 +3774,7 @@
                     <div class="raftaar-features-grid">
                         <div class="raftaar-feature">
                             <div class="raftaar-icon"><span class="material-icons">speed</span></div>
-                            <h4>Response Time < 10 Minutes</h4>
+                            <h4>Response Time &lt; 10 Minutes</h4>
                             <p>AI-powered dispatch system ensures fastest ambulance arrival</p>
                         </div>
                         <div class="raftaar-feature">
@@ -4219,8 +4308,9 @@
                     <h3 class="search-title">Search Diseases and Conditions</h3>
                     <p class="search-description">Quickly find the information you need. Search our database to explore detailed information on various diseases and conditions, including symptoms, causes, and treatment options.</p>
                     <div class="search-box-wrapper">
-                        <input type="text" id="diseaseSearch" class="disease-search-input" placeholder="Search for diseases, conditions, symptoms...">
-                        <button class="search-btn" onclick="searchDiseases()">
+                        <label for="diseaseSearch" class="visually-hidden">Search diseases and conditions</label>
+                        <input type="text" id="diseaseSearch" class="disease-search-input" placeholder="Search for diseases, conditions, symptoms..." aria-label="Search diseases and conditions">
+                        <button class="search-btn" onclick="searchDiseases()" aria-label="Search">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                             </svg>
@@ -4540,59 +4630,59 @@
             <div class="centers-grid">
                 <div class="center-card">
                     <span class="material-icons md-36">favorite</span>
-                    <h4>Cardiac Science</h4>
+                    <h3>Cardiac Science</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">accessibility_new</span>
-                    <h4>Orthopaedics</h4>
+                    <h3>Orthopaedics</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">psychology</span>
-                    <h4>Neuroscience</h4>
+                    <h3>Neuroscience</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">emergency</span>
-                    <h4>Critical Care</h4>
+                    <h3>Critical Care</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">healing</span>
-                    <h4>Joint Replacement & Arthroscopy</h4>
+                    <h3>Joint Replacement & Arthroscopy</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">pregnant_woman</span>
-                    <h4>Obstetrics and Gynecology</h4>
+                    <h3>Obstetrics and Gynecology</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">child_care</span>
-                    <h4>Pediatrics & Paediatric Surgery</h4>
+                    <h3>Pediatrics & Paediatric Surgery</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">content_cut</span>
-                    <h4>Minimal Invasive Surgery</h4>
+                    <h3>Minimal Invasive Surgery</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">restaurant</span>
-                    <h4>Gastroenterology</h4>
+                    <h3>Gastroenterology</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">water_drop</span>
-                    <h4>Nephro & Uro</h4>
+                    <h3>Nephro & Uro</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">science</span>
-                    <h4>Oncology</h4>
+                    <h3>Oncology</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">family_restroom</span>
-                    <h4>Mother & Child</h4>
+                    <h3>Mother & Child</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">local_hospital</span>
-                    <h4>Emergency Medicine</h4>
+                    <h3>Emergency Medicine</h3>
                 </div>
                 <div class="center-card">
                     <span class="material-icons md-36">monitor_heart</span>
-                    <h4>Cardiology & Cardiothoracic Surgery</h4>
+                    <h3>Cardiology & Cardiothoracic Surgery</h3>
                 </div>
             </div>
         </div>
@@ -4610,7 +4700,7 @@
             <!-- Dr. B.K. Murali Highlight -->
             <div class="doctor-highlight">
                 <div class="doctor-highlight-image">
-                    <img src="./images/dr-murali-bk.webp" alt="Dr. Murali Balasundaram (Dr. B.K. Murali) - Best Orthopedic Surgeon in Nagpur" width="200" height="200" loading="lazy">
+                    <img src="./images/dr-murali-bk.webp" alt="Dr. Murali Balasundaram (Dr. B.K. Murali) - Best Orthopedic Surgeon in Nagpur" width="900" height="600" loading="lazy">
                 </div>
                 <div class="doctor-highlight-content">
                     <h3>DR. MURALI BALASUNDARAM (DR. B.K. MURALI)</h3>
@@ -4619,7 +4709,7 @@
                         🧠 AI Healthcare Pioneer | Orthopedic Surgeon | The Surgeon Who Codes with AI | Healthcare Entrepreneur | BNI Leader (7+ Years)
                     </p>
                     <p class="doctor-desc" style="background: rgba(220, 53, 69, 0.05); padding: 1.25rem; border-left: 4px solid var(--primary-red); border-radius: 8px; margin-bottom: 1.5rem;">
-                        <strong style="color: var(--accent-red); font-size: 1.1rem;">🤖 AI-First Healthcare Visionary:</strong> With over <strong>20 years of experience in the medical field</strong>, Dr. Murali Balasundaram is not just the <strong>best orthopedic surgeon in Nagpur and Central India</strong> - he's a <strong>pioneering AI healthcare innovator</strong> who leads India's transformation in intelligent medicine. His mission: harness artificial intelligence, machine learning, and predictive analytics to deliver superior patient outcomes, reduce medical errors, and make world-class healthcare accessible to all.
+                        <strong style="color: #991b1b; font-size: 1.1rem;">🤖 AI-First Healthcare Visionary:</strong> With over <strong>20 years of experience in the medical field</strong>, Dr. Murali Balasundaram is not just the <strong>best orthopedic surgeon in Nagpur and Central India</strong> - he's a <strong>pioneering AI healthcare innovator</strong> who leads India's transformation in intelligent medicine. His mission: harness artificial intelligence, machine learning, and predictive analytics to deliver superior patient outcomes, reduce medical errors, and make world-class healthcare accessible to all.
                     </p>
                     <p class="doctor-desc">
                         Every software platform developed by Dr. Murali is <strong>AI-powered and AI-focused</strong>: <strong>DrMHope AI Platform</strong> (intelligent hospital management), <strong>Raftaar Emergency Seva AI</strong> (AI-driven ambulance dispatch), <strong>Digihealthtwin</strong> (AI diagnostic systems), and <strong>100+ AI-powered healthcare applications</strong>. His unique combination of surgical expertise and AI development skills creates software that truly understands healthcare needs from a practitioner's perspective.
@@ -5570,27 +5660,27 @@
                 <div class="surgeries-grid">
                     <div class="surgery-card">
                         <span class="material-icons md-36">science</span>
-                        <h4>Cancer Surgery</h4>
+                        <h3>Cancer Surgery</h3>
                     </div>
                     <div class="surgery-card">
                         <span class="material-icons md-36">favorite</span>
-                        <h4>Heart Surgery</h4>
+                        <h3>Heart Surgery</h3>
                     </div>
                     <div class="surgery-card">
                         <span class="material-icons md-36">accessibility_new</span>
-                        <h4>Orthopedic Surgery</h4>
+                        <h3>Orthopedic Surgery</h3>
                     </div>
                     <div class="surgery-card">
                         <span class="material-icons md-36">psychology</span>
-                        <h4>Brain Tumors Surgery</h4>
+                        <h3>Brain Tumors Surgery</h3>
                     </div>
                     <div class="surgery-card">
                         <span class="material-icons md-36">healing</span>
-                        <h4>Abdominal Surgery</h4>
+                        <h3>Abdominal Surgery</h3>
                     </div>
                     <div class="surgery-card">
                         <span class="material-icons md-36">medical_services</span>
-                        <h4>Bladder Surgery</h4>
+                        <h3>Bladder Surgery</h3>
                     </div>
                 </div>
             </div>
@@ -5665,7 +5755,7 @@
                             <div class="info-icon"><span class="material-icons">location_on</span></div>
                             <div class="info-text">
                                 <strong>Address</strong>
-                                <span>Beside Gogas Auto LPG, Kamptee Road, Teka Naka, Nagpur - 440017</span>
+                                <span>Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur - 440026</span>
                             </div>
                         </div>
                         <div class="info-item">
@@ -5960,7 +6050,7 @@
                         </div>
                     </div>
                     <div class="gallery-content">
-                        <h3">Catheterization Lab</h3>
+                        <h3>Catheterization Lab</h3>
                         <p>State-of-the-art Cath Lab for interventional cardiology procedures</p>
                         <span class="gallery-category">Medical Equipment</span>
                     </div>
@@ -6163,7 +6253,7 @@
                             <div class="contact-icon"><span class="material-icons">location_on</span></div>
                             <div class="contact-details">
                                 <strong>Main Hospital</strong>
-                                <span>Beside Gogas Auto LPG, Kamptee Road, Nagpur - 440017</span>
+                                <span>Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur - 440026</span>
                             </div>
                         </div>
                         <div class="contact-method">
@@ -6218,6 +6308,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -6250,9 +6342,9 @@
             <div class="footer-section">
                 <h3>Visit Us</h3>
                 <ul class="footer-links">
-                    <li>Beside Gogas Auto LPG</li>
-                    <li>Kamptee Road, Teka Naka</li>
-                    <li>Nagpur - 440017</li>
+                    <li>Near Go-Gas Auto LPG-2</li>
+                    <li>Teka Naka, Kamptee Road</li>
+                    <li>Nagpur - 440026</li>
                     <li>Maharashtra, India</li>
                 </ul>
             </div>
