@@ -31,6 +31,16 @@ if (fs.existsSync(robotsSrc)) {
   console.log('✓ Copied robots.txt');
 }
 
+// Copy root-level static files (favicon, manifest, etc.)
+const rootFiles = ['favicon.png', 'favicon.ico', 'apple-touch-icon.png', 'manifest.json', 'site.webmanifest'];
+rootFiles.forEach(name => {
+  const src = path.join(__dirname, '..', name);
+  if (fs.existsSync(src)) {
+    fs.copyFileSync(src, path.join(buildDir, name));
+    console.log(`✓ Copied ${name}`);
+  }
+});
+
 // Copy assets if they exist
 const assetsDirs = ['images', 'css', 'js', 'blog'];
 assetsDirs.forEach(dir => {
