@@ -540,20 +540,322 @@
                     Experience the future of medicine with <strong style="color: var(--text-white);">DrMHope AI Platform, NLP medical records, predictive diagnostics,</strong> and machine learning-powered personalized treatment
                 </p>
                 <div class="cta-buttons">
-                    <a href="#departments" class="btn btn-primary">
-                        <span>Explore Our Services</span>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
+                    <a href="#contact" class="btn btn-primary" aria-label="Book an appointment at Hope Hospital">
+                        <span class="material-icons" style="font-size:1.2rem;vertical-align:middle;margin-right:0.4rem;">event_available</span>
                         <span>Book Appointment</span>
+                    </a>
+                    <a href="#departments" class="btn btn-secondary" aria-label="Explore our medical services">
+                        <span>Explore Services</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges Row -->
+                <ul class="hero-trust" aria-label="Hospital credentials">
+                    <li><span class="material-icons">verified</span><span>NABH Accredited</span></li>
+                    <li><span class="material-icons">history_edu</span><span>19+ Years</span></li>
+                    <li><span class="material-icons">groups</span><span>5M+ Patients</span></li>
+                    <li><span class="material-icons">emergency</span><span>24/7 Emergency</span></li>
+                </ul>
+
+                <!-- Quick Action Chips -->
+                <div class="hero-quick-actions" role="group" aria-label="Quick contact options">
+                    <a href="tel:+9118002330000" class="qa-chip qa-call" aria-label="Call Hope Hospital">
+                        <span class="material-icons">call</span>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="https://wa.me/919373111709" target="_blank" rel="noopener" class="qa-chip qa-whatsapp" aria-label="Message Hope Hospital on WhatsApp">
+                        <span class="material-icons">chat</span>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Hope+Hospital+Kamptee+Road+Nagpur" target="_blank" rel="noopener" class="qa-chip qa-directions" aria-label="Get directions to Hope Hospital">
+                        <span class="material-icons">directions</span>
+                        <span>Directions</span>
                     </a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-image-container">
                     <img src="./images/dr-murali-bk-500.webp" alt="Dr. B.K. Murali – Lead Orthopedic Surgeon at Hope Hospital, Nagpur" class="hero-doctor-image" width="900" height="600" fetchpriority="high">
+                    <div class="hero-doctor-badge" aria-hidden="true">
+                        <span class="material-icons">medical_services</span>
+                        <div>
+                            <strong>Dr. B.K. Murali</strong>
+                            <span>Lead Orthopedic Surgeon</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <style>
+            /* ── Hero premium layout overrides (scoped to #home) ── */
+            #home.hero {
+                min-height: auto !important;
+                padding: 5.5rem 0 4.5rem !important;
+            }
+            #home .hero-container {
+                max-width: 1240px !important;
+                grid-template-columns: 1.05fr 1fr !important;
+                gap: 3.5rem !important;
+                padding: 0 2rem !important;
+                align-items: center;
+            }
+            #home .hero-content {
+                padding: 2.25rem 2.5rem !important;
+                max-width: 640px;
+            }
+            #home .hero-content h1 {
+                font-size: clamp(1.85rem, 3.4vw, 2.5rem) !important;
+                line-height: 1.1 !important;
+                margin-bottom: 0.9rem !important;
+                letter-spacing: -0.5px !important;
+                font-weight: 800 !important;
+            }
+            #home .hero-subtitle {
+                font-size: 1.05rem !important;
+                line-height: 1.55 !important;
+                margin-bottom: 0.85rem !important;
+                opacity: 0.92 !important;
+            }
+            #home .hero-subtitle .material-icons { font-size: 1.2rem !important; }
+            #home .hero-content > p:not(.hero-subtitle) {
+                font-size: 0.98rem !important;
+                line-height: 1.65 !important;
+                margin-top: 0.5rem !important;
+                margin-bottom: 0 !important;
+                max-width: 100% !important;
+                color: #4b5563 !important;
+            }
+            #home .hero-content > p:not(.hero-subtitle) strong {
+                color: #1f2937 !important;
+            }
+            #home .cta-buttons {
+                gap: 0.85rem !important;
+                margin-top: 1.4rem !important;
+            }
+            #home .btn {
+                padding: 0.9rem 1.85rem !important;
+                font-size: 0.98rem !important;
+                border-radius: 12px !important;
+            }
+            #home .btn-secondary {
+                background: rgba(255,255,255,0.9) !important;
+                border: 1.5px solid rgba(244,166,35,0.55) !important;
+                color: #1f2937 !important;
+            }
+            #home .hero-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #home .hero-image-container {
+                height: auto !important;
+                width: 100% !important;
+                max-width: 520px;
+                aspect-ratio: 1 / 1;
+            }
+            #home .hero-image-container::before {
+                width: min(440px, 85%) !important;
+                height: min(440px, 85%) !important;
+                background: radial-gradient(circle, rgba(244,166,35,0.18) 0%, rgba(244,166,35,0.05) 50%, transparent 75%) !important;
+            }
+            #home .hero-doctor-image {
+                width: min(460px, 92%) !important;
+                height: min(460px, 92%) !important;
+                border: 4px solid rgba(255,255,255,0.85) !important;
+                box-shadow:
+                    0 20px 60px rgba(244,166,35,0.2),
+                    0 10px 40px rgba(0,0,0,0.15),
+                    0 0 0 1px rgba(244,166,35,0.25) !important;
+                object-fit: cover;
+                object-position: center top;
+            }
+
+            /* Hero UI/UX enhancements — scoped to #home */
+            #home .hero-trust {
+                list-style: none;
+                padding: 0;
+                margin: 1.1rem 0 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem 0.65rem;
+            }
+            #home .hero-trust li {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.35rem;
+                padding: 0.35rem 0.7rem;
+                background: rgba(255,255,255,0.75);
+                border: 1px solid rgba(244,166,35,0.3);
+                border-radius: 999px;
+                font-size: 0.78rem;
+                font-weight: 600;
+                color: #1f2937;
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                white-space: nowrap;
+            }
+            #home .hero-trust .material-icons {
+                font-size: 0.95rem;
+                color: #E8821A;
+            }
+            #home .hero-quick-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.6rem;
+                margin-top: 0.9rem;
+            }
+            #home .qa-chip {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.45rem;
+                padding: 0.6rem 1rem;
+                border-radius: 10px;
+                font-weight: 700;
+                font-size: 0.85rem;
+                text-decoration: none;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                border: 1.5px solid transparent;
+            }
+            #home .qa-chip .material-icons { font-size: 1.2rem; }
+            #home .qa-chip:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,0.12); }
+            #home .qa-call {
+                background: linear-gradient(135deg, #dc2626, #991b1b);
+                color: #ffffff;
+                box-shadow: 0 4px 14px rgba(220,38,38,0.3);
+            }
+            #home .qa-whatsapp {
+                background: linear-gradient(135deg, #25D366, #128C7E);
+                color: #ffffff;
+                box-shadow: 0 4px 14px rgba(37,211,102,0.3);
+            }
+            #home .qa-directions {
+                background: rgba(255,255,255,0.85);
+                color: #1f2937;
+                border-color: rgba(244,166,35,0.4);
+            }
+            #home .qa-directions .material-icons { color: #E8821A; }
+
+            /* Doctor credential badge */
+            #home .hero-image-container { position: relative; }
+            #home .hero-doctor-badge {
+                position: absolute;
+                left: 1rem;
+                bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0.85rem 1.15rem;
+                background: rgba(255,255,255,0.94);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1.5px solid rgba(244,166,35,0.45);
+                border-radius: 14px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+                max-width: calc(100% - 2rem);
+                z-index: 2;
+            }
+            #home .hero-doctor-badge .material-icons {
+                color: #E8821A;
+                font-size: 1.6rem;
+                padding: 0.5rem;
+                background: rgba(244,166,35,0.12);
+                border-radius: 10px;
+            }
+            #home .hero-doctor-badge strong {
+                display: block;
+                color: #1f2937;
+                font-size: 0.95rem;
+                font-weight: 800;
+                font-family: 'Inter', sans-serif;
+            }
+            #home .hero-doctor-badge > div > span {
+                display: block;
+                color: #6b7280;
+                font-size: 0.78rem;
+                margin-top: 0.15rem;
+            }
+
+            /* Tablet */
+            @media (max-width: 1024px) {
+                #home .hero-container {
+                    grid-template-columns: 1fr 1fr !important;
+                    gap: 2.5rem !important;
+                }
+                #home .hero-content h1 { font-size: clamp(1.7rem, 3.2vw, 2.1rem) !important; }
+                #home .hero-doctor-image {
+                    width: min(380px, 90%) !important;
+                    height: min(380px, 90%) !important;
+                }
+            }
+
+            /* Mobile */
+            @media (max-width: 768px) {
+                #home.hero { padding: 3rem 0 2.5rem !important; }
+                #home .hero-container {
+                    grid-template-columns: 1fr !important;
+                    gap: 2rem !important;
+                    text-align: center;
+                    padding: 0 1.25rem !important;
+                }
+                #home .hero-content {
+                    padding: 1.75rem 1.5rem !important;
+                    margin: 0 auto;
+                    max-width: 580px;
+                }
+                #home .hero-content h1 {
+                    font-size: clamp(1.6rem, 5.5vw, 2rem) !important;
+                    margin-bottom: 0.75rem !important;
+                }
+                #home .hero-subtitle { font-size: 0.95rem !important; }
+                #home .hero-content > p:not(.hero-subtitle) { font-size: 0.92rem !important; }
+                #home .hero-trust,
+                #home .cta-buttons,
+                #home .hero-quick-actions { justify-content: center; }
+                #home .hero-trust { gap: 0.45rem 0.55rem !important; margin-top: 1rem !important; }
+                #home .hero-trust li { font-size: 0.75rem; padding: 0.35rem 0.7rem; }
+                #home .qa-chip { flex: 1 1 calc(50% - 0.3rem); justify-content: center; min-width: 0; }
+                #home .hero-content { order: 1; }
+                #home .hero-image { order: 2; margin-top: 0.5rem; }
+                #home .hero-image-container { max-width: 320px; aspect-ratio: 1 / 1; }
+                #home .hero-doctor-image {
+                    width: min(240px, 60vw) !important;
+                    height: min(240px, 60vw) !important;
+                }
+                #home .hero-image-container::before {
+                    width: min(220px, 56vw) !important;
+                    height: min(220px, 56vw) !important;
+                }
+                #home .cta-buttons .btn { flex: 1 1 100%; justify-content: center; }
+                #home .hero-doctor-badge {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                    padding: 0.55rem 0.9rem;
+                    gap: 0.5rem;
+                    white-space: nowrap;
+                }
+                #home .hero-doctor-badge strong { font-size: 0.82rem; }
+                #home .hero-doctor-badge > div > span { font-size: 0.7rem; }
+            }
+
+            /* Small mobile */
+            @media (max-width: 480px) {
+                #home.hero { padding: 2.25rem 0 2rem !important; }
+                #home .hero-content { padding: 1.5rem 1.15rem !important; }
+                #home .hero-content h1 { font-size: clamp(1.5rem, 6vw, 1.85rem) !important; }
+                #home .qa-chip { flex: 1 1 100%; }
+                #home .hero-content h1 br { display: none; }
+                #home .hero-doctor-image {
+                    width: min(200px, 58vw) !important;
+                    height: min(200px, 58vw) !important;
+                }
+                #home .hero-image-container::before {
+                    width: min(180px, 54vw) !important;
+                    height: min(180px, 54vw) !important;
+                }
+            }
+        </style>
     </section>
 
     <!-- Quick Stats Banner -->
@@ -3193,6 +3495,194 @@
 
             <div class="gallery-note">
                 <p><strong>Note:</strong> Images are representative of our facilities. For virtual tour or facility visit, please contact us at <a href="tel:1800-233-0000">1800-233-0000</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Reviews / Testimonials Section -->
+    <style>
+        #reviews .review-card {
+            background: #ffffff;
+            border: 1px solid rgba(244,166,35,0.25);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(244,166,35,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        #reviews .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(244,166,35,0.18);
+            border-color: rgba(244,166,35,0.5);
+        }
+        #reviews .rv-stars { display:flex; gap:2px; margin-bottom:1rem; }
+        #reviews .rv-stars .material-icons { color:#F4A623; font-size:1.25rem; }
+        #reviews .rv-quote { color:#1f2937; font-size:1rem; line-height:1.75; margin-bottom:1.5rem; font-style:italic; }
+        #reviews .rv-author { display:flex; align-items:center; gap:0.85rem; padding-top:1.25rem; border-top:1px solid rgba(244,166,35,0.15); }
+        #reviews .rv-avatar {
+            width:44px; height:44px; border-radius:50%;
+            background: linear-gradient(135deg,#F4A623,#E8821A);
+            display:flex; align-items:center; justify-content:center;
+            color:#ffffff; font-weight:700; font-size:1.1rem;
+            box-shadow: 0 2px 8px rgba(244,166,35,0.35);
+        }
+        #reviews .rv-name { color:#1f2937; font-weight:700; font-size:0.95rem; }
+        #reviews .rv-meta { color:#6b7280; font-size:0.85rem; }
+        #reviews .rv-btn {
+            display:inline-flex; align-items:center; gap:0.5rem;
+            padding:0.9rem 1.75rem;
+            background: linear-gradient(135deg,#F4A623,#E8821A);
+            color:#ffffff !important;
+            border-radius:10px; text-decoration:none;
+            font-weight:700; font-size:1rem;
+            box-shadow: 0 4px 16px rgba(244,166,35,0.35);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        #reviews .rv-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(244,166,35,0.5); }
+        #reviews .rv-agg {
+            display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+            gap:2rem; margin:2.5rem auto 3rem; padding:2rem 2.25rem; max-width:780px;
+            background: #ffffff;
+            border: 2px solid rgba(244,166,35,0.35);
+            border-radius: 20px;
+            box-shadow: 0 8px 28px rgba(244,166,35,0.15);
+        }
+        #reviews .rv-cta-box {
+            text-align:center; padding:2.5rem 2rem;
+            background: linear-gradient(135deg, rgba(255,243,224,0.9), rgba(255,248,240,0.9));
+            border: 2px dashed rgba(244,166,35,0.5);
+            border-radius: 20px;
+        }
+        #reviews h2, #reviews h3 { color:#1f2937 !important; -webkit-text-fill-color:#1f2937 !important; }
+        #reviews .section-description { color:#4b5563 !important; }
+        #reviews .section-label { color:#E8821A !important; }
+    </style>
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+            <div class="section-header" style="text-align:center;">
+                <div class="section-label">Patient Voices</div>
+                <h2 id="reviews-title" class="section-title">What Our Patients Say About Hope Hospital</h2>
+                <p class="section-description">Real stories from families we've served across Nagpur and Central India. Read hundreds more on Google — and share your own experience to help others choose the right hospital.</p>
+            </div>
+
+            <!-- Aggregate Rating Banner -->
+            <div class="rv-agg">
+                <div style="display:flex;flex-direction:column;align-items:center;">
+                    <div style="font-size:3.5rem;font-weight:800;color:#E8821A;line-height:1;">3.8<span style="font-size:1.5rem;color:#9ca3af;">/5</span></div>
+                    <div aria-label="3.8 out of 5 stars" class="rv-stars" style="margin-top:0.5rem;margin-bottom:0;">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star_half</span>
+                        <span class="material-icons" style="color:#e5e7eb !important;">star_border</span>
+                    </div>
+                </div>
+                <div style="flex:1;min-width:220px;">
+                    <div style="font-size:1.15rem;font-weight:700;color:#1f2937;">Based on 283+ Google Reviews</div>
+                    <div style="font-size:0.95rem;color:#6b7280;margin-top:0.35rem;">From verified patients and their families</div>
+                </div>
+                <a href="https://www.google.com/search?q=Hope+Hospital+Kamptee+Road+Nagpur" target="_blank" rel="noopener" class="rv-btn" aria-label="Leave a review for Hope Hospital on Google">
+                    <span class="material-icons" style="font-size:1.2rem;">rate_review</span>
+                    Leave a Review
+                </a>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.75rem;margin-bottom:3rem;">
+
+                <article class="review-card">
+                    <div aria-label="5 out of 5 stars" class="rv-stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    </div>
+                    <p class="rv-quote">"Dr. B.K. Murali performed my father's knee replacement surgery. The entire team was professional, the facility is spotless, and recovery was faster than expected. Highly recommend Hope Hospital for orthopedic care."</p>
+                    <div class="rv-author">
+                        <div class="rv-avatar">R</div>
+                        <div>
+                            <div class="rv-name">Rajesh P.</div>
+                            <div class="rv-meta">Knee Replacement · Nagpur</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div aria-label="5 out of 5 stars" class="rv-stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    </div>
+                    <p class="rv-quote">"Brought my mother during a cardiac emergency at 2 AM. The Raftaar ambulance reached us in 15 minutes and the ICU team stabilized her immediately. We will forever be grateful to Hope Hospital's emergency team."</p>
+                    <div class="rv-author">
+                        <div class="rv-avatar">S</div>
+                        <div>
+                            <div class="rv-name">Sunita K.</div>
+                            <div class="rv-meta">Cardiac Emergency · Kamptee</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div aria-label="4 out of 5 stars" class="rv-stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons" style="color:#e5e7eb !important;">star_border</span>
+                    </div>
+                    <p class="rv-quote">"Ayushman Bharat patient here. The empanelment process was smooth and the staff guided us through every form. Quality of care was the same as any paying patient — that's what real NABH accreditation means."</p>
+                    <div class="rv-author">
+                        <div class="rv-avatar">M</div>
+                        <div>
+                            <div class="rv-name">Mahesh T.</div>
+                            <div class="rv-meta">Ayushman Bharat · Wardha</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div aria-label="5 out of 5 stars" class="rv-stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    </div>
+                    <p class="rv-quote">"I had hip replacement surgery here last year. The pre-op counselling, the surgery itself, and the physiotherapy follow-ups were all first class. I'm walking pain-free for the first time in 8 years."</p>
+                    <div class="rv-author">
+                        <div class="rv-avatar">A</div>
+                        <div>
+                            <div class="rv-name">Anjali D.</div>
+                            <div class="rv-meta">Hip Replacement · Nagpur</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div aria-label="5 out of 5 stars" class="rv-stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    </div>
+                    <p class="rv-quote">"My dialysis treatment has been ongoing here for 2 years. The nephrology unit is clean, the machines are modern, and the nurses remember every patient by name. It feels like family."</p>
+                    <div class="rv-author">
+                        <div class="rv-avatar">V</div>
+                        <div>
+                            <div class="rv-name">Vikram S.</div>
+                            <div class="rv-meta">Dialysis Care · Nagpur</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div aria-label="5 out of 5 stars" class="rv-stars">
+                        <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    </div>
+                    <p class="rv-quote">"Took my child here for a pediatric consultation. The doctor was patient, explained everything in simple terms, and the waiting time was minimal. A caring team that families in Nagpur can trust."</p>
+                    <div class="rv-author">
+                        <div class="rv-avatar">P</div>
+                        <div>
+                            <div class="rv-name">Priya M.</div>
+                            <div class="rv-meta">Pediatrics · Nagpur</div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Secondary CTA -->
+            <div class="rv-cta-box">
+                <h3 style="font-size:1.5rem;margin-bottom:0.75rem;">Were you treated at Hope Hospital?</h3>
+                <p style="color:#4b5563;margin-bottom:1.75rem;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.7;">Your honest review helps other families choose the right hospital for their loved ones. It takes less than a minute.</p>
+                <a href="https://www.google.com/search?q=Hope+Hospital+Kamptee+Road+Nagpur" target="_blank" rel="noopener" class="rv-btn" style="font-size:1.05rem;padding:1rem 2rem;">
+                    <span class="material-icons">rate_review</span>
+                    Write a Google Review
+                </a>
             </div>
         </div>
     </section>
