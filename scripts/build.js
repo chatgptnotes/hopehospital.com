@@ -15,6 +15,16 @@ const indexDest = path.join(buildDir, 'index.html');
 fs.copyFileSync(indexSrc, indexDest);
 console.log('✓ Copied index.html');
 
+// Copy multi-page HTML files
+const pages = ['about.html', 'departments.html', 'hospitals.html', 'empanelments.html', 'gallery.html', 'contact.html'];
+pages.forEach(page => {
+  const src = path.join(__dirname, '..', page);
+  if (fs.existsSync(src)) {
+    fs.copyFileSync(src, path.join(buildDir, page));
+    console.log(`✓ Copied ${page}`);
+  }
+});
+
 // Copy sitemap.xml
 const sitemapSrc = path.join(__dirname, '..', 'sitemap.xml');
 const sitemapDest = path.join(buildDir, 'sitemap.xml');
@@ -42,7 +52,7 @@ rootFiles.forEach(name => {
 });
 
 // Copy assets if they exist
-const assetsDirs = ['images', 'css', 'js', 'blog'];
+const assetsDirs = ['images', 'css', 'js', 'blog', 'nagpur', 'diseases'];
 assetsDirs.forEach(dir => {
   const srcDir = path.join(__dirname, '..', dir);
   if (fs.existsSync(srcDir)) {
