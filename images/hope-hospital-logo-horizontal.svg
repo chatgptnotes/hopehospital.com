@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 68" width="440" height="68">
+
+  <!-- ===== ICON: Faithful to original — wide U-smile, spread figures ===== -->
+  <g transform="translate(0, 4)">
+    <!-- Left figure (red) -->
+    <circle cx="13" cy="3.5" r="3.2" fill="#C10D0D"/>
+    <rect x="10.8" y="9" width="4.4" height="46" rx="2.2" fill="#C10D0D"/>
+
+    <!-- Right figure (navy) -->
+    <circle cx="43" cy="3.5" r="3.8" fill="none" stroke="#1A4273" stroke-width="2.8"/>
+    <rect x="40.8" y="9" width="4.4" height="46" rx="2.2" fill="#1A4273"/>
+
+    <!-- Left arm (red): from top of left body, wide sweep right & down to center-bottom -->
+    <path d="M15.2 13 C24 8, 28 26, 28 48" stroke="#C10D0D" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Right arm (navy): from top of right body, wide sweep left & down to center-bottom -->
+    <path d="M40.8 13 C32 8, 28 26, 28 48" stroke="#1A4273" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- ===== TEXT BLOCK ===== -->
+  <text x="60" y="18"
+        font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="600" fill="#4AADE4"
+        letter-spacing="0.2">Dr. Murali's</text>
+
+  <text x="60" y="46"
+        font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="800" letter-spacing="1.2">
+    <tspan fill="#C10D0D">HOPE</tspan><tspan dx="2" fill="#1A4273">HOSPITAL</tspan>
+  </text>
+
+  <text x="182" y="60"
+        font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="8.5" font-weight="500" fill="#6B7B8D"
+        letter-spacing="1.8">Assured | Committed | Proficient</text>
+</svg>

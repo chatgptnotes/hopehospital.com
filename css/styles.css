@@ -2735,8 +2735,8 @@
         .nav-links a:hover { color: var(--ph-amber) !important; }
         .nav-links a::after { background: linear-gradient(90deg, var(--ph-gold), var(--ph-amber)) !important; }
 
-        /* Phoenix logo in nav */
-        .logo-img { content: url('images/phoenix-logo-96.webp'); height: 48px !important; }
+        /* Hospital logo in nav */
+        #navbar .logo img { height: 52px !important; width: auto !important; }
 
         /* ── Hero Section ────────────────────────────── */
         .hero {
