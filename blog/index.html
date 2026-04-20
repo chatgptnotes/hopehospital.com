@@ -285,6 +285,20 @@
     </style>
 </head>
 <body>
+  <!-- Preloader: hides page until fully loaded -->
+  <div id="preloader" style="position:fixed;inset:0;background:#ffffff;z-index:99999;display:flex;align-items:center;justify-content:center;">
+    <img src="/images/hope-hospital-logo-header.webp" alt="Hope Hospital" style="height:64px;width:auto;" onerror="this.style.display='none'">
+  </div>
+  <style>
+    #preloader{transition:opacity 0.35s ease;}
+    #preloader.fade-out{opacity:0;}
+  </style>
+  <script>
+    window.addEventListener('load',function(){
+      var p=document.getElementById('preloader');
+      if(p){p.classList.add('fade-out');setTimeout(function(){p.style.display='none';},360);}
+    });
+  </script>
     <nav id="navbar">
         <div class="nav-container">
             <a href="/" class="logo">
@@ -337,7 +351,7 @@
                         <p class="blog-excerpt">
                             Comprehensive guide to knee replacement surgery by Nagpur's best orthopedic surgeon. Learn about the procedure, recovery, costs, and why Hope Hospital is the best choice for total knee replacement.
                         </p>
-                        <a href="knee-replacement-surgery-nagpur-guide.html" class="read-more">
+                        <a href="/blog/knee-replacement-surgery-nagpur-guide" class="read-more">
                             Read Full Article
                             <span class="material-icons">arrow_forward</span>
                         </a>
@@ -365,7 +379,7 @@
                         <p class="blog-excerpt">
                             Expert advice from the best orthopedic surgeon in Nagpur on hip replacement surgery. Understand the symptoms, procedure, recovery timeline, and how to choose the right hospital for hip replacement.
                         </p>
-                        <a href="hip-replacement-when-do-you-need-it.html" class="read-more">
+                        <a href="/blog/hip-replacement-when-do-you-need-it" class="read-more">
                             Read Full Article
                             <span class="material-icons">arrow_forward</span>
                         </a>
@@ -393,7 +407,7 @@
                         <p class="blog-excerpt">
                             Essential factors to consider when selecting a hospital in Nagpur. Learn about NABH accreditation, specialist availability, facilities, insurance acceptance, and why Hope Hospital stands out.
                         </p>
-                        <a href="choosing-best-hospital-in-nagpur.html" class="read-more">
+                        <a href="/blog/choosing-best-hospital-in-nagpur" class="read-more">
                             Read Full Article
                             <span class="material-icons">arrow_forward</span>
                         </a>
