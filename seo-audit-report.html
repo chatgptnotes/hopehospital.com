@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SEO Audit Report - hopehospital.com</title>
+<style>
+  @page { size: A4; margin: 20mm 18mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; font-size: 11px; line-height: 1.5; background: #fff; }
+
+  /* Cover Page */
+  .cover { page-break-after: always; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; text-align: center; padding: 60px 40px; }
+  .cover-logo { font-size: 42px; font-weight: 800; color: #0d6efd; margin-bottom: 8px; letter-spacing: -1px; }
+  .cover-sub { font-size: 14px; color: #666; margin-bottom: 50px; }
+  .cover h1 { font-size: 32px; color: #1a1a1a; margin-bottom: 10px; font-weight: 700; }
+  .cover .subtitle { font-size: 18px; color: #0d6efd; font-weight: 600; margin-bottom: 40px; }
+  .cover-meta { font-size: 13px; color: #555; line-height: 2; }
+  .cover-meta strong { color: #1a1a1a; }
+  .cover-bar { width: 80px; height: 4px; background: #0d6efd; margin: 30px auto; border-radius: 2px; }
+
+  /* Headers */
+  h2 { font-size: 18px; color: #0d6efd; border-bottom: 2px solid #0d6efd; padding-bottom: 6px; margin: 28px 0 14px 0; page-break-after: avoid; }
+  h3 { font-size: 13px; color: #333; margin: 16px 0 8px 0; page-break-after: avoid; }
+
+  /* Score card */
+  .score-card { background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%); color: #fff; border-radius: 10px; padding: 28px 34px; text-align: center; margin: 20px 0; }
+  .score-card .big { font-size: 54px; font-weight: 800; }
+  .score-card .label { font-size: 16px; opacity: 0.9; margin-top: 4px; }
+
+  /* Score grid */
+  .score-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 16px 0 24px 0; }
+  .score-item { border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px; text-align: center; }
+  .score-item .num { font-size: 26px; font-weight: 700; }
+  .score-item .cat { font-size: 10px; color: #666; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .score-good .num { color: #198754; }
+  .score-fair .num { color: #fd7e14; }
+  .score-bad .num { color: #dc3545; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 18px 0; font-size: 10.5px; }
+  th { background: #f0f4ff; color: #0d6efd; font-weight: 600; text-align: left; padding: 8px 10px; border: 1px solid #d0d7e8; }
+  td { padding: 7px 10px; border: 1px solid #e0e0e0; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafbff; }
+
+  /* Priority badges */
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+  .badge-critical { background: #dc3545; color: #fff; }
+  .badge-high { background: #fd7e14; color: #fff; }
+  .badge-medium { background: #ffc107; color: #333; }
+  .badge-low { background: #6c757d; color: #fff; }
+
+  /* Status icons */
+  .ok { color: #198754; font-weight: 700; }
+  .warn { color: #fd7e14; font-weight: 700; }
+  .fail { color: #dc3545; font-weight: 700; }
+
+  /* Sections */
+  .section { page-break-inside: avoid; margin-bottom: 10px; }
+  .finding-box { background: #fff8f0; border-left: 4px solid #fd7e14; padding: 10px 14px; margin: 10px 0; border-radius: 0 6px 6px 0; font-size: 11px; }
+  .finding-box.critical { background: #fff0f0; border-left-color: #dc3545; }
+  .finding-box.good { background: #f0fff4; border-left-color: #198754; }
+
+  /* Lists */
+  ul, ol { margin: 6px 0 10px 20px; }
+  li { margin-bottom: 4px; }
+
+  /* Action items */
+  .action-table td:first-child { text-align: center; font-weight: 700; color: #0d6efd; width: 30px; }
+  .action-table td:nth-child(3), .action-table td:nth-child(4) { text-align: center; width: 70px; }
+
+  /* Footer */
+  .page-footer { font-size: 9px; color: #999; text-align: center; margin-top: 40px; padding-top: 10px; border-top: 1px solid #e0e0e0; }
+
+  /* Page breaks */
+  .page-break { page-break-before: always; }
+
+  p { margin: 4px 0 8px 0; }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="cover-logo">SEO AUDIT</div>
+  <div class="cover-sub">Comprehensive Website Analysis</div>
+  <div class="cover-bar"></div>
+  <h1>hopehospital.com</h1>
+  <div class="subtitle">Hope Hospital - Best Hospital in Nagpur</div>
+  <div class="cover-meta">
+    <strong>Date:</strong> April 20, 2026<br>
+    <strong>Prepared for:</strong> Dr. B.K. Murali / Hope Hospital Team<br>
+    <strong>Auditor:</strong> Claude Code (AI-Powered SEO Analysis)<br>
+    <strong>Domain:</strong> https://www.hopehospital.com
+  </div>
+</div>
+
+<!-- PAGE 2: EXECUTIVE SUMMARY -->
+<div class="page-break"></div>
+
+<h2>1. Executive Summary</h2>
+
+<div class="score-card">
+  <div class="big">72 / 100</div>
+  <div class="label">Overall SEO Score</div>
+</div>
+
+<div class="score-grid">
+  <div class="score-item score-good"><div class="num">78</div><div class="cat">Technical SEO</div></div>
+  <div class="score-item score-good"><div class="num">82</div><div class="cat">On-Page SEO</div></div>
+  <div class="score-item score-bad"><div class="num">55</div><div class="cat">Content</div></div>
+  <div class="score-item score-fair"><div class="num">70</div><div class="cat">Local SEO</div></div>
+  <div class="score-item score-fair"><div class="num">65</div><div class="cat">Performance</div></div>
+  <div class="score-item score-fair"><div class="num">60</div><div class="cat">Indexing &amp; Crawling</div></div>
+</div>
+
+<h3>Key Findings</h3>
+<div class="finding-box good">
+  <strong>Strengths:</strong> Solid technical foundation with proper title tags, meta descriptions, Open Graph tags, Twitter Cards, canonical URLs, and structured data (JSON-LD) on all core pages. Google Analytics and Search Console are configured.
+</div>
+<div class="finding-box critical">
+  <strong>Critical Issue:</strong> Google has indexed 8+ URLs that no longer exist in the codebase (neurosurgery, critical-care, health-packages, etc.). These are likely returning 404 errors, wasting crawl budget and hurting user experience.
+</div>
+<div class="finding-box">
+  <strong>Biggest Gap:</strong> Content volume is extremely low for a multispeciality hospital — only 3 blog posts and 3 disease pages. No individual department pages exist. This is the #1 factor limiting organic search growth.
+</div>
+
+<!-- PAGE 3: TECHNICAL SEO -->
+<div class="page-break"></div>
+
+<h2>2. Technical SEO (78/100)</h2>
+
+<h3>2.1 What's Working Well</h3>
+<table>
+  <tr><th>Element</th><th>Status</th><th>Details</th></tr>
+  <tr><td>Title Tags</td><td class="ok">PASS</td><td>Unique, keyword-rich titles on all 7 core pages (34-67 chars)</td></tr>
+  <tr><td>Meta Descriptions</td><td class="ok">PASS</td><td>Unique descriptions on all pages (130-160 chars) with CTAs</td></tr>
+  <tr><td>Open Graph Tags</td><td class="ok">PASS</td><td>Complete OG tags (type, url, title, desc, image, locale, site_name)</td></tr>
+  <tr><td>Twitter Cards</td><td class="ok">PASS</td><td>summary_large_image card with all required fields</td></tr>
+  <tr><td>Canonical URLs</td><td class="ok">PASS</td><td>Set on every page pointing to www.hopehospital.com</td></tr>
+  <tr><td>Structured Data</td><td class="ok">PASS</td><td>Hospital, Physician, LocalBusiness, BreadcrumbList schemas on homepage</td></tr>
+  <tr><td>Favicon</td><td class="ok">PASS</td><td>Multiple sizes (16, 32, 192px) + apple-touch-icon</td></tr>
+  <tr><td>HTML lang Attribute</td><td class="ok">PASS</td><td>&lt;html lang="en"&gt; present</td></tr>
+  <tr><td>Robots Meta</td><td class="ok">PASS</td><td>"index, follow" on all pages</td></tr>
+  <tr><td>Hreflang Tags</td><td class="ok">PASS</td><td>en-in, en, x-default on homepage</td></tr>
+  <tr><td>Geo Meta Tags</td><td class="ok">PASS</td><td>geo.region (IN-MH), geo.placename (Nagpur), geo.position</td></tr>
+  <tr><td>Google Analytics</td><td class="ok">PASS</td><td>G-R4J5W7V2Z8 with deferred loading (performance-friendly)</td></tr>
+  <tr><td>Search Console</td><td class="ok">PASS</td><td>Verified via HTML meta tag</td></tr>
+  <tr><td>Security Headers</td><td class="ok">PASS</td><td>X-Content-Type-Options, X-Frame-Options, X-XSS-Protection</td></tr>
+  <tr><td>Clean URLs</td><td class="ok">PASS</td><td>Enabled via Vercel (cleanUrls: true)</td></tr>
+</table>
+
+<h3>2.2 Issues Found</h3>
+<table>
+  <tr><th>Priority</th><th>Issue</th><th>Impact</th></tr>
+  <tr>
+    <td><span class="badge badge-high">HIGH</span></td>
+    <td><strong>robots.txt sitemap URL missing "www"</strong><br>Currently: Sitemap: https://hopehospital.com/sitemap.xml<br>Should be: https://www.hopehospital.com/sitemap.xml</td>
+    <td>Google may not discover sitemap properly</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-high">HIGH</span></td>
+    <td><strong>Same OG image for all 7 pages</strong><br>All pages use hope-hospital-og1.png</td>
+    <td>Poor social sharing differentiation — all pages look identical when shared</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>No Content-Security-Policy header</strong> in Vercel config</td>
+    <td>Security gap, minor SEO trust signal</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>No Strict-Transport-Security (HSTS) header</strong></td>
+    <td>HTTPS not enforced at header level</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-low">LOW</span></td>
+    <td><strong>Copyright in footer says "2024"</strong> — should be 2025 or 2026</td>
+    <td>Looks outdated to users and search engines</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-low">LOW</span></td>
+    <td><strong>Twitter meta uses property= instead of name=</strong><br>&lt;meta property="twitter:card"&gt; should be &lt;meta name="twitter:card"&gt;</td>
+    <td>Minor spec violation (still works but not standards-compliant)</td>
+  </tr>
+</table>
+
+<!-- PAGE 4: ON-PAGE SEO -->
+<div class="page-break"></div>
+
+<h2>3. On-Page SEO (82/100)</h2>
+
+<h3>3.1 Title Tags Analysis</h3>
+<table>
+  <tr><th>Page</th><th>Title</th><th>Length</th><th>Verdict</th></tr>
+  <tr><td>Home</td><td>Best Hospital in Nagpur | Hope Hospital – NABH Accredited</td><td>57</td><td class="ok">Good</td></tr>
+  <tr><td>About</td><td>About Hope Hospital | NABH Accredited Super Specialty Center in Nagpur</td><td>67</td><td class="warn">Slightly long</td></tr>
+  <tr><td>Departments</td><td>Medical Departments & Services | Hope Hospital Nagpur</td><td>56</td><td class="ok">Good</td></tr>
+  <tr><td>Hospitals</td><td>Our Hospital Locations | Hope Hospital Nagpur</td><td>48</td><td class="ok">Good</td></tr>
+  <tr><td>Empanelments</td><td>Insurance & Government Schemes | Hope Hospital Nagpur</td><td>55</td><td class="ok">Good</td></tr>
+  <tr><td>Gallery</td><td>Photo Gallery | Hope Hospital Nagpur</td><td>38</td><td class="warn">Short</td></tr>
+  <tr><td>Contact</td><td>Contact Us | Hope Hospital Nagpur</td><td>34</td><td class="warn">Short</td></tr>
+</table>
+
+<h3>3.2 Meta Descriptions Analysis</h3>
+<table>
+  <tr><th>Page</th><th>Description</th><th>Length</th></tr>
+  <tr><td>Home</td><td>Looking for the best hospital in Nagpur? Hope Hospital offers NABH-accredited multispeciality care, expert doctors & 24/7 emergency. Call 1800-233-0000.</td><td>155</td></tr>
+  <tr><td>About</td><td>Learn about Hope Hospital Nagpur - Central India first NABH-accredited super specialty center with awards, AI innovation, world-class facilities and expert doctors.</td><td>162</td></tr>
+  <tr><td>Departments</td><td>Comprehensive medical departments at Hope Hospital - Orthopedics, Cardiology, Neurosurgery, Oncology and more. Health checkup packages available.</td><td>149</td></tr>
+  <tr><td>Contact</td><td>Contact Hope Hospital Nagpur for appointments, emergencies or enquiries. Call 1800-233-0000 (24/7). Teka Naka, Kamptee Road, Nagpur.</td><td>136</td></tr>
+  <tr><td>Hospitals</td><td>Visit Hope Hospital at Teka Naka, Ayushman Nagpur Hospital at Ramdaspeth, or Ayushman Polyclinic Pandurna. 24/7 emergency with Raftaar Ambulance.</td><td>150</td></tr>
+  <tr><td>Empanelments</td><td>Hope Hospital empaneled under Ayushman Bharat, MJPJAY, CGHS, ECHS and 20+ government schemes. Cashless treatment with major insurance companies.</td><td>149</td></tr>
+  <tr><td>Gallery</td><td>View photos of Hope Hospital facilities, medical equipment, operation theaters, patient care, and our expert doctors team.</td><td>121</td></tr>
+</table>
+
+<h3>3.3 Additional On-Page Issues</h3>
+<table>
+  <tr><th>Priority</th><th>Issue</th><th>Details</th></tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>Google rewriting title in SERPs</strong></td>
+    <td>Your title: "Best Hospital in Nagpur | Hope Hospital..."<br>Google shows: "AI-Powered Best Hospital in Nagpur | Dr. B.K. Murali..."<br>This means Google finds a better title from your content.</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>H1 on homepage is brand-focused</strong></td>
+    <td>"Hope. Healing. Healthcare." lacks keywords. Consider adding a keyword-rich H1 like "Best Hospital in Nagpur"</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-low">LOW</span></td>
+    <td><strong>Keywords meta tag too long</strong></td>
+    <td>300+ chars of keywords visible to competitors. Search engines ignore this tag entirely — consider removing it.</td>
+  </tr>
+</table>
+
+<!-- PAGE 5: CONTENT -->
+<div class="page-break"></div>
+
+<h2>4. Content Analysis (55/100) — Biggest Gap</h2>
+
+<h3>4.1 Current Content Inventory</h3>
+<table>
+  <tr><th>Content Type</th><th>Count</th><th>Pages</th></tr>
+  <tr><td>Core Pages</td><td>7</td><td>Home, About, Departments, Hospitals, Empanelments, Gallery, Contact</td></tr>
+  <tr><td>Location Pages</td><td>1</td><td>/nagpur/</td></tr>
+  <tr><td>Blog Posts</td><td>3</td><td>Knee replacement guide, Hip replacement guide, Choosing best hospital</td></tr>
+  <tr><td>Disease Pages</td><td>3</td><td>Arthritis, Diabetes, Hypertension</td></tr>
+  <tr><td><strong>Total</strong></td><td><strong>14</strong></td><td></td></tr>
+</table>
+
+<h3>4.2 Critical Content Gaps</h3>
+<table>
+  <tr><th>Priority</th><th>Missing Content</th><th>Impact</th><th>Estimated Pages Needed</th></tr>
+  <tr>
+    <td><span class="badge badge-critical">CRITICAL</span></td>
+    <td><strong>Individual department pages</strong><br>Orthopedics, Cardiology, Neurosurgery, Oncology, Nephrology, etc.</td>
+    <td>Losing all "department + Nagpur" searches</td>
+    <td>10-15 pages</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-critical">CRITICAL</span></td>
+    <td><strong>More disease/condition pages</strong><br>Only 3 of 50+ treatable conditions covered</td>
+    <td>Missing high-intent "treatment in Nagpur" queries</td>
+    <td>20-30 pages</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-critical">CRITICAL</span></td>
+    <td><strong>More blog content</strong><br>Only 3 posts vs competitors with 50-100+ articles</td>
+    <td>Losing long-tail keyword traffic entirely</td>
+    <td>2-4 posts/month</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-high">HIGH</span></td>
+    <td><strong>FAQ page with FAQ schema</strong></td>
+    <td>Missing FAQ rich snippets in Google SERPs</td>
+    <td>1-2 pages</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-high">HIGH</span></td>
+    <td><strong>Doctor profile pages</strong><br>Only Dr. Murali has visibility</td>
+    <td>Missing "doctor name + Nagpur" searches</td>
+    <td>5-10 pages</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>Patient testimonials page</strong></td>
+    <td>Missing social proof and review-related keywords</td>
+    <td>1 page</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>Blog freshness</strong><br>Last posts dated Nov 2025 — 5 months stale</td>
+    <td>Signals inactive site to Google</td>
+    <td>Ongoing</td>
+  </tr>
+</table>
+
+<h3>4.3 Keyword Density (Homepage)</h3>
+<table>
+  <tr><th>Keyword</th><th>Frequency</th><th>Assessment</th></tr>
+  <tr><td>"hospital"</td><td>25+</td><td class="ok">Well-distributed</td></tr>
+  <tr><td>"Nagpur"</td><td>15+</td><td class="ok">Strong geographic signal</td></tr>
+  <tr><td>"NABH"</td><td>8</td><td class="ok">Good authority keyword</td></tr>
+  <tr><td>"best"</td><td>6+</td><td class="ok">Competitive positioning</td></tr>
+  <tr><td>"Kamptee"</td><td>3</td><td class="warn">Low — increase for local SEO</td></tr>
+</table>
+
+<!-- PAGE 6: INDEXING & CRAWLING -->
+<div class="page-break"></div>
+
+<h2>5. Indexing & Crawling (60/100)</h2>
+
+<div class="finding-box critical">
+  <strong>Major Problem:</strong> Google has indexed 8+ URLs that do NOT exist in the current codebase. These are likely returning 404 errors, wasting crawl budget, and providing a poor user experience when clicked from search results.
+</div>
+
+<h3>5.1 Orphaned Indexed Pages</h3>
+<table>
+  <tr><th>Google-Indexed URL</th><th>Status in Codebase</th><th>Action Needed</th></tr>
+  <tr><td>/neurosurgery/</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to /departments</td></tr>
+  <tr><td>/critical-care/</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to /departments</td></tr>
+  <tr><td>/health-packages/</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to /departments</td></tr>
+  <tr><td>/news/</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to /blog</td></tr>
+  <tr><td>/gallbladder-symptoms-surgery-tips.../</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to /blog</td></tr>
+  <tr><td>/corporate-empanelment.../</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to /empanelments</td></tr>
+  <tr><td>/list-of-empanelments/</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to /empanelments</td></tr>
+  <tr><td>/total-knee-joint-replacement-surgery/</td><td class="fail">NOT FOUND</td><td>Recreate or 301 redirect to blog/knee guide</td></tr>
+</table>
+
+<h3>5.2 Sitemap Analysis</h3>
+<table>
+  <tr><th>Metric</th><th>Value</th><th>Notes</th></tr>
+  <tr><td>URLs in Sitemap</td><td>15</td><td>Low count for a multispeciality hospital</td></tr>
+  <tr><td>Last Updated</td><td>April 16, 2026</td><td class="ok">Recent</td></tr>
+  <tr><td>Homepage Priority</td><td>1.0</td><td class="ok">Correct</td></tr>
+  <tr><td>Image Sitemap</td><td>Namespace declared but unused</td><td class="warn">Add image entries for image SEO</td></tr>
+  <tr><td>Orphaned URLs</td><td>8+ indexed but not in sitemap</td><td class="fail">Must address</td></tr>
+</table>
+
+<h3>5.3 robots.txt Review</h3>
+<table>
+  <tr><th>Directive</th><th>Status</th><th>Notes</th></tr>
+  <tr><td>User-agent: *</td><td class="ok">OK</td><td>Allows all crawlers</td></tr>
+  <tr><td>Allow: /</td><td class="ok">OK</td><td>Root access allowed</td></tr>
+  <tr><td>Sitemap reference</td><td class="warn">ISSUE</td><td>Uses non-www URL — should match canonical www domain</td></tr>
+  <tr><td>Disallow: /.git/</td><td class="ok">OK</td><td>Dev files blocked</td></tr>
+  <tr><td>Disallow: /node_modules/</td><td class="ok">OK</td><td>Dependencies blocked</td></tr>
+  <tr><td>Crawl-delay: 1</td><td class="ok">OK</td><td>Reasonable 1-second delay</td></tr>
+</table>
+
+<!-- PAGE 7: LOCAL SEO -->
+<div class="page-break"></div>
+
+<h2>6. Local SEO (70/100)</h2>
+
+<h3>6.1 NAP Consistency (Name, Address, Phone)</h3>
+<table>
+  <tr><th>Element</th><th>Value</th><th>Status</th></tr>
+  <tr><td>Name</td><td>Hope Hospital</td><td class="ok">Consistent across site</td></tr>
+  <tr><td>Address</td><td>Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur - 440026</td><td class="ok">Consistent</td></tr>
+  <tr><td>Phone</td><td>1800-233-0000</td><td class="ok">Toll-free, prominent</td></tr>
+  <tr><td>Google Maps</td><td>Embedded on contact page</td><td class="ok">Present</td></tr>
+</table>
+
+<h3>6.2 Structured Data for Local</h3>
+<table>
+  <tr><th>Schema Type</th><th>Status</th><th>Notes</th></tr>
+  <tr><td>Hospital</td><td class="ok">Present</td><td>Name, address, geo, specialties, services</td></tr>
+  <tr><td>LocalBusiness</td><td class="ok">Present</td><td>Complete with geo coordinates</td></tr>
+  <tr><td>Physician (Dr. Murali)</td><td class="ok">Present</td><td>With aggregate rating</td></tr>
+  <tr><td>ServiceArea</td><td class="fail">Missing</td><td>Important for "near me" searches</td></tr>
+  <tr><td>openingHoursSpecification</td><td class="warn">Basic only</td><td>Uses simple openingHours, not detailed specification</td></tr>
+</table>
+
+<h3>6.3 Local SEO Issues</h3>
+<table>
+  <tr><th>Priority</th><th>Issue</th><th>Details</th></tr>
+  <tr>
+    <td><span class="badge badge-high">HIGH</span></td>
+    <td><strong>Google Business Profile ownership unclear</strong></td>
+    <td>GBP is the #1 local ranking factor. Must be claimed and optimized.</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-high">HIGH</span></td>
+    <td><strong>Only 1 location landing page</strong></td>
+    <td>Need separate pages for Ramdaspeth (Ayushman Hospital) and Pandurna locations</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>Review count mismatch in schema</strong></td>
+    <td>Schema says 850 reviews but Google shows 656. Inconsistency can trigger spam filters.</td>
+  </tr>
+  <tr>
+    <td><span class="badge badge-medium">MEDIUM</span></td>
+    <td><strong>Third-party directories outranking for branded terms</strong></td>
+    <td>Justdial, Practo appearing prominently for "Hope Hospital Nagpur" — need more domain authority</td>
+  </tr>
+</table>
+
+<h3>6.4 Directory Presence</h3>
+<table>
+  <tr><th>Directory</th><th>Listed</th><th>URL</th></tr>
+  <tr><td>Google Business</td><td class="warn">Unclear</td><td>Ownership status unknown</td></tr>
+  <tr><td>Justdial</td><td class="ok">Yes</td><td>justdial.com/Nagpur/Hope-Hospital</td></tr>
+  <tr><td>Practo</td><td class="ok">Yes</td><td>practo.com/nagpur/hospital/hope-hospital</td></tr>
+  <tr><td>Medindia</td><td class="ok">Yes</td><td>medindia.net (listed)</td></tr>
+  <tr><td>Bajaj Finserv Health</td><td class="ok">Yes</td><td>bajajfinservhealth.in (listed)</td></tr>
+  <tr><td>Facebook</td><td class="ok">Yes</td><td>facebook.com/hopehospitalnagpur</td></tr>
+  <tr><td>Instagram</td><td class="ok">Yes</td><td>instagram.com/hopehospitalnagpur</td></tr>
+</table>
+
+<!-- PAGE 8: PERFORMANCE -->
+<div class="page-break"></div>
+
+<h2>7. Performance & Optimization (65/100)</h2>
+
+<table>
+  <tr><th>Item</th><th>Status</th><th>Notes</th></tr>
+  <tr><td>Image Format</td><td class="warn">Partial</td><td>Only 8 of 19 images in WebP format. Remaining use JPEG/PNG.</td></tr>
+  <tr><td>GA Deferred Loading</td><td class="ok">Good</td><td>Loads after user interaction or 2.5s timeout — performance-friendly</td></tr>
+  <tr><td>CSS Delivery</td><td class="warn">Inline</td><td>All CSS is inline — no external stylesheet caching. Increases HTML payload.</td></tr>
+  <tr><td>JS Minification</td><td class="fail">Missing</td><td>No minification pipeline in build process</td></tr>
+  <tr><td>CSS Minification</td><td class="fail">Missing</td><td>No CSS minification</td></tr>
+  <tr><td>Lazy Loading</td><td class="warn">Unknown</td><td>Need to verify loading="lazy" on below-fold images</td></tr>
+  <tr><td>Core Web Vitals (LCP)</td><td class="warn">Not tested</td><td>Run Lighthouse/PageSpeed for actual data</td></tr>
+  <tr><td>Core Web Vitals (CLS)</td><td class="warn">Not tested</td><td>Run Lighthouse/PageSpeed for actual data</td></tr>
+  <tr><td>Core Web Vitals (INP)</td><td class="warn">Not tested</td><td>Run Lighthouse/PageSpeed for actual data</td></tr>
+  <tr><td>Build Process</td><td class="warn">Basic</td><td>Copy script only — no optimization pipeline</td></tr>
+</table>
+
+<h3>7.1 Image Optimization Details</h3>
+<table>
+  <tr><th>Metric</th><th>Value</th></tr>
+  <tr><td>Total Images</td><td>19</td></tr>
+  <tr><td>WebP Format</td><td>8 (42%)</td></tr>
+  <tr><td>JPEG/PNG Format</td><td>11 (58%) — should convert to WebP</td></tr>
+</table>
+
+<!-- PAGE 9: COMPETITOR CONTEXT -->
+<h2>8. Competitor & SERP Context</h2>
+
+<p>Based on search results analysis, hopehospital.com faces competition from healthcare directories that often outrank the hospital's own pages:</p>
+
+<table>
+  <tr><th>Competitor/Directory</th><th>Threat Level</th><th>Notes</th></tr>
+  <tr><td>Justdial (justdial.com)</td><td class="warn">Medium</td><td>Ranks for "Hope Hospital Nagpur" + specialty searches. High domain authority.</td></tr>
+  <tr><td>Practo (practo.com)</td><td class="warn">Medium</td><td>Ranks for hospital + doctor searches. Strong healthcare domain.</td></tr>
+  <tr><td>Medindia (medindia.net)</td><td class="ok">Low</td><td>Directory listing, lower visibility.</td></tr>
+  <tr><td>Other Nagpur hospitals</td><td class="warn">Medium</td><td>Competing for "best hospital in Nagpur" keywords.</td></tr>
+</table>
+
+<p><strong>Key insight:</strong> The fact that third-party directories rank prominently for "Hope Hospital" branded queries indicates the domain needs more content, backlinks, and authority signals to outrank aggregators.</p>
+
+<!-- PAGE 10: ACTION PLAN -->
+<div class="page-break"></div>
+
+<h2>9. Top 10 Action Items (Priority Order)</h2>
+
+<table class="action-table">
+  <tr><th>#</th><th>Action</th><th>Impact</th><th>Effort</th></tr>
+  <tr>
+    <td>1</td>
+    <td><strong>Fix orphaned indexed URLs</strong><br>Recreate the 8 missing pages (neurosurgery, critical-care, health-packages, etc.) or add 301 redirects in Vercel config to relevant existing pages.</td>
+    <td><span class="badge badge-critical">Critical</span></td>
+    <td><span class="badge badge-medium">Medium</span></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><strong>Create individual department pages</strong><br>Build 10-15 standalone pages for Orthopedics, Cardiology, Neurosurgery, Oncology, Nephrology, etc. with unique content, schema, and internal links.</td>
+    <td><span class="badge badge-high">High</span></td>
+    <td><span class="badge badge-high">High</span></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><strong>Fix robots.txt sitemap URL</strong><br>Change to: Sitemap: https://www.hopehospital.com/sitemap.xml</td>
+    <td><span class="badge badge-high">High</span></td>
+    <td><span class="badge badge-low">1 min</span></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><strong>Fix review count in schema</strong><br>Update aggregateRating reviewCount from 850 to actual Google review count (656).</td>
+    <td><span class="badge badge-high">High</span></td>
+    <td><span class="badge badge-low">5 min</span></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><strong>Publish more blog content</strong><br>Target 2-4 posts/month covering conditions, treatments, patient guides, and "in Nagpur" keywords.</td>
+    <td><span class="badge badge-high">High</span></td>
+    <td><span class="badge badge-high">Ongoing</span></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><strong>Add FAQ schema</strong><br>Add FAQPage structured data to homepage and department pages for rich snippet eligibility.</td>
+    <td><span class="badge badge-medium">Medium</span></td>
+    <td><span class="badge badge-medium">Medium</span></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><strong>Create location pages</strong><br>Build separate pages for Ramdaspeth (Ayushman Hospital) and Pandurna with LocalBusiness schema.</td>
+    <td><span class="badge badge-medium">Medium</span></td>
+    <td><span class="badge badge-medium">Medium</span></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><strong>Convert remaining images to WebP</strong><br>11 of 19 images still in JPEG/PNG format. Convert for 25-35% size reduction.</td>
+    <td><span class="badge badge-medium">Medium</span></td>
+    <td><span class="badge badge-low">Low</span></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><strong>Add CSS/JS minification</strong><br>Add a minification step to the build pipeline for faster page loads.</td>
+    <td><span class="badge badge-medium">Medium</span></td>
+    <td><span class="badge badge-low">Low</span></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><strong>Claim/verify Google Business Profile</strong><br>Ensure GBP is claimed, optimized with photos, services, posts, and Q&A.</td>
+    <td><span class="badge badge-high">High</span></td>
+    <td><span class="badge badge-medium">External</span></td>
+  </tr>
+</table>
+
+<!-- FOOTER -->
+<div class="page-footer">
+  SEO Audit Report — hopehospital.com — Generated April 20, 2026 — Claude Code (AI-Powered Analysis)<br>
+  This report is based on live site analysis, source code review, Google index data, and search results as of the report date.
+</div>
+
+</body>
+</html>

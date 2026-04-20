@@ -52,7 +52,7 @@ rootFiles.forEach(name => {
 });
 
 // Copy assets if they exist
-const assetsDirs = ['images', 'css', 'js', 'blog', 'nagpur', 'diseases'];
+const assetsDirs = ['images', 'css', 'js', 'blog', 'nagpur', 'diseases', 'departments'];
 assetsDirs.forEach(dir => {
   const srcDir = path.join(__dirname, '..', dir);
   if (fs.existsSync(srcDir)) {

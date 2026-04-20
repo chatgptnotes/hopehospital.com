@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://hopehospital.com/sitemap.xml
+Sitemap: https://www.hopehospital.com/sitemap.xml
 
 # Disallow admin and private areas (if any)
 Disallow: /admin/
