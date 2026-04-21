@@ -293,6 +293,20 @@
     </style>
 </head>
 <body>
+  <!-- Preloader: hides page until fully loaded -->
+  <div id="preloader" style="position:fixed;inset:0;background:#ffffff;z-index:99999;display:flex;align-items:center;justify-content:center;">
+    <img src="/images/hope-hospital-logo-header.webp" alt="Hope Hospital" style="height:64px;width:auto;" onerror="this.style.display='none'">
+  </div>
+  <style>
+    #preloader{transition:opacity 0.35s ease;}
+    #preloader.fade-out{opacity:0;}
+  </style>
+  <script>
+    window.addEventListener('load',function(){
+      var p=document.getElementById('preloader');
+      if(p){p.classList.add('fade-out');setTimeout(function(){p.style.display='none';},360);}
+    });
+  </script>
 
     <div class="topbar">
         <a href="/" class="brand">Hope Hospital</a>

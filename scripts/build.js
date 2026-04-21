@@ -25,6 +25,13 @@ pages.forEach(page => {
   }
 });
 
+// Copy serve.json (enables clean URLs for local dev with `npx serve`)
+const serveJsonSrc = path.join(__dirname, '..', 'serve.json');
+if (fs.existsSync(serveJsonSrc)) {
+  fs.copyFileSync(serveJsonSrc, path.join(buildDir, 'serve.json'));
+  console.log('✓ Copied serve.json');
+}
+
 // Copy sitemap.xml
 const sitemapSrc = path.join(__dirname, '..', 'sitemap.xml');
 const sitemapDest = path.join(buildDir, 'sitemap.xml');
