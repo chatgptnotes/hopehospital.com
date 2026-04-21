@@ -732,21 +732,6 @@
                     <li><span class="material-icons">emergency</span><span>24/7 Emergency</span></li>
                 </ul>
 
-                <!-- Quick Action Chips -->
-                <div class="hero-quick-actions" role="group" aria-label="Quick contact options">
-                    <a href="tel:+9118002330000" class="qa-chip qa-call" aria-label="Call Hope Hospital">
-                        <span class="material-icons">call</span>
-                        <span>Call Now</span>
-                    </a>
-                    <a href="https://wa.me/919373111709" target="_blank" rel="noopener" class="qa-chip qa-whatsapp" aria-label="Message Hope Hospital on WhatsApp">
-                        <span class="material-icons">chat</span>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=Hope+Hospital+Kamptee+Road+Nagpur" target="_blank" rel="noopener" class="qa-chip qa-directions" aria-label="Get directions to Hope Hospital">
-                        <span class="material-icons">directions</span>
-                        <span>Directions</span>
-                    </a>
-                </div>
             </div>
             <div class="hero-image">
                 <div class="hero-image-container">
@@ -766,18 +751,18 @@
             /* ── Hero premium layout overrides (scoped to #home) ── */
             #home.hero {
                 min-height: auto !important;
-                padding: 5.5rem 0 4.5rem !important;
+                padding: 5.5rem 0 2rem !important;
                 overflow: visible !important;
             }
             #home .hero-container {
                 max-width: 1240px !important;
                 grid-template-columns: 1.05fr 1fr !important;
-                gap: 3.5rem !important;
+                gap: 2rem !important;
                 padding: 0 2rem !important;
                 align-items: center;
             }
             #home .hero-content {
-                padding: 2.25rem 2.5rem !important;
+                padding: 1rem 2rem !important;
                 max-width: 640px;
             }
             #home .hero-content h1 {
@@ -828,9 +813,10 @@
             #home .hero-image-container {
                 height: auto !important;
                 width: 100% !important;
-                max-width: 520px;
+                max-width: 460px;
                 aspect-ratio: 1 / 1;
-                margin-top: -140px;
+                margin-top: -80px;
+                overflow: hidden;
             }
             #home .hero-image-container::before {
                 width: min(440px, 85%) !important;
