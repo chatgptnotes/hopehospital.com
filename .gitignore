@@ -41,3 +41,5 @@ test-results/
 tmp/
 temp/
 *.tmp
+audit-screens/*.json
+himanshuhopehospt.*.pdf
