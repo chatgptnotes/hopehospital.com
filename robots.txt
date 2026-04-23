@@ -21,5 +21,4 @@ Allow: /blog/
 # Allow disease information pages
 Allow: /diseases/
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
+# Note: crawl-delay omitted to avoid slowing indexing on compliant bots

@@ -673,6 +673,12 @@ AI-Powered Best Hospital in Nagpur - Hope Hospital uses artificial intelligence 
 - [ ] Review analytics for traffic changes
 - [ ] Respond to Google My Business reviews
 
+### Monthly Trust Signal Sync:
+- [ ] Verify current Google Business Profile rating and review count
+- [ ] Update `AggregateRating` schema values across key pages (`index`, `about`, `contact`, `departments`, `empanelments`, `gallery`, `hospitals`)
+- [ ] Match homepage visible review banner text with schema values
+- [ ] Re-run rich result/schema validation after updates
+
 ### Monthly Tasks:
 - [ ] Comprehensive ranking report
 - [ ] Backlink audit
