@@ -56,6 +56,7 @@
     <meta property="og:title" content="Best Hospital in Nagpur | Hope Hospital – NABH Accredited">
     <meta property="og:description" content="Looking for the best hospital in Nagpur? Hope Hospital offers NABH-accredited multispeciality care, expert doctors & 24/7 emergency. Call 1800-233-0000.">
     <meta property="og:image" content="https://www.hopehospital.com/images/hope-hospital-og1.png">
+    <meta property="og:image:alt" content="Hope Hospital Nagpur exterior and healthcare team">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_IN">
@@ -67,6 +68,7 @@
     <meta name="twitter:title" content="Best Hospital in Nagpur | Hope Hospital – NABH Accredited">
     <meta name="twitter:description" content="Looking for the best hospital in Nagpur? Hope Hospital offers NABH-accredited multispeciality care, expert doctors & 24/7 emergency. Call 1800-233-0000.">
     <meta name="twitter:image" content="https://www.hopehospital.com/images/hope-hospital-og1.png">
+    <meta name="twitter:image:alt" content="Hope Hospital Nagpur exterior and healthcare team">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.hopehospital.com/" />
@@ -108,8 +110,8 @@
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "656"
+        "ratingValue": "3.9",
+        "reviewCount": "389"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -157,9 +159,9 @@
       "url": "https://www.hopehospital.com",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
+        "ratingValue": "3.9",
         "bestRating": "5",
-        "reviewCount": "656"
+        "reviewCount": "389"
       }
     }
     </script>
@@ -200,7 +202,7 @@
         "longitude": 79.0882
       },
       "url": "https://www.hopehospital.com",
-      "telephone": "+919373111709",
+      "telephone": "+91-1800-233-0000",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -462,21 +464,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Combined Google Fonts (Inter + Cinzel) - async non-blocking load -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    <!-- Critical: reserve icon space before Material Icons font loads to prevent CLS -->
+    <style>
+      .material-icons{font-family:'Material Icons',sans-serif;font-weight:normal;font-style:normal;font-size:24px;line-height:1;display:inline-block;white-space:nowrap;text-transform:none;letter-spacing:normal;overflow:hidden;vertical-align:middle;}
+    </style>
+
+    <!-- Google Fonts: Cinzel (700,900 only) + Inter (400,600,700,800) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
 
     <!-- Material Icons - non-blocking load -->
     <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet"></noscript>
 
-    <!-- Preload LCP images -->
-    <link rel="preload" as="image" href="images/phoenix-hero.webp" fetchpriority="high">
+    <!-- Preload LCP image -->
     <link rel="preload" as="image" href="images/DR MURALI-2.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="images/phoenix-logo-96.webp">
-    <!-- External stylesheet - non-blocking (critical styles are inlined per section) -->
-    <link rel="preload" href="css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/styles.min.css"></noscript>
+    <!-- Main stylesheet: loaded synchronously to prevent layout shift (CLS) -->
+    <link rel="stylesheet" href="css/styles.min.css">
     
 
 </head>
@@ -735,7 +739,7 @@
             </div>
             <div class="hero-image">
                 <div class="hero-image-container">
-                    <img src="./images/DR MURALI-2.webp" alt="Dr. B.K. Murali – Lead Orthopedic Surgeon at Hope Hospital, Nagpur" class="hero-doctor-image" width="900" height="600" fetchpriority="high">
+                    <img src="./images/DR MURALI-2.webp" alt="Dr. B.K. Murali – Lead Orthopedic Surgeon at Hope Hospital, Nagpur" class="hero-doctor-image" width="800" height="800" fetchpriority="high">
                     <div class="hero-doctor-badge" aria-hidden="true">
                         <span class="material-icons">medical_services</span>
                         <div>
@@ -1329,8 +1333,8 @@
             <!-- Aggregate Rating Banner -->
             <div class="rv-agg">
                 <div style="display:flex;flex-direction:column;align-items:center;">
-                    <div style="font-size:3.5rem;font-weight:800;color:#E8821A;line-height:1;">3.8<span style="font-size:1.5rem;color:#9ca3af;">/5</span></div>
-                    <div aria-label="3.8 out of 5 stars" class="rv-stars" style="margin-top:0.5rem;margin-bottom:0;">
+                    <div style="font-size:3.5rem;font-weight:800;color:#E8821A;line-height:1;">3.9<span style="font-size:1.5rem;color:#9ca3af;">/5</span></div>
+                    <div aria-label="3.9 out of 5 stars" class="rv-stars" style="margin-top:0.5rem;margin-bottom:0;">
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
                         <span class="material-icons">star</span>
@@ -1339,7 +1343,7 @@
                     </div>
                 </div>
                 <div style="flex:1;min-width:220px;">
-                    <div style="font-size:1.15rem;font-weight:700;color:#1f2937;">Based on 384+ Google Reviews</div>
+                    <div style="font-size:1.15rem;font-weight:700;color:#1f2937;">Based on 389+ Google Reviews</div>
                     <div style="font-size:0.95rem;color:#6b7280;margin-top:0.35rem;">From verified patients and their families</div>
                 </div>
                 <a href="https://www.google.com/search?q=Hope+Hospital+Kamptee+Road+Nagpur" target="_blank" rel="noopener" class="rv-btn" aria-label="Leave a review for Hope Hospital on Google">
