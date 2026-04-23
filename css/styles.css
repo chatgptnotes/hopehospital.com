@@ -2741,7 +2741,7 @@
 
         /* ── Hero Section ────────────────────────────── */
         .hero {
-            background: url('images/phoenix-hero.webp') center center / cover no-repeat !important;
+            background: url('../images/phoenix-hero.webp') center center / cover no-repeat !important;
             animation: none !important;
             position: relative;
         }
@@ -2890,7 +2890,7 @@
 
         /* ── Surgeon Coder Section ───────────────────── */
         .surgeon-coder-section {
-            background: url('images/phoenix-services.webp') center center / cover no-repeat !important;
+            background: url('../images/phoenix-services.webp') center center / cover no-repeat !important;
             position: relative !important;
         }
         .surgeon-coder-section::before {
