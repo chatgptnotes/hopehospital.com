@@ -23,7 +23,6 @@
         ['scroll','mousemove','touchstart','keydown','click'].forEach(function(ev){
           window.addEventListener(ev, loadGA, {once:true, passive:true});
         });
-        setTimeout(loadGA, 2500);
       })();
     </script>
 
@@ -464,8 +463,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Combined Google Fonts (Inter + Cinzel) - async non-blocking load -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
     <!-- Material Icons - non-blocking load -->
     <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -475,8 +474,9 @@
     <link rel="preload" as="image" href="images/phoenix-hero.webp" fetchpriority="high">
     <link rel="preload" as="image" href="images/DR MURALI-2.webp" fetchpriority="high">
     <link rel="preload" as="image" href="images/phoenix-logo-96.webp">
-    <!-- External stylesheet (minified, async non-blocking) -->
-    <link rel="stylesheet" href="css/styles.min.css">
+    <!-- External stylesheet - non-blocking (critical styles are inlined per section) -->
+    <link rel="preload" href="css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.min.css"></noscript>
     
 
 </head>
