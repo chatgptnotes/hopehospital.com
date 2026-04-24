@@ -62,7 +62,16 @@
       "Bash(TEMP=\"C:/Users/hope4/Documents/hopehospital/hopehospital.com/audit-screens/tmp\" npx lighthouse https://hopehospital.com/ --only-categories=performance --output=json --output-path=\"audit-screens/live-audit-today.json\" --chrome-flags=\"--headless --no-sandbox --disable-gpu --user-data-dir=C:/Users/hope4/Documents/hopehospital/hopehospital.com/audit-screens/tmp/chrome\")",
       "Bash(grep -A5 \"h1,\\\\|h1 {\" css/styles.css)",
       "Bash(grep -A5 \"h2,\\\\|h2 {\" css/styles.css)",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(grep -v \"www.hopehospital.com/$\\\\|/about\\\\|/departments$\\\\|/hospitals\\\\|/empanelments\\\\|/gallery\\\\|/contact\\\\|/blog\\\\|/diseases\\\\|/doctors\\\\|/nagpur\")",
+      "Bash(python -m http.server 8080)",
+      "Bash(python -m http.server 3000)",
+      "Bash(npx --yes serve . -l 5500)",
+      "PowerShell(Stop-Process *)",
+      "Bash(git log *)",
+      "Bash(python *)",
+      "Bash(npx live-server *)",
+      "Bash(grep -o '\"name\": \"How long\\\\|\"name\": \"What is the cost\\\\|\"name\": \"Who is the best ortho\\\\|\"text\": \"[^\"]\\\\{0,200\\\\}\"' /c/Users/hope4/Documents/hopehospital/hopehospital.com/departments/orthopedics.html)"
     ]
   }
 }
