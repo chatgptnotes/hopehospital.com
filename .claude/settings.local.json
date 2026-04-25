@@ -74,7 +74,10 @@
       "Bash(grep -o '\"name\": \"How long\\\\|\"name\": \"What is the cost\\\\|\"name\": \"Who is the best ortho\\\\|\"text\": \"[^\"]\\\\{0,200\\\\}\"' /c/Users/hope4/Documents/hopehospital/hopehospital.com/departments/orthopedics.html)",
       "Bash(git revert *)",
       "Bash(git stash *)",
-      "WebFetch(domain:thehoth.websiteauditserver.com)"
+      "WebFetch(domain:thehoth.websiteauditserver.com)",
+      "Bash(git *)",
+      "Bash(powershell -Command ' *)",
+      "Bash(grep -rn '\"lastReviewed\".*,$' --include=\"*.html\" .)"
     ]
   }
 }
