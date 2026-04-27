@@ -96,6 +96,13 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+        <loc>https://www.hopehospital.com/blog/ayushman-bharat-hospitals-nagpur</loc>
+        <lastmod>2026-04-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Department Pages -->
     <url>
         <loc>https://www.hopehospital.com/departments/orthopedics</loc>
