@@ -1,23 +1,56 @@
-        * {
+﻿        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         :root {
-            --primary-red: #dc2626;
-            --dark-red: #991b1b;
-            --light-red: #ef4444;
-            --accent-red: #f87171;
-            --text-white: #ffffff;
-            --text-light: #f3f4f6;
-            --text-gray: #9ca3af;
-            --dark-gray: #1f2937;
-            --text-black: #000000;
+            /* Legacy variables â€” kept for base CSS compatibility */
+            --primary-red:  #D31211;
+            --dark-red:     #8f0909;
+            --light-red:    #e52020;
+            --accent-red:   #ef4444;
+            --text-white:   #ffffff;
+            --text-light:   #f3f4f6;
+            --text-gray:    #9ca3af;
+            --dark-gray:    #1f2937;
+            --text-black:   #111827;
+
+            /* â”€â”€ Hope Hospital Brand Palette (logo-extracted) â”€â”€ */
+            --hope-navy:         #1B365D;   /* Primary Navy */
+            --hope-navy-dark:    #122a50;
+            --hope-navy-light:   #2a5298;
+            --hope-red:          #D31211;   /* Medical Red */
+            --hope-red-dark:     #a50e0d;
+            --hope-red-light:    #e52020;
+            --hope-sky:          #3BA1D7;   /* Sky Blue */
+            --hope-sky-light:    #e8f4fd;
+            --hope-sky-mid:      #b8ddf0;
+            --hope-gray:         #64748B;   /* Neutral slate */
+            --hope-gray-light:   #94a3b8;
+
+            /* Backgrounds â€” white + blue-tinted gray only */
+            --hope-bg-white:     #ffffff;
+            --hope-bg-tinted:    #F8FAFC;
+            --hope-bg-blue:      #EEF5FB;
+
+            /* Glass / shadow system */
+            --hope-glass-bg:     rgba(255,255,255,0.92);
+            --hope-glass-border: rgba(74,159,212,0.18);
+            --hope-shadow:       0 8px 32px rgba(26,58,107,0.10);
+            --hope-shadow-md:    0 16px 48px rgba(26,58,107,0.15);
+            --hope-glow-sky:     0 0 24px rgba(74,159,212,0.28);
+            --hope-glow-red:     0 0 24px rgba(193,13,13,0.28);
+
+            /* Border-radius system */
+            --radius-sm:  8px;
+            --radius-md:  12px;
+            --radius-lg:  16px;
+            --radius-xl:  20px;
         }
 
         html, body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             overflow-x: hidden;
             max-width: 100vw;
             color: var(--text-white);
@@ -519,7 +552,8 @@
 
         .about-image-box {
             aspect-ratio: 1;
-            background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(153, 27, 27, 0.1));
+            background: #ffffff;
+            border: 1px solid rgba(26, 58, 107, 0.12);
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -533,7 +567,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, transparent 0%, rgba(220, 38, 38, 0.05) 100%);
+            background: linear-gradient(135deg, transparent 0%, rgba(74, 159, 212, 0.04) 100%);
         }
 
         /* Statistics Section */
@@ -653,7 +687,7 @@
         }
 
         .department-card li::before {
-            content: '✓';
+            content: 'âœ“';
             position: absolute;
             left: 0;
             color: var(--primary-red);
@@ -2687,61 +2721,63 @@
             }
         }
     
-        /* Fonts (Cinzel + Inter) loaded in document head via single <link> for performance */
+        /* â”€â”€ Hope Hospital Brand Theme â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* Derived from logo: Navy #1B365D Â· Red #D31211 Â· Sky #3BA1D7 */
+        /* Fonts: Manrope (headings) + Inter (body) â€” no yellow, no beige */
 
-        /* ── Phoenix Palette ─────────────────────────── */
-        :root {
-            --ph-gold: #F4A623;
-            --ph-amber: #E8821A;
-            --ph-deep: #C0440A;
-            --ph-light: #FFF8F0;
-            --ph-cream: #FFFDF8;
-            --ph-charcoal: #1A1A2E;
-            --ph-glass-bg: rgba(255,255,255,0.78);
-            --ph-glass-border: rgba(244,166,35,0.22);
-            --ph-shadow: 0 8px 32px rgba(244,166,35,0.12);
-            --ph-glow: 0 0 20px rgba(244,166,35,0.3);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800;900&display=optional');
 
-        /* ── Base Reset ──────────────────────────────── */
+        /* â”€â”€ Base â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         body {
-            background: linear-gradient(160deg, #FFF8F0 0%, #FFFDF8 50%, #FFF3E0 100%) !important;
-            color: var(--ph-charcoal) !important;
-            font-family: 'Inter', sans-serif !important;
+            background: var(--hope-bg-white) !important;
+            color: #374151 !important;
+            font-family: 'Open Sans', -apple-system, sans-serif !important;
         }
 
-        /* ── Floating Ember Particles ────────────────── */
-        @keyframes emberFloat {
-            0%   { transform: translateY(0)   rotate(0deg)   scale(1);   opacity: 0.7; }
-            33%  { transform: translateY(-40px) rotate(120deg) scale(1.1); opacity: 1;   }
-            66%  { transform: translateY(-80px) rotate(240deg) scale(0.9); opacity: 0.5; }
-            100% { transform: translateY(-130px) rotate(360deg) scale(0.6); opacity: 0; }
+        /* â”€â”€ Typography â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        h1, h2, h3, h4, .section-title, .hero-content h1 {
+            font-family: 'Montserrat', 'Open Sans', sans-serif !important;
+            color: var(--hope-navy) !important;
         }
-        .ph-ember {
-            position: absolute;
-            border-radius: 50%;
-            pointer-events: none;
-            animation: emberFloat linear infinite;
+        .section-title {
+            background: linear-gradient(135deg, var(--hope-navy) 0%, var(--hope-sky) 100%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
         }
+        .section-label {
+            color: var(--hope-sky) !important;
+            font-weight: 700 !important;
+            letter-spacing: 2px !important;
+        }
+        .section-description { color: var(--hope-gray) !important; }
 
-        /* ── Navigation ──────────────────────────────── */
+        /* â”€â”€ Navigation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         #navbar, nav {
-            background: rgba(255,252,245,0.88) !important;
-            backdrop-filter: blur(16px) !important;
-            -webkit-backdrop-filter: blur(16px) !important;
-            border-bottom: 1px solid rgba(244,166,35,0.18) !important;
-            box-shadow: 0 2px 20px rgba(244,166,35,0.08) !important;
+            background: rgba(255,255,255,0.96) !important;
+            backdrop-filter: blur(20px) !important;
+            -webkit-backdrop-filter: blur(20px) !important;
+            border-bottom: 1px solid var(--hope-glass-border) !important;
+            box-shadow: 0 2px 16px rgba(26,58,107,0.06) !important;
         }
-        .nav-links a { color: var(--ph-charcoal) !important; font-family: 'Inter', sans-serif !important; }
-        .nav-links a:hover { color: var(--ph-amber) !important; }
-        .nav-links a::after { background: linear-gradient(90deg, var(--ph-gold), var(--ph-amber)) !important; }
-
-        /* Hospital logo in nav */
+        #navbar.scrolled, nav.scrolled {
+            background: rgba(255,255,255,0.99) !important;
+            box-shadow: 0 4px 24px rgba(26,58,107,0.10) !important;
+        }
+        .nav-links a {
+            color: #374151 !important;
+            font-family: 'Montserrat', 'Open Sans', sans-serif !important;
+            font-weight: 500 !important;
+        }
+        .nav-links a:hover { color: var(--hope-navy) !important; }
+        .nav-links a::after {
+            background: linear-gradient(90deg, var(--hope-sky), var(--hope-navy)) !important;
+        }
         #navbar .logo img { height: 52px !important; width: auto !important; }
 
-        /* ── Hero Section ────────────────────────────── */
+        /* â”€â”€ Hero Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .hero {
-            background: url('../images/phoenix-hero.webp') center center / cover no-repeat !important;
+            background: linear-gradient(108deg, #ffffff 54%, #EEF7FD 54%) !important;
             animation: none !important;
             position: relative;
         }
@@ -2749,275 +2785,621 @@
             content: '' !important;
             position: absolute !important;
             inset: 0 !important;
-            background: linear-gradient(135deg,
-                rgba(255,248,240,0.55) 0%,
-                rgba(244,166,35,0.08) 50%,
-                rgba(255,252,245,0.45) 100%) !important;
+            background: none !important;
             pointer-events: none !important;
             z-index: 0 !important;
         }
         .hero-container { position: relative; z-index: 1; }
+
+        /* Hero content card — clean border */
         .hero-content {
-            background: var(--ph-glass-bg) !important;
-            backdrop-filter: blur(14px) !important;
-            -webkit-backdrop-filter: blur(14px) !important;
-            border: 1.5px solid var(--ph-glass-border) !important;
-            border-radius: 20px !important;
-            box-shadow: var(--ph-shadow) !important;
+            border: 1px solid rgba(27,54,93,.08) !important;
+        }
+        .hero-content {
+            background: var(--hope-glass-bg) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            border: 1.5px solid var(--hope-glass-border) !important;
+            border-radius: var(--radius-lg) !important;
+            box-shadow: var(--hope-shadow-md) !important;
             padding: 2.5rem 3rem !important;
         }
         .hero-content h1 {
-            font-family: 'Cinzel', serif !important;
-            color: var(--ph-charcoal) !important;
-            font-size: 3.6rem !important;
-            letter-spacing: -1px !important;
+            font-family: 'Montserrat', 'Open Sans', sans-serif !important;
+            color: var(--hope-navy) !important;
+            font-size: 3.4rem !important;
+            font-weight: 900 !important;
+            letter-spacing: -1.5px !important;
         }
         .hero-content h1 .gradient-text {
-            background: linear-gradient(135deg, var(--ph-amber), var(--ph-deep)) !important;
+            background: linear-gradient(135deg, var(--hope-navy), var(--hope-sky)) !important;
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
             background-clip: text !important;
         }
-        .hero-subtitle { color: var(--ph-charcoal) !important; opacity: 0.85 !important; }
-        .hero-content p { color: var(--ph-charcoal) !important; }
+        .hero-subtitle { color: var(--hope-gray) !important; opacity: 1 !important; }
+        .hero-content p { color: #374151 !important; }
+
+        /* â”€â”€ Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .btn-primary {
-            background: linear-gradient(135deg, var(--ph-gold), var(--ph-amber)) !important;
+            background: linear-gradient(135deg, var(--hope-navy), var(--hope-sky)) !important;
             color: #fff !important;
-            box-shadow: 0 8px 24px rgba(244,166,35,0.35) !important;
+            border-radius: var(--radius-md) !important;
+            box-shadow: 0 8px 24px rgba(26,58,107,0.28) !important;
         }
-        .btn-primary:hover { box-shadow: var(--ph-glow) !important; }
+        .btn-primary:hover {
+            box-shadow: var(--hope-glow-sky) !important;
+            transform: translateY(-3px) !important;
+        }
         .btn-secondary {
-            background: rgba(255,255,255,0.7) !important;
-            color: var(--ph-charcoal) !important;
-            border: 2px solid var(--ph-glass-border) !important;
+            background: rgba(255,255,255,0.88) !important;
+            color: var(--hope-navy) !important;
+            border: 2px solid var(--hope-glass-border) !important;
+            border-radius: var(--radius-md) !important;
+        }
+        .btn-secondary:hover {
+            background: var(--hope-sky-light) !important;
+            border-color: var(--hope-sky) !important;
         }
 
-        /* ── Headings everywhere ─────────────────────── */
-        h1, h2, h3, .section-title {
-            font-family: 'Cinzel', serif !important;
-        }
-        .section-title {
-            background: linear-gradient(135deg, var(--ph-charcoal) 40%, var(--ph-amber) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: var(--ph-charcoal) !important;
-        }
-        .section-label {
-            color: var(--ph-amber) !important;
-            font-weight: 700 !important;
-        }
-
-        /* ── Stats Banner ────────────────────────────── */
+        /* â”€â”€ Stats Banner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .stats-banner {
-            background: linear-gradient(135deg, rgba(244,166,35,0.12) 0%, rgba(232,130,26,0.08) 100%) !important;
-            backdrop-filter: blur(10px) !important;
-            border-top: 1px solid var(--ph-glass-border) !important;
-            border-bottom: 1px solid var(--ph-glass-border) !important;
+            background: linear-gradient(135deg, var(--hope-navy) 0%, var(--hope-navy-light) 100%) !important;
         }
         .stats-banner .stat-item h3, .stats-banner .stat-item p,
         .stats-banner .stat-content h3, .stats-banner .stat-content p {
-            color: var(--ph-charcoal) !important;
-        }
-        .stats-banner .stat-icon { color: var(--ph-amber) !important; }
-        .stats-banner .material-icons { color: var(--ph-amber) !important; }
-
-        /* ── All Cards / Service Cards / Department Cards ── */
-        .award-card, .mvv-card, .department-card, .service-card,
-        .coder-feature, .raftaar-feature, .fleet-type, .stat-item,
-        .about-image-box, .about-features .feature-item,
-        .consultant-card, .facility-card, .opd-card,
-        .blog-card, .gallery-item, .checkup-card,
-        .empanelment-card, .scheme-card, .insurance-card,
-        [class*="-card"], [class*="card-"] {
-            background: var(--ph-glass-bg) !important;
-            backdrop-filter: blur(10px) !important;
-            -webkit-backdrop-filter: blur(10px) !important;
-            border: 1px solid var(--ph-glass-border) !important;
-            border-radius: 16px !important;
-            box-shadow: var(--ph-shadow) !important;
-            color: var(--ph-charcoal) !important;
-            transition: box-shadow 0.3s, transform 0.3s !important;
-        }
-        [class*="-card"]:hover, [class*="card-"]:hover,
-        .department-card:hover, .award-card:hover, .service-card:hover {
-            box-shadow: 0 0 0 2px var(--ph-gold), var(--ph-glow) !important;
-            transform: translateY(-4px) !important;
-        }
-        [class*="-card"] h3, [class*="-card"] h4, [class*="-card"] p,
-        .department-card h3, .department-card p, .award-card h3, .award-card p,
-        .mvv-card h3, .mvv-card p {
-            color: var(--ph-charcoal) !important;
-        }
-        [class*="-card"] ul li, .department-card ul li {
-            color: #444 !important;
-        }
-
-        /* ── Icon colors ─────────────────────────────── */
-        .department-icon .material-icons,
-        .award-icon .material-icons,
-        .mvv-icon .material-icons,
-        .service-icon .material-icons,
-        .feature-icon .material-icons,
-        .raftaar-icon .material-icons,
-        .stat-icon .material-icons,
-        .coder-feature .material-icons {
-            color: var(--ph-amber) !important;
-        }
-        .service-icon {
-            background: linear-gradient(135deg, var(--ph-gold), var(--ph-amber)) !important;
-        }
-        .service-icon .material-icons { color: #fff !important; }
-
-        /* ── Section backgrounds ─────────────────────── */
-        .section, section {
-            background: transparent !important;
-        }
-        .section-dark {
-            background: linear-gradient(135deg,
-                rgba(255,248,240,0.95) 0%,
-                rgba(255,243,224,0.98) 100%) !important;
-        }
-        .section-dark .section-title { -webkit-text-fill-color: var(--ph-charcoal) !important; }
-        .section-dark .section-description { color: #555 !important; }
-        .section-dark .stat-number { color: var(--ph-amber) !important; }
-        .section-dark .stat-label { color: #666 !important; }
-
-        /* Services section with phoenix infographic bg */
-        #departments .container, .section-facilities .container {
-            position: relative;
-        }
-
-        /* ── Surgeon Coder Section ───────────────────── */
-        .surgeon-coder-section {
-            background: url('../images/phoenix-services.webp') center center / cover no-repeat !important;
-            position: relative !important;
-        }
-        .surgeon-coder-section::before {
-            content: '' !important;
-            position: absolute !important;
-            inset: 0 !important;
-            background: rgba(255,252,245,0.88) !important;
-            pointer-events: none !important;
-        }
-        .surgeon-coder-section .container { position: relative; z-index: 1; }
-        .surgeon-coder-text { background: var(--ph-glass-bg) !important; backdrop-filter: blur(12px) !important; border: 1px solid var(--ph-glass-border) !important; border-radius: 16px !important; padding: 2.5rem !important; box-shadow: var(--ph-shadow) !important; }
-        .surgeon-coder-text p, .surgeon-coder-text strong { color: var(--ph-charcoal) !important; }
-        .surgeon-coder-text a { color: var(--ph-amber) !important; }
-        .code-icon-bg { background: linear-gradient(135deg, rgba(244,166,35,0.15), rgba(232,130,26,0.1)) !important; border: 2px solid var(--ph-glass-border) !important; border-radius: 50% !important; }
-        .code-icon-bg .material-icons { color: var(--ph-amber) !important; }
-
-        /* ── Raftaar Section ─────────────────────────── */
-        .raftaar-section {
-            background: linear-gradient(135deg, rgba(255,248,240,0.97), rgba(255,243,224,0.97)) !important;
-        }
-        .raftaar-highlight {
-            background: linear-gradient(135deg, var(--ph-gold), var(--ph-amber)) !important;
-            border-radius: 16px !important;
             color: #fff !important;
         }
-        .raftaar-highlight h3, .raftaar-highlight p { color: #fff !important; }
-        .raftaar-highlight .material-icons { color: #fff !important; }
+        .stats-banner .stat-icon, .stats-banner .material-icons { color: var(--hope-sky) !important; }
 
-        /* Emergency CTA button */
-        .raftaar-cta .btn-primary {
-            background: linear-gradient(135deg, var(--ph-deep), var(--ph-amber)) !important;
+        /* â”€â”€ Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .award-card, .mvv-card, .department-card, .service-card,
+        .coder-feature, .raftaar-feature, .facility-card,
+        .checkup-package-card {
+            background: #fff !important;
+            border: 1px solid var(--hope-glass-border) !important;
+            border-radius: var(--radius-lg) !important;
+            box-shadow: var(--hope-shadow) !important;
+            color: #374151 !important;
+            transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+        }
+        .department-card:hover, .award-card:hover, .service-card:hover,
+        .coder-feature:hover, .facility-card:hover, .checkup-package-card:hover {
+            box-shadow: 0 0 0 2px var(--hope-sky), var(--hope-shadow-md) !important;
+            transform: translateY(-6px) !important;
+        }
+        .department-card::before {
+            background: linear-gradient(90deg, var(--hope-sky), var(--hope-navy)) !important;
+        }
+        .award-card h3, .mvv-card h3, .department-card h3, .service-card h3 {
+            color: var(--hope-navy) !important;
+            font-family: 'Montserrat', 'Open Sans', sans-serif !important;
+        }
+        .award-card p, .mvv-card p, .department-card p, .service-card p,
+        .raftaar-feature p, .facility-card p { color: var(--hope-gray) !important; }
+        .department-card ul li { color: #4b5563 !important; }
+
+        /* â”€â”€ Icons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .department-icon, .feature-icon, .raftaar-icon, .info-icon,
+        .contact-icon, .service-icon {
+            background: linear-gradient(135deg, var(--hope-sky), var(--hope-navy)) !important;
+        }
+        .department-icon .material-icons, .feature-icon .material-icons,
+        .raftaar-icon .material-icons, .info-icon .material-icons,
+        .contact-icon .material-icons, .service-icon .material-icons {
+            color: #fff !important;
+        }
+        .award-icon .material-icons, .mvv-icon .material-icons,
+        .facility-icon, .doctor-specialties .material-icons,
+        .coder-feature .material-icons, .fleet-type .material-icons,
+        .empanelment-item .material-icons { color: var(--hope-sky) !important; }
+
+        /* â”€â”€ Section backgrounds â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .section { background: var(--hope-bg-white) !important; }
+        .section-dark {
+            background: linear-gradient(135deg, var(--hope-navy) 0%, var(--hope-navy-light) 100%) !important;
+        }
+        .section-dark .section-title {
+            background: linear-gradient(135deg, #fff 0%, var(--hope-sky) 100%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+        }
+        .section-dark h3, .section-dark p, .section-dark .section-description {
+            color: rgba(255,255,255,0.85) !important;
+        }
+        .section-diseases, .section-health-checkup, .section-gallery {
+            background: linear-gradient(135deg, var(--hope-navy) 0%, var(--hope-navy-dark) 100%) !important;
+        }
+        .section-awards, .surgeon-coder-section,
+        .section-consultants, .raftaar-section {
+            background: var(--hope-bg-tinted) !important;
         }
 
-        /* ── AI Section ──────────────────────────────── */
-        section[style*="background: linear-gradient(135deg, #0a0a0a"] {
-            background: linear-gradient(135deg, rgba(255,248,240,0.97) 0%, rgba(255,243,224,0.97) 100%) !important;
-        }
-        /* Override inline dark backgrounds in AI section */
-        .service-card[style*="background: linear-gradient(135deg, rgba(220, 53, 69"] {
-            background: var(--ph-glass-bg) !important;
-            border-color: var(--ph-glass-border) !important;
-        }
+        /* â”€â”€ About section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .about-text h3 { color: var(--hope-navy) !important; }
+        .about-text p { color: #4b5563 !important; }
+        .about-image-box .material-icons { color: var(--hope-sky) !important; }
 
-        /* Stats numbers in AI summary */
-        div[style*="font-size: 3rem"][style*="color: var(--accent-red)"] {
-            color: var(--ph-amber) !important;
-        }
-
-        /* ── About section ───────────────────────────── */
-        .about-content { color: var(--ph-charcoal) !important; }
-        .about-text h3, .about-text p { color: var(--ph-charcoal) !important; }
-        .about-image-box .material-icons { color: var(--ph-amber) !important; }
-
-        /* ── Statistics Section ──────────────────────── */
+        /* â”€â”€ Statistics numbers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .stat-number {
-            background: linear-gradient(135deg, var(--ph-amber), var(--ph-deep)) !important;
+            background: linear-gradient(135deg, var(--hope-sky), var(--hope-navy)) !important;
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
             background-clip: text !important;
         }
 
-        /* ── Footer ──────────────────────────────────── */
-        footer, .footer {
-            background: rgba(255,248,240,0.95) !important;
-            backdrop-filter: blur(10px) !important;
-            border-top: 2px solid var(--ph-glass-border) !important;
-            color: var(--ph-charcoal) !important;
+        /* â”€â”€ Surgeon Coder Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .surgeon-coder-section::before {
+            background: rgba(248,250,252,0.92) !important;
         }
-        footer h3, footer h4, .footer h3, .footer h4,
-        .footer-section h3 { color: var(--ph-amber) !important; }
-        footer p, footer a, .footer p, .footer a,
-        .footer-section p { color: #555 !important; }
-        footer a:hover { color: var(--ph-amber) !important; }
+        .code-icon-bg {
+            background: linear-gradient(135deg, var(--hope-navy), var(--hope-sky)) !important;
+            border-radius: 50% !important;
+        }
+        .code-icon-bg .material-icons { color: #fff !important; }
+        .coder-feature { border-left-color: var(--hope-sky) !important; }
 
-        /* ── Emergency banner / CTA strips ──────────────*/
-        [class*="emergency"], [id*="emergency"],
-        .emergency-banner, .cta-banner {
-            background: linear-gradient(135deg, var(--ph-gold), var(--ph-deep)) !important;
+        /* â”€â”€ Raftaar Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .raftaar-highlight {
+            background: linear-gradient(135deg, var(--hope-red), var(--hope-red-dark)) !important;
+            border-radius: var(--radius-lg) !important;
+        }
+        .raftaar-highlight h3, .raftaar-highlight p,
+        .raftaar-highlight .material-icons { color: #fff !important; }
+        .fleet-type:hover { border-color: var(--hope-sky) !important; background: var(--hope-sky-light) !important; }
+
+        /* â”€â”€ CTA Banner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--hope-navy), var(--hope-sky)) !important;
+            border-radius: var(--radius-lg) !important;
+        }
+        .cta-banner h2, .cta-banner p { color: #fff !important; }
+        .cta-banner a {
+            background: #fff !important;
+            color: var(--hope-navy) !important;
+            border-radius: var(--radius-md) !important;
+        }
+
+        /* â”€â”€ Doctor profiles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .hero-doctor-image {
+            border: 3px solid var(--hope-sky) !important;
+            box-shadow: 0 0 0 6px rgba(74,159,212,0.12), var(--hope-shadow-md) !important;
+        }
+        .doctor-highlight-content h3 { color: var(--hope-navy) !important; }
+        .doctor-title { color: var(--hope-sky) !important; }
+        .doctor-desc strong { color: var(--hope-navy) !important; }
+        .consultant-item { border-left-color: var(--hope-sky) !important; }
+        .consultants-category h3 {
+            color: var(--hope-navy) !important;
+            border-bottom-color: rgba(74,159,212,0.25) !important;
+        }
+        .consultants-category h3 .material-icons { color: var(--hope-sky) !important; }
+
+        /* â”€â”€ Ayushman / OPD sections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .section-ayushman {
+            background: linear-gradient(135deg, var(--hope-navy) 0%, var(--hope-sky) 100%) !important;
+        }
+        .section-opd {
+            background: linear-gradient(135deg, var(--hope-red) 0%, var(--hope-red-dark) 100%) !important;
+        }
+
+        /* â”€â”€ Empanelments â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .empanelment-section h3 { color: var(--hope-navy) !important; }
+        .empanelment-section h3 .material-icons { color: var(--hope-sky) !important; }
+        .empanelment-item { border-left-color: var(--hope-sky) !important; }
+        .empanelment-item:hover { background: var(--hope-sky-light) !important; }
+
+        /* â”€â”€ Betserlife card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .betserlife-card {
+            background: linear-gradient(135deg, var(--hope-navy), var(--hope-navy-light)) !important;
+        }
+
+        /* â”€â”€ Disease / dark-bg cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .disease-card:hover {
+            box-shadow: 0 12px 30px rgba(74,159,212,0.20) !important;
+            border-color: var(--hope-sky) !important;
+        }
+        .alphabet-btn {
+            background: rgba(74,159,212,0.10) !important;
+            border-color: rgba(74,159,212,0.30) !important;
+        }
+        .alphabet-btn:hover, .alphabet-btn.active {
+            background: var(--hope-sky) !important;
+            border-color: var(--hope-sky) !important;
             color: #fff !important;
         }
+        .read-more-btn, .package-btn, .search-btn {
+            background: linear-gradient(135deg, var(--hope-sky), var(--hope-navy)) !important;
+        }
+        .gallery-filter-btn.active {
+            background: linear-gradient(135deg, var(--hope-sky), var(--hope-navy)) !important;
+            border-color: var(--hope-sky) !important;
+        }
+        .gallery-filter-btn:hover {
+            border-color: var(--hope-sky) !important;
+            background: rgba(74,159,212,0.10) !important;
+        }
 
-        /* ── Form elements ───────────────────────────── */
+        /* â”€â”€ Form elements â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         input, textarea, select {
-            background: rgba(255,255,255,0.85) !important;
-            border: 1px solid var(--ph-glass-border) !important;
-            color: var(--ph-charcoal) !important;
-            border-radius: 10px !important;
+            background: #fff !important;
+            border: 1.5px solid var(--hope-glass-border) !important;
+            color: #374151 !important;
+            border-radius: var(--radius-md) !important;
         }
         input:focus, textarea:focus, select:focus {
-            border-color: var(--ph-gold) !important;
-            box-shadow: 0 0 0 3px rgba(244,166,35,0.15) !important;
+            border-color: var(--hope-sky) !important;
+            box-shadow: 0 0 0 3px rgba(74,159,212,0.15) !important;
             outline: none !important;
         }
-
-        /* ── Inline dark override cleanup ────────────── */
-        /* Force any inline black/dark backgrounds to be light */
-        [style*="background: linear-gradient(135deg, #1a0505"],
-        [style*="background: linear-gradient(135deg, #0a0a0a"],
-        [style*="background: linear-gradient(135deg, rgba(220, 53, 69, 0.2), rgba(220, 53, 69, 0.1))"] {
-            background: rgba(255,248,240,0.95) !important;
-            color: var(--ph-charcoal) !important;
+        .submit-btn {
+            background: linear-gradient(135deg, var(--hope-navy), var(--hope-sky)) !important;
+            border-radius: var(--radius-md) !important;
         }
-        /* Section description text */
-        .section-description { color: #555 !important; }
-        /* Text that was white on dark bg — now needs to be charcoal */
-        [style*="color: var(--text-white)"] { color: var(--ph-charcoal) !important; }
-        [style*="color: var(--text-gray)"] { color: #666 !important; }
-        [style*="color: var(--text-light)"] { color: #555 !important; }
-        [style*="color: var(--accent-red)"] { color: var(--ph-amber) !important; }
-        [style*="color: var(--primary-red)"] { color: var(--ph-deep) !important; }
-        [style*="color: var(--light-red)"] { color: var(--ph-amber) !important; }
+        .submit-btn:hover { box-shadow: 0 10px 30px rgba(26,58,107,0.30) !important; }
 
-        /* ── Scrollbar ───────────────────────────────── */
+        /* â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        footer {
+            background: var(--hope-navy) !important;
+            color: rgba(255,255,255,0.80) !important;
+        }
+        .footer-section h3, footer h3, footer h4 {
+            color: var(--hope-sky) !important;
+            font-family: 'Montserrat', 'Open Sans', sans-serif !important;
+        }
+        .footer-links a { color: #ffffff !important; }
+        .footer-links a:hover { color: var(--hope-sky) !important; }
+        .footer-bottom {
+            border-top-color: rgba(74,159,212,0.20) !important;
+            color: rgba(255,255,255,0.55) !important;
+        }
+        .social-links a {
+            background: rgba(255,255,255,0.10) !important;
+            border-color: rgba(74,159,212,0.25) !important;
+        }
+        .social-links a:hover { background: var(--hope-sky) !important; }
+
+        /* â”€â”€ Inline variable overrides â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        [style*="color: var(--accent-red)"] { color: var(--hope-sky) !important; }
+        [style*="color: var(--primary-red)"] { color: var(--hope-red) !important; }
+        [style*="color: var(--dark-red)"] { color: var(--hope-navy) !important; }
+        [style*="color: var(--text-gray)"] { color: var(--hope-gray) !important; }
+        [style*="background: linear-gradient(135deg, var(--light-red)"] {
+            background: linear-gradient(135deg, var(--hope-sky), var(--hope-navy)) !important;
+        }
+        [style*="background: linear-gradient(135deg, var(--primary-red)"],
+        [style*="background: linear-gradient(135deg, var(--dark-red)"] {
+            background: linear-gradient(135deg, var(--hope-navy), var(--hope-navy-light)) !important;
+        }
+
+        /* â”€â”€ Scrollbar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--ph-light); }
-        ::-webkit-scrollbar-thumb { background: var(--ph-gold); border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: var(--hope-bg-tinted); }
+        ::-webkit-scrollbar-thumb { background: var(--hope-sky); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--hope-navy); }
 
-        /* ── Keyframe: hero title fade-in ────────────── */
-        @keyframes phHeroFadeUp {
-            from { opacity: 0; transform: translateY(30px); }
+        /* â”€â”€ Micro-interactions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* Logo glow on hover â€” mirrors rounded H geometry */
+        .logo img:hover, #navbar .logo img:hover {
+            filter: drop-shadow(0 0 8px rgba(74,159,212,0.45)) !important;
+            transition: filter 0.3s ease !important;
+        }
+        /* Department card icon bounce */
+        .department-card:hover .department-icon {
+            animation: iconBounce 0.4s ease !important;
+        }
+        @keyframes iconBounce {
+            0%   { transform: scale(1);    }
+            40%  { transform: scale(1.18); }
+            70%  { transform: scale(0.94); }
+            100% { transform: scale(1);    }
+        }
+        /* Trust / accreditation logos â€” grayscale â†’ brand color on hover */
+        .footer-nabh-badge img, [class*="accreditation"] img,
+        [class*="trust-logo"] img, [class*="nabh"] img {
+            filter: grayscale(1) opacity(0.65) !important;
+            transition: filter 0.35s ease !important;
+        }
+        .footer-nabh-badge img:hover, [class*="accreditation"] img:hover,
+        [class*="trust-logo"] img:hover, [class*="nabh"] img:hover {
+            filter: grayscale(0) opacity(1) !important;
+        }
+
+        /* â”€â”€ Hero animation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        @keyframes hopeHeroFadeUp {
+            from { opacity: 0; transform: translateY(28px); }
             to   { opacity: 1; transform: translateY(0); }
         }
-        .hero-content { animation: phHeroFadeUp 0.9s ease-out both !important; }
+        .hero-content { animation: hopeHeroFadeUp 0.85s ease-out both !important; }
 
-        /* ── Responsive adjustments ──────────────────── */
+        /* â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         @media (max-width: 768px) {
-            .hero-content { padding: 1.5rem !important; }
-            .hero-content h1 { font-size: 2.4rem !important; }
+            .hero-content {
+                padding: 1.5rem !important;
+                border-radius: var(--radius-md) !important;
+            }
+            .hero-content h1 { font-size: 2.2rem !important; }
         }
-    
+
+        /* â”€â”€ Footer: new 2-tier structure â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .footer-emergency-strip {
+            background: var(--hope-red);
+            padding: .65rem 2rem;
+        }
+        .footer-strip-inner {
+            max-width: 1360px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .footer-strip-left {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            color: #fff;
+            font-weight: 600;
+            font-size: .95rem;
+        }
+        .footer-strip-left .material-icons { font-size: 1.2rem; }
+        .footer-strip-actions {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            flex-wrap: wrap;
+        }
+        .fstrip-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            padding: .45rem 1rem;
+            border-radius: 8px;
+            font-size: .85rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: opacity .2s ease, transform .2s ease;
+            white-space: nowrap;
+        }
+        .fstrip-btn:hover { opacity: .88; transform: translateY(-1px); }
+        .fstrip-btn .material-icons { font-size: 1rem; }
+        .fstrip-call  { background: #fff; color: var(--hope-red); }
+        .fstrip-wa    { background: #25d366; color: #fff; }
+        .fstrip-appt  { background: var(--hope-navy); color: #fff; border: 1px solid rgba(255,255,255,.25); }
+
+        .footer-main {
+            background: var(--hope-navy);
+            padding: 3rem 2rem 1.5rem;
+        }
+        .footer-grid {
+            max-width: 1360px;
+            margin: 0 auto 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 2.5rem;
+        }
+        .footer-col { color: #ffffff; }
+        .footer-col h4 {
+            color: var(--hope-sky);
+            font-family: 'Montserrat', 'Open Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+        }
+        .footer-col p {
+            font-size: .88rem;
+            line-height: 1.7;
+            color: #ffffff;
+        }
+        .footer-col .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col .footer-links li { margin-bottom: .55rem; }
+        .footer-col .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: .9rem;
+            transition: color .2s ease;
+        }
+        .footer-col .footer-links a:hover { color: var(--hope-sky); }
+        .footer-col address { color: #ffffff; }
+        .footer-col address a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        .footer-col address a:hover { color: var(--hope-sky) !important; }
+
+        .footer-brand img {
+            display: block;
+            margin-bottom: .9rem;
+            background: rgba(255,255,255,.95);
+            padding: 8px 14px;
+            border-radius: 10px;
+        }
+        .footer-nabh-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .35rem;
+            margin-top: 1rem;
+            padding: .4rem .85rem;
+            background: rgba(74,159,212,.15);
+            border: 1px solid rgba(74,159,212,.3);
+            border-radius: 999px;
+            color: var(--hope-sky);
+            font-size: .8rem;
+            font-weight: 600;
+        }
+        .footer-nabh-badge .material-icons { font-size: .9rem; }
+
+        .footer-review-link {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .45rem 1.1rem .45rem .65rem;
+            background: #fff;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: .82rem;
+            font-weight: 700;
+            color: #1f2937;
+            white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(0,0,0,.15);
+            transition: box-shadow .2s ease, transform .2s ease;
+            vertical-align: middle;
+        }
+        .footer-review-link svg { flex-shrink: 0; }
+        .footer-review-link:hover {
+            box-shadow: 0 4px 14px rgba(0,0,0,.22);
+            transform: translateY(-1px);
+        }
+        .footer-review-link::after { content: 'Rate us on Google'; }
+
+        .footer-map-link {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            margin-top: .85rem;
+            padding: .45rem 1rem;
+            background: var(--hope-sky);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: .85rem;
+            font-weight: 700;
+            transition: opacity .2s ease;
+        }
+        .footer-map-link:hover { opacity: .88; }
+
+        .footer-bottom-bar {
+            background: rgba(0,0,0,.28);
+            padding: .9rem 2.5rem;
+        }
+        .footer-bottom-inner {
+            max-width: 1360px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer-bottom-inner p {
+            color: #ffffff;
+            font-size: .8rem;
+            margin: 0;
+        }
+
+        .footer-social-icons {
+            display: flex;
+            gap: .55rem;
+        }
+        .footer-social-icons a {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.12);
+            border: 1.5px solid rgba(255,255,255,.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            transition: background .25s ease, border-color .25s ease, transform .2s ease;
+        }
+        .footer-social-icons a:hover {
+            transform: translateY(-3px);
+            border-color: transparent;
+        }
+        .footer-social-icons a[aria-label*="Facebook"]:hover  { background: #1877F2; }
+        .footer-social-icons a[aria-label*="Instagram"]:hover { background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+        .footer-social-icons a[aria-label*="YouTube"]:hover   { background: #FF0000; }
+        .footer-social-icons a[aria-label*="WhatsApp"]:hover  { background: #25D366; }
+
+        @media (max-width: 1024px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+        }
+        @media (max-width: 600px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .footer-strip-inner { flex-direction: column; align-items: flex-start; }
+            .footer-strip-actions { width: 100%; }
+            .fstrip-btn { flex: 1; justify-content: center; }
+        }
+
+                #reviews { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+
+        /* â”€â”€ About stat cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .about-image-box .feature-icon .material-icons {
+            color: var(--hope-sky) !important;
+            font-size: 2.2rem !important;
+        }
+        .about-image-box .feature-text h4 {
+            color: var(--hope-navy) !important;
+            font-size: 1.3rem !important;
+            font-weight: 800 !important;
+            font-family: 'Montserrat', 'Open Sans', sans-serif !important;
+        }
+        .about-image-box .feature-text p {
+            color: var(--hope-gray) !important;
+            font-size: .85rem !important;
+        }
+
+        /* â”€â”€ FAQ accordion â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .faq-list details {
+            border-bottom: 1px solid #e2e8f0 !important;
+            padding: 1.1rem 0 !important;
+            border-left: 3px solid transparent;
+            padding-left: .85rem !important;
+            transition: border-color .2s ease;
+        }
+        .faq-list details[open] {
+            border-left-color: var(--hope-sky) !important;
+        }
+        .faq-list details summary {
+            font-weight: 600 !important;
+            cursor: pointer;
+            list-style: none;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            font-size: 1rem !important;
+            color: var(--hope-navy) !important;
+        }
+        .faq-list details summary::-webkit-details-marker { display: none; }
+        .faq-list details summary .faq-icon {
+            font-size: 1.4rem;
+            line-height: 1;
+            color: var(--hope-navy);
+            flex-shrink: 0;
+            transition: transform .25s ease;
+        }
+        .faq-list details[open] summary .faq-icon {
+            transform: rotate(45deg);
+            color: var(--hope-sky);
+        }
+        .faq-list details p {
+            margin: .75rem 0 0 !important;
+            color: var(--hope-gray) !important;
+            line-height: 1.75 !important;
+            font-size: .95rem !important;
+        }
+
+        /* â”€â”€ Global typography â€” headings â†’ navy â”€â”€â”€â”€â”€â”€â”€ */
+        section h1, section h2, section h3,
+        .section-title, .hero-content h1 {
+            color: var(--hope-navy) !important;
+        }
+        /* Keep hero h1 white since hero has dark/image bg */
+        #home .hero-content h1,
+        #home .hero-content h1 * { color: var(--hope-navy) !important; }
+        #home .hero-content h1 .gradient-text { color: var(--hope-red) !important; }
+
+        /* Department cards, about section headings */
+        .department-card h3, .department-card h4 { color: var(--hope-navy) !important; }
+        .about-text h3, .about-text h4 { color: var(--hope-navy) !important; }
+
