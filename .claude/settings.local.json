@@ -104,7 +104,27 @@
       "PowerShell(Start-Process \"http://localhost:3000\")",
       "WebSearch",
       "PowerShell(Select-String -Path \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\index.html\" -Pattern \"Inter|Manrope\" | ForEach-Object { $_.Line.Substring\\([Math]::Max\\(0,$_.Matches[0].Index-60\\), 120\\) })",
-      "PowerShell(Select-String -Path \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\index.html\" -Pattern \"Inter|Manrope\" | ForEach-Object { $_.Line.Substring\\([Math]::Max\\(0,$_.Matches[0].Index-80\\), 160\\) })"
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\index.html\" -Pattern \"Inter|Manrope\" | ForEach-Object { $_.Line.Substring\\([Math]::Max\\(0,$_.Matches[0].Index-80\\), 160\\) })",
+      "PowerShell(New-Item *)",
+      "PowerShell(cwebp *)",
+      "PowerShell(magick *)",
+      "Bash(where msedge *)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "PowerShell(Get-Content *)",
+      "Bash(del himanshuhopehospt.08May2026.html)",
+      "WebFetch(domain:www.impactguru.com)",
+      "WebFetch(domain:threebestrated.in)",
+      "Bash(awk 'NR==345{print length\\($0\\)\" chars on line 345\"}' \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\index.html\")",
+      "WebFetch(domain:2men.co)",
+      "WebFetch(domain:www.practo.com)",
+      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" --headless --disable-gpu --print-to-pdf=\"C:\\\\Users\\\\hope4\\\\Documents\\\\2men-co-video-concept.pdf\" \"C:\\\\Users\\\\hope4\\\\Documents\\\\2men-co-video-concept.html\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\images\\\\\" | Where-Object {$_.Name -match \"murali|hero\"} | Select-Object Name, @{N='KB';E={[math]::Round\\($_.Length/1KB,1\\)}} | Sort-Object KB -Descending)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\css\\\\styles.min.css\" | Select-Object Name, @{N='KB';E={[math]::Round\\($_.Length/1KB,1\\)}})",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\images\" | Sort-Object Length -Descending | Select-Object -First 15 Name, @{N='KB';E={[math]::Round\\($_.Length/1KB,1\\)}})",
+      "Bash(sort -k5 -rn)",
+      "PowerShell(Get-Item *)",
+      "Bash(Get-ChildItem -Path . -Filter \"*.html\" -Recurse -File)",
+      "Bash(Select-Object -ExpandProperty FullName)"
     ]
   }
 }

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Work Report – Hope Hospital | 12 May 2026</title>
+<style>
+  @media print {
+    body { margin: 0; }
+    .no-print { display: none; }
+    .page-break { page-break-before: always; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #1a1a2e; font-size: 13px; }
+  .wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 36px 48px 48px; box-shadow: 0 4px 24px rgba(0,0,0,.10); }
+
+  /* Header */
+  .report-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #1B365D; padding-bottom: 18px; margin-bottom: 24px; }
+  .report-header h1 { font-size: 22px; color: #1B365D; font-weight: 800; line-height: 1.3; }
+  .report-header .meta { text-align: right; font-size: 12px; color: #555; line-height: 1.8; }
+  .report-header .meta strong { color: #1B365D; }
+  .logo-text { font-size: 26px; font-weight: 900; color: #D31211; letter-spacing: -1px; }
+  .logo-text span { color: #1B365D; }
+
+  /* Summary bar */
+  .summary-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #f0f4ff; border-radius: 10px; padding: 14px 16px; text-align: center; border-top: 4px solid #1B365D; }
+  .summary-card.green { border-top-color: #16a34a; background: #f0fdf4; }
+  .summary-card.red { border-top-color: #D31211; background: #fff5f5; }
+  .summary-card.orange { border-top-color: #ea580c; background: #fff7ed; }
+  .summary-card .num { font-size: 28px; font-weight: 800; color: #1B365D; line-height: 1; }
+  .summary-card.green .num { color: #16a34a; }
+  .summary-card.red .num { color: #D31211; }
+  .summary-card.orange .num { color: #ea580c; }
+  .summary-card .label { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+
+  /* Section */
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 14px; font-weight: 800; color: #fff; background: #1B365D; padding: 8px 14px; border-radius: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .6px; }
+  .section-title.red { background: #D31211; }
+  .section-title.green { background: #16a34a; }
+  .section-title.blue { background: #1a6fa8; }
+
+  /* Task table */
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #f0f4ff; color: #1B365D; font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid #d0d8ef; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.6; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbff; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .badge.done { background: #dcfce7; color: #15803d; }
+  .badge.pushed { background: #dbeafe; color: #1d4ed8; }
+  .badge.fixed { background: #fce7f3; color: #9d174d; }
+  .badge.live { background: #d1fae5; color: #065f46; }
+  .badge.pending { background: #fef3c7; color: #92400e; }
+
+  /* Score table */
+  .score-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 14px; }
+  .score-box { border-radius: 10px; padding: 14px; text-align: center; border: 2px solid #eee; }
+  .score-box .score { font-size: 32px; font-weight: 900; line-height: 1; }
+  .score-box .metric { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; }
+  .score-orange { border-color: #f97316; }
+  .score-orange .score { color: #ea580c; }
+  .score-green { border-color: #22c55e; }
+  .score-green .score { color: #16a34a; }
+
+  .metric-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+  .metric-box { background: #f8fafc; border-radius: 8px; padding: 10px 12px; border-left: 4px solid #1B365D; }
+  .metric-box.ok { border-left-color: #16a34a; }
+  .metric-box.warn { border-left-color: #ea580c; }
+  .metric-box .val { font-size: 18px; font-weight: 800; color: #1B365D; }
+  .metric-box.ok .val { color: #16a34a; }
+  .metric-box.warn .val { color: #ea580c; }
+  .metric-box .name { font-size: 11px; color: #666; margin-top: 2px; }
+
+  /* Commits */
+  .commit-list { list-style: none; }
+  .commit-list li { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid #eee; font-size: 12px; }
+  .commit-list li:last-child { border-bottom: none; }
+  .commit-hash { background: #1B365D; color: #fff; border-radius: 4px; padding: 2px 6px; font-family: monospace; font-size: 11px; flex-shrink: 0; }
+  .commit-msg { color: #222; line-height: 1.5; }
+
+  /* Footer */
+  .report-footer { margin-top: 32px; padding-top: 16px; border-top: 2px solid #eee; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #888; }
+  .print-btn { no-print; background: #1B365D; color: #fff; border: none; padding: 10px 24px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700; margin-bottom: 20px; display: block; }
+</style>
+</head>
+<body>
+<div style="text-align:center;padding:16px 0 4px;" class="no-print">
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="report-header">
+    <div>
+      <div class="logo-text">HOPE<span>HOSPITAL</span></div>
+      <h1 style="margin-top:6px">Daily Work Report<br><span style="font-size:16px;color:#555;font-weight:500">Website SEO & Performance Optimization</span></h1>
+    </div>
+    <div class="meta">
+      <strong>Date:</strong> 12 May 2026<br>
+      <strong>Prepared for:</strong> Himanshu<br>
+      <strong>Website:</strong> hopehospital.com<br>
+      <strong>Branch:</strong> main (Vercel live)<br>
+      <strong>Total Git Commits:</strong> 6
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-bar">
+    <div class="summary-card green">
+      <div class="num">95</div>
+      <div class="label">Accessibility Score</div>
+    </div>
+    <div class="summary-card green">
+      <div class="num">100</div>
+      <div class="label">Best Practices</div>
+    </div>
+    <div class="summary-card green">
+      <div class="num">100</div>
+      <div class="label">SEO Score</div>
+    </div>
+    <div class="summary-card orange">
+      <div class="num">72–74</div>
+      <div class="label">Performance (Mobile)</div>
+    </div>
+  </div>
+
+  <!-- Task 1: Pending Fixes from Previous Session -->
+  <div class="section">
+    <div class="section-title">Task 1 — Committed Pending Fixes from 11 May Session</div>
+    <table>
+      <tr><th style="width:42%">Fix Applied</th><th style="width:40%">Detail</th><th>Status</th></tr>
+      <tr>
+        <td>styles.min.css async preload</td>
+        <td>Converted render-blocking CSS to async load — saved ~390ms render block</td>
+        <td><span class="badge pushed">Committed</span></td>
+      </tr>
+      <tr>
+        <td>Preconnect — cdnjs.cloudflare.com</td>
+        <td>Added early preconnect hint to reduce CDN latency</td>
+        <td><span class="badge pushed">Committed</span></td>
+      </tr>
+      <tr>
+        <td>Section-label contrast fix (#reviews)</td>
+        <td>#3BA1D7 (3:1) → #1a6fa8 (4.88:1) — WCAG AA</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>Footer heading hierarchy</td>
+        <td>&lt;h4&gt; Quick Links / Departments / Find Us → &lt;h3&gt;</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>aria-label on Google review link</td>
+        <td>Added aria-label="Rate Hope Hospital on Google" to footer icon link</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Task 2: GBP Phone Fix -->
+  <div class="section">
+    <div class="section-title green">Task 2 — Google Business Profile Phone Number Fix</div>
+    <table>
+      <tr><th style="width:42%">Action</th><th style="width:40%">Detail</th><th>Status</th></tr>
+      <tr>
+        <td>Removed wrong phone from GBP</td>
+        <td>Bing Places had imported wrong number 1800 233 0000 from GBP — corrected in GBP dashboard</td>
+        <td><span class="badge live">Done by Himanshu</span></td>
+      </tr>
+      <tr>
+        <td>Correct phone confirmed</td>
+        <td>071-22980073 / +91-9823555053 — now consistent across GBP and Bing Places</td>
+        <td><span class="badge done">NAP Consistent</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Task 3: Accessibility Fixes -->
+  <div class="section">
+    <div class="section-title blue">Task 3 — Accessibility (WCAG AA) Fixes — Accessibility: ~75 → 95</div>
+    <table>
+      <tr><th style="width:42%">Element Fixed</th><th style="width:40%">Issue &amp; Fix</th><th>Status</th></tr>
+      <tr>
+        <td>#about .section-label</td>
+        <td>#ef4444 on white = 3.75:1 (FAIL) → #1a6fa8 = 4.88:1 (PASS)</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>#about .section-title gradient</td>
+        <td>Gradient end #3BA1D7 → #1a6fa8 — lightest part now 4.88:1 on white</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>.footer-nabh-badge</td>
+        <td>#3BA1D7 on dark navy = 4.2:1 (FAIL small text) → #aed6f1 = 8.1:1 (PASS)</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>WhatsApp strip button (.fstrip-wa)</td>
+        <td>White on #25d366 green = 1.93:1 (catastrophic FAIL) → bg #075e54 = 6.77:1 (PASS)</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>Footer social icon touch targets</td>
+        <td>18×18px SVG icons — added min-width:44px; min-height:44px to .footer-social-icons a</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>Duplicate link text</td>
+        <td>Two "Leave a Google Review" buttons with different URLs → second renamed to "Write a Google Review"</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>.rv-btn gradient (review buttons)</td>
+        <td>Gradient end #3BA1D7 — white text only 2.89:1 (FAIL) → #1a6fa8 = 4.88:1 (PASS)</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>.footer-map-link ("Get Directions")</td>
+        <td>White text on #3BA1D7 bg = 2.89:1 (FAIL) → bg #1a6fa8 = 4.88:1 (PASS)</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>FAQ summary touch targets</td>
+        <td>Summary elements too small for tap — added min-height:44px to #faq-list summary</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+      <tr>
+        <td>.rv-btn touch target</td>
+        <td>Review CTA button — added min-height:44px explicitly</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Task 4: Performance / CLS Fix -->
+  <div class="section">
+    <div class="section-title">Task 4 — Performance Fixes — CLS: 0.132 → 0</div>
+    <table>
+      <tr><th style="width:42%">Fix</th><th style="width:40%">Detail</th><th>Status</th></tr>
+      <tr>
+        <td>Reverted styles.min.css to preload + sync</td>
+        <td>Async CSS caused entire page to re-layout when styles arrived (CLS 0.132). Changed to &lt;link rel="preload"&gt; + &lt;link rel="stylesheet"&gt; — CSS downloads early but applies before first paint. CLS = 0.</td>
+        <td><span class="badge fixed">CLS = 0 ✓</span></td>
+      </tr>
+      <tr>
+        <td>Fixed Google Fonts double-noscript</td>
+        <td>Malformed HTML: noscript was double-nested. Corrected to single noscript fallback for no-JS browsers.</td>
+        <td><span class="badge fixed">Fixed</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PageSpeed Scores Progress -->
+  <div class="section">
+    <div class="section-title green">PageSpeed Insights — Score Progression (Mobile)</div>
+    <table>
+      <tr><th>Run</th><th>Performance</th><th>Accessibility</th><th>Best Practices</th><th>SEO</th><th>CLS</th></tr>
+      <tr>
+        <td>Start of session</td>
+        <td>72</td>
+        <td>~75</td>
+        <td>~85</td>
+        <td>100</td>
+        <td>0.132</td>
+      </tr>
+      <tr>
+        <td>After accessibility fixes</td>
+        <td>69–74</td>
+        <td><strong>95 ✅</strong></td>
+        <td><strong>100 ✅</strong></td>
+        <td><strong>100 ✅</strong></td>
+        <td>0.132</td>
+      </tr>
+      <tr style="background:#f0fdf4;">
+        <td><strong>After CLS fix (final)</strong></td>
+        <td><strong>72–74</strong></td>
+        <td><strong>95 ✅</strong></td>
+        <td><strong>100 ✅</strong></td>
+        <td><strong>100 ✅</strong></td>
+        <td><strong>0 ✅</strong></td>
+      </tr>
+    </table>
+
+    <div style="margin-top:16px;">
+      <div class="score-grid">
+        <div class="score-box score-orange"><div class="score">72–74</div><div class="metric">Performance (Mobile)</div></div>
+        <div class="score-box score-green"><div class="score">95</div><div class="metric">Accessibility</div></div>
+        <div class="score-box score-green"><div class="score">100</div><div class="metric">Best Practices</div></div>
+        <div class="score-box score-green"><div class="score">100</div><div class="metric">SEO</div></div>
+      </div>
+      <div class="metric-row" style="margin-top:10px;">
+        <div class="metric-box warn"><div class="val">3.8s</div><div class="name">First Contentful Paint</div></div>
+        <div class="metric-box warn"><div class="val">4.7s</div><div class="name">Largest Contentful Paint</div></div>
+        <div class="metric-box ok"><div class="val">0 ms</div><div class="name">Total Blocking Time</div></div>
+        <div class="metric-box ok"><div class="val">0</div><div class="name">Cumulative Layout Shift</div></div>
+        <div class="metric-box warn"><div class="val">3.9s</div><div class="name">Speed Index</div></div>
+        <div class="metric-box ok"><div class="val">98</div><div class="name">Desktop Performance</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Git Commits -->
+  <div class="section">
+    <div class="section-title">Git Commits Today — Branch: main</div>
+    <ul class="commit-list">
+      <li>
+        <span class="commit-hash">6cfe0d8</span>
+        <div class="commit-msg"><strong>perf: mobile PageSpeed fixes</strong> — preload CSS, preconnect cdnjs, contrast #reviews, footer h4→h3, aria-label review link</div>
+      </li>
+      <li>
+        <span class="commit-hash">25d18a1</span>
+        <div class="commit-msg"><strong>fix: accessibility contrast, WhatsApp button, touch targets, duplicate link text</strong> — section-label, footer-nabh-badge, fstrip-wa bg, social icon min-size, "Write a Google Review"</div>
+      </li>
+      <li>
+        <span class="commit-hash">ce188ec</span>
+        <div class="commit-msg"><strong>perf: fix CLS and LCP</strong> — sync CSS preload (CLS 0.132→0), fix Google Fonts double-noscript malformed HTML</div>
+      </li>
+      <li>
+        <span class="commit-hash">a518fca</span>
+        <div class="commit-msg"><strong>fix: rv-btn gradient contrast and FAQ touch target</strong> — gradient end #3BA1D7→#1a6fa8 (4.88:1), FAQ summary min-height 44px</div>
+      </li>
+      <li>
+        <span class="commit-hash">5f6ed23</span>
+        <div class="commit-msg"><strong>fix: footer-map-link contrast, FAQ and rv-btn touch target sizes</strong> — footer-map-link bg #1a6fa8, FAQ summary 44px, rv-btn min-height 44px</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Pending Items -->
+  <div class="section">
+    <div class="section-title red">Pending / Next Steps</div>
+    <table>
+      <tr><th style="width:40%">Item</th><th style="width:45%">Detail</th><th>Status</th></tr>
+      <tr>
+        <td>Practo verification</td>
+        <td>Submitted 11 May. Takes 1–7 working days. Check back by 18 May.</td>
+        <td><span class="badge pending">Waiting</span></td>
+      </tr>
+      <tr>
+        <td>Justdial listing live</td>
+        <td>Profile completed. Takes ~2 working days to go live.</td>
+        <td><span class="badge pending">Waiting</span></td>
+      </tr>
+      <tr>
+        <td>Lybrate listing</td>
+        <td>Not yet done — planned as part of Task 4 local citations.</td>
+        <td><span class="badge pending">Pending</span></td>
+      </tr>
+      <tr>
+        <td>Week 2 GBP Posts (Days 8–14)</td>
+        <td>Week 1 posts running. Need to write and schedule Week 2 content calendar.</td>
+        <td><span class="badge pending">Pending</span></td>
+      </tr>
+      <tr>
+        <td>Mobile Performance FCP/LCP</td>
+        <td>FCP 3.8s, LCP 4.7s — remaining gap. Needs critical CSS inlining or unused CSS removal from styles.min.css to push Performance above 85.</td>
+        <td><span class="badge pending">In Progress</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <div class="report-footer">
+    <div>Hope Hospital — hopehospital.com &nbsp;|&nbsp; Teka Naka, Kamptee Road, Nagpur 440026</div>
+    <div>Report: himanshuhopehospt.12May2026 &nbsp;|&nbsp; Prepared by Claude (AI Assistant)</div>
+  </div>
+
+</div>
+</body>
+</html>
