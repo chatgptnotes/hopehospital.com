@@ -8,6 +8,10 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/events", "destination": "/blog", "permanent": true },
+    { "source": "/events/", "destination": "/blog", "permanent": true },
+    { "source": "/urological-surgery-at-lowest-cost-in-nagpur", "destination": "/departments/nephrology", "permanent": true },
+    { "source": "/urological-surgery-at-lowest-cost-in-nagpur/", "destination": "/departments/nephrology", "permanent": true },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "hopehospital.com" }],
