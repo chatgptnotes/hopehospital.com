@@ -124,7 +124,14 @@
       "Bash(sort -k5 -rn)",
       "PowerShell(Get-Item *)",
       "Bash(Get-ChildItem -Path . -Filter \"*.html\" -Recurse -File)",
-      "Bash(Select-Object -ExpandProperty FullName)"
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(pip install *)",
+      "PowerShell(pip install *)",
+      "PowerShell(graphify install *)",
+      "PowerShell(graphify *)",
+      "PowerShell(use-current *)"
     ]
   }
 }
