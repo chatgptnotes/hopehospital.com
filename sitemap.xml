@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://www.hopehospital.com/</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -61,7 +61,7 @@
     <!-- Kamptee Road Location Landing Page -->
     <url>
         <loc>https://www.hopehospital.com/nagpur/</loc>
-        <lastmod>2026-04-14</lastmod>
+        <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -210,6 +210,49 @@
         <lastmod>2026-04-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <!-- New Blog Posts May 2026 -->
+    <url>
+        <loc>https://www.hopehospital.com/blog/best-maternity-hospital-nagpur</loc>
+        <lastmod>2026-05-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.hopehospital.com/blog/kidney-transplant-cost-nagpur-2026</loc>
+        <lastmod>2026-05-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.hopehospital.com/blog/best-heart-hospital-nagpur</loc>
+        <lastmod>2026-05-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.hopehospital.com/blog/best-cancer-hospital-nagpur</loc>
+        <lastmod>2026-05-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.hopehospital.com/blog/best-neurologist-nagpur</loc>
+        <lastmod>2026-05-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.hopehospital.com/blog/hope-hospital-nagpur-press-release-2026</loc>
+        <lastmod>2026-05-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- Service Landing Pages -->

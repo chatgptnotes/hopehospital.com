@@ -25,9 +25,10 @@ Use the **EXACT SAME** information on ALL platforms:
 ### Hope Hospital - Teka Naka
 ```
 Business Name: Hope Hospital
-Address: Beside Gogas Auto LPG, Kamptee Road, Teka Naka, Nagpur, Maharashtra 440017
-Phone: +91-9373111709
-Website: https://hopehospital.com
+Address: Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur - 440026, Maharashtra, India
+Phone (landline): 071-22980073
+Phone (mobile): +91-9823555053
+Website: https://www.hopehospital.com
 Email: info@hopehospital.com
 ```
 
@@ -434,9 +435,9 @@ Empanelments:
 • Cashless treatment available
 
 Contact:
-📞 +91-9373111709
-🌐 https://hopehospital.com
-📍 Three locations in Nagpur and Madhya Pradesh
+📞 071-22980073 / +91-9823555053
+🌐 https://www.hopehospital.com
+📍 Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur - 440026
 
 Book appointments online at https://betserlife.com
 
@@ -524,5 +525,5 @@ Create a Google Sheet or Excel to track:
 
 **Need Help?** Refer to this guide or contact your marketing team.
 
-**Last Updated:** November 15, 2025
-**Next Review:** February 15, 2025
+**Last Updated:** May 13, 2026
+**Next Review:** August 13, 2026
