@@ -43,3 +43,6 @@ temp/
 *.tmp
 audit-screens/*.json
 himanshuhopehospt.*.pdf
+
+# Local non-website assets (GBP post infographics, raw image sources)
+gbp-assets/
