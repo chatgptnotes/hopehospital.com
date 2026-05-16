@@ -5,37 +5,30 @@
 
 ---
 
-## Current State
+## Current State (updated 16 May 2026)
 
 | Asset | Status |
 |-------|--------|
 | Homepage | Live |
-| Blog posts | 3 (knee replacement, hip replacement, choosing hospital) |
-| Disease pages | 3 (arthritis, diabetes, hypertension) |
+| Blog posts | 12 live (knee/hip/kidney cost guides, Ayushman lists, "best X hospital" posts, press release, etc.) |
+| Disease pages | 8 (arthritis, diabetes, hypertension, heart attack, stroke, back pain, kidney stones, gallbladder stones) |
 | Location page | 1 (Kamptee Road) |
-| Service pages | 0 (sitemap lists 3, but no HTML files exist) |
-| Doctor profile page | 0 (sitemap lists 1, but no HTML file exists) |
+| Service pages | 9 (knee, hip, cardiac, cancer, kidney transplant, neurosurgery, laparoscopic, maternity, gastroenterology) |
+| Doctor profile page | 1 (Dr. B.K. Murali) |
+| Department pages | 10 |
 | Local citations guide | Exists (50+ directories listed) |
 
-**Critical gaps to fix before link building:**
-- Create service pages (orthopedics, neurosurgery, cardiology) — these are linkable assets
-- Create Dr. B.K. Murali profile page — key for doctor-related backlinks
-- Expand blog to 10+ posts — more content = more link targets
-- Expand disease pages to 15+ — health content attracts natural links
+**The linkable-asset foundation is now BUILT.** The gaps this plan was originally written
+to fix — missing service pages, missing doctor page, thin blog — are all done. Link building
+can start immediately; there is no longer a content blocker.
 
 ---
 
 ## Phase 1: Foundation (Week 1–4) — Fix & Build Linkable Assets
 
-### 1.1 Create Missing Pages
-These pages are referenced in sitemap.xml but don't exist. Create them first:
-
-| Page | Target Keywords |
-|------|----------------|
-| `/services/orthopedics.html` | knee replacement Nagpur, hip replacement Nagpur |
-| `/services/neurosurgery.html` | brain surgery Nagpur, neurosurgeon Nagpur |
-| `/services/cardiology.html` | heart surgery Nagpur, cardiologist Nagpur |
-| `/doctors/dr-bk-murali.html` | best orthopedic surgeon Nagpur, Dr Murali Nagpur |
+### 1.1 Create Missing Pages — ✅ DONE
+All 9 service pages and the Dr. B.K. Murali profile page are now live (see Current State
+above). This step is complete — proceed straight to Phase 2.
 
 ### 1.2 Expand Blog Content (Link Magnets)
 Write 7+ new blog posts targeting long-tail keywords that attract links:
@@ -267,16 +260,17 @@ Create YouTube videos and link back to website:
 
 | # | Action | Effort | Impact |
 |---|--------|--------|--------|
-| 1 | Resolve Google Business Profile ownership | Medium | Very High |
-| 2 | Create service pages (ortho, neuro, cardio) | Medium | High |
-| 3 | Create Dr. Murali profile page | Low | High |
+| 1 | Complete Google Business Profile — add missing phone, keep daily posts | Medium | Very High |
+| 2 | ✅ DONE — 9 service pages live | — | — |
+| 3 | ✅ DONE — Dr. Murali profile page live | — | — |
 | 4 | Submit to Practo, Lybrate, Justdial | Low | High |
-| 5 | Write 3 new blog posts | Medium | High |
+| 5 | ✅ DONE — 12 blog posts live | — | — |
 | 6 | Submit to 10 local directories | Low | Medium |
-| 7 | Create "Ayushman Bharat surgery guide" page | Medium | High |
-| 8 | Set up LinkedIn for Dr. Murali | Low | Medium |
+| 7 | ✅ DONE — Ayushman Bharat surgery list page live | — | — |
+| 8 | LinkedIn — skipped (no account; low priority for a local hospital) | — | — |
 | 9 | Pitch 1 guest post to health website | Medium | High |
 | 10 | Distribute first press release | Medium | Medium |
+| 11 | Drive Google reviews — biggest lever (3.9★; also fix the 1★ cluster cause) | Medium | Very High |
 
 ---
 
