@@ -18,3 +18,7 @@ doesn't work and doubles down on what does.
 - The audit's title/meta length thresholds (60/160) are **strict** and produce
   ~50 low-value 🟡 flags. Treat length flags as polish, not bugs; consider raising
   to ~65/165 if the noise gets in the way.
+- `review.html` (and similar) are intentional `noindex` + instant-redirect pages —
+  their missing meta/schema/sitemap flags were false positives. The audit now
+  skips any `noindex` or meta-refresh page. Lesson: always check *intent* before
+  "fixing" an audit flag.

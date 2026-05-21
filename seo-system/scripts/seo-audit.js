@@ -107,10 +107,15 @@ try {
 } catch (_) { add('yellow', 'Sitemap', null, 'sitemap.xml not found'); }
 
 const titleMap = new Map();
+let scanned = 0;
 
 for (const file of allFiles) {
   const html = read(file);
   const r = rel(file);
+  // Skip intentionally non-indexed pages (instant redirects, thank-you pages):
+  // they are not meant to rank, so title/meta/schema/sitemap flags are noise.
+  if (/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html) || /http-equiv=["']refresh["']/i.test(html)) continue;
+  scanned++;
   let m;
 
   // 1. Review consistency
@@ -195,7 +200,7 @@ const redCount = issues.filter((i) => i.sev === 'red').length;
 const yellowCount = issues.filter((i) => i.sev === 'yellow').length;
 
 let md = `# SEO Audit — Hope Hospital — ${stamp}\n\n`;
-md += `Scanned **${allFiles.length}** public pages. Found **${redCount}** 🔴 fix-now and **${yellowCount}** 🟡 review issues.\n\n`;
+md += `Scanned **${scanned}** indexable pages. Found **${redCount}** 🔴 fix-now and **${yellowCount}** 🟡 review issues.\n\n`;
 md += `| Check | 🔴 | 🟡 |\n|---|---|---|\n`;
 for (const c of CHECKS) {
   const red = issues.filter((i) => i.check === c && i.sev === 'red').length;
