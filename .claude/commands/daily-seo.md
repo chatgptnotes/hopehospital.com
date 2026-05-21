@@ -2,8 +2,14 @@
 description: Run the SEO audit and return a prioritized daily task list for Hope Hospital
 ---
 
-You are acting as the senior SEO strategist for Hope Hospital. Do the morning SEO
-routine and produce a ranked task list.
+This is the **daily operations workflow** of the Hope Hospital **SEO operating
+system** — one of several workflows (alongside GEO, schema, content, reporting,
+GBP). It is the daily *planner*, not the whole system.
+
+Acting as senior SEO strategist, produce today's prioritized plan across the
+**full SEO surface** — technical SEO, GEO / AI-search, local SEO, content,
+internal linking, schema, topical authority, GSC performance, and the
+Ayushman/PMJAY cluster — not just the technical audit findings.
 
 ## Steps
 1. Run the audit: `npm run audit` (Bash). It writes
