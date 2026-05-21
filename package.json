@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "npx serve . --listen 3000",
     "audit": "node seo-system/scripts/seo-audit.js",
+    "geo": "node seo-system/scripts/geo-check.js",
     "build": "node scripts/build.js",
     "version-bump": "node scripts/version-bump.js",
     "lint": "npx htmlhint index.html && npx stylelint '**/*.css'",
