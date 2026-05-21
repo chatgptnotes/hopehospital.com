@@ -10,6 +10,7 @@
     "gsc": "node seo-system/scripts/gsc-insights.js",
     "sitemap": "node seo-system/scripts/sitemap-gen.js",
     "seo:morning": "npm run audit && npm run gsc",
+    "links": "node seo-system/scripts/link-graph.js",
     "build": "node scripts/build.js",
     "version-bump": "node scripts/version-bump.js",
     "lint": "npx htmlhint index.html && npx stylelint '**/*.css'",
