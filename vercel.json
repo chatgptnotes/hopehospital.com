@@ -8,6 +8,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/services", "destination": "/departments", "permanent": true },
+    { "source": "/services/", "destination": "/departments", "permanent": true },
     { "source": "/events", "destination": "/blog", "permanent": true },
     { "source": "/events/", "destination": "/blog", "permanent": true },
     { "source": "/urological-surgery-at-lowest-cost-in-nagpur", "destination": "/departments/nephrology", "permanent": true },
