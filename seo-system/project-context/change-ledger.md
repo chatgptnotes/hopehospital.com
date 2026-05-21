@@ -5,6 +5,7 @@ against later GSC data (see `learnings.md`). Newest first.
 
 | Date | Page(s) | Change | Hypothesis | Outcome (filled later) |
 |---|---|---|---|---|
+| 2026-05-21 | empanelments, index (home), blog/ayushman-bharat-hospitals-nagpur | +3 internal links → ayushman-bharat-surgery-list-2026 (inbound 1 → 4) | consolidate Ayushman cluster (top growth driver); funnel link equity to the orphaned hub | _pending (re-check ~2026-06-04)_ |
 | 2026-05-21 | blog/knee-replacement-cost-nagpur-2026 | "3.8/5" → "3.9/5" rating text | accuracy/consistency; no ranking effect expected | _pending_ |
 | 2026-05-21 | all 9 service pages (via vercel.json) | added `/services` → `/departments` redirect (breadcrumb was 404) | removes broken-link signal; minor UX/crawl gain | _pending_ |
 | 2026-05-21 | 24 pages | review rating corrected 4.5★/384 → 3.9★/399 sitewide | removes structured-data risk; honest snippets | _pending_ |
