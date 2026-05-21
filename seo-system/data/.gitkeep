@@ -1,0 +1,3 @@
+# Drop Google Search Console export CSVs here (Queries.csv, Pages.csv, …).
+# Get them: Search Console → Performance → Export → CSV/ZIP, then unzip here.
+# Raw exports are gitignored; only this placeholder is tracked.

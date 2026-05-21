@@ -46,3 +46,7 @@ himanshuhopehospt.*.pdf
 
 # Local non-website assets (GBP post infographics, raw image sources)
 gbp-assets/
+
+# Raw GSC exports (keep the folder, ignore the data)
+seo-system/data/*
+!seo-system/data/.gitkeep
