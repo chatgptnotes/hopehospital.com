@@ -33,7 +33,7 @@ Score each candidate task with **SEO-RICE**
 
 ## Rules
 - Obey every hard constraint in master-context.md (no Hindi, no new location
-  pages, no blog review schema, rating is 3.9/399, no commit/push without
+  pages, no blog review schema, rating is 3.9/402, no commit/push without
   explicit approval).
 - Do NOT edit any file yet — this command only *plans* the day. Wait for the user
   to pick tasks.
