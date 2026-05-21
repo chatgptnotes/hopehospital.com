@@ -8,6 +8,8 @@
     "audit": "node seo-system/scripts/seo-audit.js",
     "geo": "node seo-system/scripts/geo-check.js",
     "gsc": "node seo-system/scripts/gsc-insights.js",
+    "sitemap": "node seo-system/scripts/sitemap-gen.js",
+    "seo:morning": "npm run audit && npm run gsc",
     "build": "node scripts/build.js",
     "version-bump": "node scripts/version-bump.js",
     "lint": "npx htmlhint index.html && npx stylelint '**/*.css'",
