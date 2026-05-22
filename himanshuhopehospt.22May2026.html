@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Work Report – Hope Hospital | 22 May 2026</title>
+<style>
+  @media print {
+    body { margin: 0; background: #fff; }
+    .no-print { display: none; }
+    .wrapper { box-shadow: none; }
+    .section { page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #1a1a2e; font-size: 13px; }
+  .wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 36px 48px 48px; box-shadow: 0 4px 24px rgba(0,0,0,.10); }
+  .report-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #1B365D; padding-bottom: 18px; margin-bottom: 24px; }
+  .report-header h1 { font-size: 22px; color: #1B365D; font-weight: 800; line-height: 1.3; }
+  .report-header .meta { text-align: right; font-size: 12px; color: #555; line-height: 1.8; }
+  .report-header .meta strong { color: #1B365D; }
+  .logo-text { font-size: 26px; font-weight: 900; color: #D31211; letter-spacing: -1px; }
+  .logo-text span { color: #1B365D; }
+  .summary-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #f0f4ff; border-radius: 10px; padding: 14px 16px; text-align: center; border-top: 4px solid #1B365D; }
+  .summary-card.green { border-top-color: #16a34a; background: #f0fdf4; }
+  .summary-card.blue { border-top-color: #1d4ed8; background: #eff6ff; }
+  .summary-card.orange { border-top-color: #ea580c; background: #fff7ed; }
+  .summary-card .num { font-size: 26px; font-weight: 800; color: #1B365D; line-height: 1.1; }
+  .summary-card.green .num { color: #16a34a; }
+  .summary-card.blue .num { color: #1d4ed8; }
+  .summary-card.orange .num { color: #ea580c; }
+  .summary-card .label { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .section { margin-bottom: 26px; }
+  .section-title { font-size: 14px; font-weight: 800; color: #fff; background: #1B365D; padding: 8px 14px; border-radius: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .6px; }
+  .section-title.red { background: #D31211; }
+  .section-title.green { background: #16a34a; }
+  .section-title.blue { background: #1a6fa8; }
+  .section-title.orange { background: #ea580c; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #f0f4ff; color: #1B365D; font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid #d0d8ef; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.55; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .badge.done { background: #dcfce7; color: #15803d; }
+  .badge.pushed { background: #dbeafe; color: #1d4ed8; }
+  .badge.fixed { background: #fce7f3; color: #9d174d; }
+  .badge.live { background: #d1fae5; color: #065f46; }
+  .badge.win { background: #fef9c3; color: #854d0e; }
+  .badge.pending { background: #fef3c7; color: #92400e; }
+  .metric-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 6px; }
+  .metric-box { background: #f8fafc; border-radius: 8px; padding: 10px 12px; border-left: 4px solid #1B365D; }
+  .metric-box .v { font-size: 18px; font-weight: 800; color: #1B365D; }
+  .metric-box .k { font-size: 10.5px; color: #555; font-weight: 600; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 11.5px; color: #1e40af; }
+  .note { font-size: 11.5px; color: #555; line-height: 1.6; margin-top: 8px; }
+  .pdfbtn { background: #1B365D; color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; margin: 16px auto; display: block; }
+  .footer { text-align: center; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; margin-top: 18px; padding-top: 16px; }
+</style>
+</head>
+<body>
+<button class="pdfbtn no-print" onclick="window.print()">🖨️  Save as PDF  (Ctrl + P → Save as PDF)</button>
+<div class="wrapper">
+
+  <div class="report-header">
+    <div>
+      <div class="logo-text">Hope<span>Hospital</span></div>
+      <h1>Daily Work Report — SEO &amp; Digital</h1>
+    </div>
+    <div class="meta">
+      <strong>Date:</strong> 22 May 2026<br>
+      <strong>Scope:</strong> Website SEO, Local/GBP, GEO<br>
+      <strong>Status:</strong> 9 commits pushed to live site
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="summary-card blue"><div class="num">9</div><div class="label">Commits Pushed</div></div>
+    <div class="summary-card green"><div class="num">53 → 0</div><div class="label">SEO Audit Issues</div></div>
+    <div class="summary-card orange"><div class="num">1 → 48</div><div class="label">Service-page Links</div></div>
+    <div class="summary-card green"><div class="num">2</div><div class="label">New 5★ Reviews</div></div>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-title">1 · On-Page SEO — Titles &amp; Meta</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Disease page titles</td><td>Shortened 8 titles to ≤60 chars (arthritis, diabetes, stroke, etc.)</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Meta descriptions</td><td>Trimmed 30 over-length meta descriptions to ≤160 chars</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Remaining titles</td><td>Shortened 15 blog/department/service/doctor titles to ≤60</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Audit result</td><td>SEO audit cleared from 53 issues to <strong>0 fix-now / 0 review</strong></td><td><span class="badge done">Clean</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-title green">2 · Keyword Cannibalization Fix</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Footer link-equity</td><td>Added sitewide "Treatments" list → service (money) pages went from ~1 to ~48 internal links each</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td>Differentiate pairs</td><td>Neurosurgery → "neurosurgeon/specialist"; Gastroenterology service → "endoscopy/colonoscopy/ERCP"</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Hub-and-spoke links</td><td>Added 17 reciprocal department↔service contextual links with intent-correct anchors</td><td><span class="badge pushed">Pushed</span></td></tr>
+    </table>
+    <div class="note">Strategy: department pages = "specialist" intent, service pages = "procedure/cost" intent. No merges/redirects.</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-title red">3 · Local SEO · NAP · Schema</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>GBP linked in schema</td><td>Added Google Business Profile to <code>sameAs</code> + <code>hasMap</code> on schema pages</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>WhatsApp unified</td><td>All <code>wa.me</code> links set to official <strong>9823555053</strong> (was split with a 2nd number)</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Rogue number removed</td><td>Removed third number <strong>9373111709</strong> from entire site (0 left)</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Phone display corrected</td><td>Fixed <code>071-22980073</code> → <code>0712-2980073</code> sitewide (443 instances) — correct Nagpur STD code</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Schema telephone</td><td>Normalized all 36 schema <code>telephone</code> fields to one primary number</td><td><span class="badge done">Done</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-title blue">4 · GEO — AI-Search Readiness</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Answer-first content</td><td>Added concise extractable summaries under key sections (homepage &amp; /nagpur)</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>/nagpur schema deepened</td><td>Added <code>Physician</code> (Dr. B.K. Murali) + <code>MedicalWebPage</code></td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>AI-search win</td><td>Confirmed Hope Hospital ranks <strong>#1 on ChatGPT for "orthopaedics in Nagpur"</strong> (above 4.9★ competitors)</td><td><span class="badge win">Win</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-title orange">5 · GBP &amp; Reviews System</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Reviews SOP</td><td>Created 1-page staff process to lift rating 3.9★ → 4.3★+ (ask, filter unhappy, 24h WhatsApp follow-up)</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>Directory checklist</td><td>Canonical NAP + tiered list (Practo, Justdial, Lybrate, Bing, etc.)</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>GBP posts &amp; replies</td><td>Optimization checklist + posting cadence + reply templates; image-generation prompts</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>Posts published</td><td>Day 4 (Endoscopy) &amp; Day 5 (NABH Trust Signal) — Week 1 now 5/7 published</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td>Review replies</td><td>Drafted replies for 2 new 5★ reviews (Maroti, Gautam)</td><td><span class="badge done">Done</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-title">6 · Search Console — 3-Month Baseline</div>
+    <div class="metric-row">
+      <div class="metric-box"><div class="v">300</div><div class="k">CLICKS</div></div>
+      <div class="metric-box"><div class="v">12.8K</div><div class="k">IMPRESSIONS</div></div>
+      <div class="metric-box"><div class="v">2.3%</div><div class="k">AVG CTR</div></div>
+      <div class="metric-box"><div class="v">8.6</div><div class="k">AVG POSITION</div></div>
+    </div>
+    <table>
+      <tr><th>Finding</th><th>Detail</th></tr>
+      <tr><td>Branded-dominant</td><td>~85% of clicks are "hope hospital nagpur" (pos 1.2) — strong brand, weak non-branded discovery</td></tr>
+      <tr><td>Top non-branded winner</td><td>Ayushman/PMJAY cluster ranks pos 2.6–4.5 ("rate list", "package list 2026") — the proven growth driver</td></tr>
+      <tr><td>Striking distance</td><td>"best nephrologist in nagpur" pos 11.4; nephrology page 356 impr at pos 9.7 — push to page 1</td></tr>
+      <tr><td>Dead-end term</td><td>"best hospital in nagpur" pos 25.3 (page 3) — focus on specialty niches instead</td></tr>
+    </table>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-title">7 · Git Commits (pushed to live site)</div>
+    <table>
+      <tr><th>Hash</th><th>Change</th></tr>
+      <tr><td><code>a183ed2</code></td><td>Disease page titles ≤60 chars</td></tr>
+      <tr><td><code>6e523f3</code></td><td>30 meta descriptions trimmed</td></tr>
+      <tr><td><code>4e3c084</code></td><td>Remaining 15 titles shortened</td></tr>
+      <tr><td><code>e7184c1</code></td><td>Cannibalization fix (footer link-equity + hub-spoke)</td></tr>
+      <tr><td><code>3a85133</code></td><td>Local signals (GBP link, schema telephone)</td></tr>
+      <tr><td><code>36ee6f1</code></td><td>WhatsApp unify + remove rogue number</td></tr>
+      <tr><td><code>ec4784a</code></td><td>GEO content + /nagpur schema + reviews/GBP system</td></tr>
+      <tr><td><code>62132bd</code></td><td>Phone display 071-22980073 → 0712-2980073 sitewide</td></tr>
+      <tr><td><code>b069e23</code></td><td>Staff review SOP + directory-listings checklist</td></tr>
+    </table>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+    <div class="section-title orange">8 · Pending — Off-Site (action items)</div>
+    <table>
+      <tr><th>Action</th><th>Owner</th><th>Status</th></tr>
+      <tr><td>Set GBP phone to <code>0712-2980073</code> (fixes missing "Call" button in Google/AI)</td><td>GBP admin</td><td><span class="badge pending">Pending</span></td></tr>
+      <tr><td>Run reviews SOP daily — target 3.9★ → 4.3★</td><td>Front desk / discharge</td><td><span class="badge pending">In progress</span></td></tr>
+      <tr><td>Claim &amp; fix directory listings (Practo, Justdial, Lybrate, Bing)</td><td>Marketing</td><td><span class="badge pending">Pending</span></td></tr>
+      <tr><td>Re-export GSC 3-month range in mid-June to measure impact</td><td>SEO</td><td><span class="badge pending">Pending</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    Hope Hospital · Teka Naka, Kamptee Road, Nagpur – 440026 · 0712-2980073 · hopehospital.com<br>
+    Daily Work Report · 22 May 2026 · To save as PDF: open in Chrome → Ctrl + P → "Save as PDF"
+  </div>
+
+</div>
+</body>
+</html>
