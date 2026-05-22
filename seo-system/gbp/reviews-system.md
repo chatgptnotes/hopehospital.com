@@ -36,7 +36,7 @@ At ~402 reviews / 3.9★, you lift the average fastest with **consistent new 5�
 **WhatsApp (send within 24h of discharge):**
 > Namaste 🙏 Thank you for choosing Hope Hospital, Nagpur. We hope you had a good experience
 > with our team. If you have a moment, a quick Google review helps other families find quality
-> care: https://g.page/r/CXNeWp4Fw2cOEBM/review — Team Hope Hospital, 071-22980073
+> care: https://g.page/r/CXNeWp4Fw2cOEBM/review — Team Hope Hospital, 0712-2980073
 
 **SMS (160 chars):**
 > Thank you for visiting Hope Hospital, Nagpur. Please rate your experience on Google:

@@ -14,7 +14,7 @@ and lists the **off-site half** (GBP dashboard, citations) that needs your acces
 ## 🔴 Fix-now (on-site, high value)
 1. **GBP not linked in structured data.** Homepage `sameAs` lists Facebook/Instagram/YouTube but **not** the Google Business Profile. Add the GBP place URL to `sameAs` (and add `hasMap`) so Google firmly connects website ↔ GBP entity. *Easy, high value.*
 2. **Phone-number fragmentation (NAP risk).** THREE numbers are in active use:
-   - `071-22980073` (landline) — 407 text / 145 `tel:` — primary displayed.
+   - `0712-2980073` (landline) — 407 text / 145 `tel:` — primary displayed.
    - `+91-9823555053` (mobile) — 253 text / 49 WhatsApp.
    - `9373111709` — **77 text / 52 WhatsApp links / 3 `tel:`** — the primary WhatsApp number, but it does **not** match the displayed contact number.
    NAP must match the GBP exactly. Decide ONE primary phone and align site + GBP + citations. The WhatsApp mismatch (9373111709 vs 9823555053) is the biggest inconsistency.
@@ -22,9 +22,9 @@ and lists the **off-site half** (GBP dashboard, citations) that needs your acces
 ## 🟡 Improvements (on-site)
 3. **No `hasMap`** in schema — add it pointing to the GBP place URL.
 4. **Verify geo-coordinates.** Schema uses `21.1458, 79.0882` (≈ central Nagpur). Confirm this matches the actual Teka Naka / Kamptee Road pin from your GBP — wrong coordinates hurt Map Pack placement. (North-Nagpur/Kamptee Rd is ≈ 21.17–21.19 lat.)
-5. **`telephone` holds two numbers** in one field ("071-22980073 / +91-9823555053"). schema.org expects a single value — split into primary + use `contactPoint` for others.
+5. **`telephone` holds two numbers** in one field ("0712-2980073 / +91-9823555053"). schema.org expects a single value — split into primary + use `contactPoint` for others.
 6. **Coordinate type inconsistency** — some files use `"latitude": "21.1458"` (string), others `21.1458` (number). Harmless but tidy to unify.
-7. **Inconsistent `tel:` formatting** — `gallery.html:317` uses `tel:071-22980073`; everywhere else uses canonical `tel:+917122980073`. Also WhatsApp `tel:` appears as both `09373111709` and `+919373111709`.
+7. **Inconsistent `tel:` formatting** — `gallery.html:317` uses `tel:0712-2980073`; everywhere else uses canonical `tel:+917122980073`. Also WhatsApp `tel:` appears as both `09373111709` and `+919373111709`.
 8. **"Get Directions" uses a text-query maps link** (`maps.google.com/?q=Hope+Hospital+...`) — replace with the canonical GBP place link for a precise pin.
 9. **`Physician` (Dr. Murali) carries `aggregateRating`** — review stars on a person entity can be flagged under Google's review-snippet policy; consider keeping `aggregateRating` only on the `Hospital` entity.
 

@@ -2,7 +2,7 @@
 
 Companion to `reviews-system.md`. These are **dashboard actions** (do them at
 business.google.com) plus ready-to-publish content. NAP must match the site exactly:
-**Hope Hospital · Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur 440026 · 071-22980073.**
+**Hope Hospital · Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur 440026 · 0712-2980073.**
 
 ## A. Profile optimization checklist (one-time, then maintain)
 - [ ] **Primary category:** set the most specific accurate one — **"Private hospital"** (or
@@ -11,7 +11,7 @@ business.google.com) plus ready-to-publish content. NAP must match the site exac
       Neurosurgeon, Cardiologist, Nephrologist, Oncologist, Maternity hospital, Emergency room,
       Dialysis center*. These help you appear for specialty searches.
 - [ ] **Name:** exactly "Hope Hospital" (no keyword stuffing — that risks suspension).
-- [ ] **Phone:** primary **071-22980073** (matches site). Add 9823555053 as additional.
+- [ ] **Phone:** primary **0712-2980073** (matches site). Add 9823555053 as additional.
 - [ ] **Website:** https://www.hopehospital.com
 - [ ] **Hours:** set correctly; mark **Open 24 hours** for emergency if accurate; add OPD hours
       as more hours / special hours for holidays.
@@ -40,34 +40,34 @@ Post **1–2× per week**. Rotate these themes:
 4. **Health awareness** — tie to days (World Kidney Day, Heart Day) or seasonal (dengue, winter heart).
 5. **Trust** — NABH, awards, 5M+ patients, 24/7 emergency.
 
-Every post: 1 image + ~100 words + a CTA button (Call 071-22980073 / Book).
+Every post: 1 image + ~100 words + a CTA button (Call 0712-2980073 / Book).
 
 ## C. Starter posts (ready to publish)
 **1 — Ayushman**
 > 🏥 Free surgery under Ayushman Bharat at Hope Hospital, Nagpur. We're empanelled under PM-JAY,
 > MJPJAY, CGHS, ECHS & 20+ schemes — eligible patients get knee replacement, kidney transplant,
-> cardiac & cancer surgery cashless. NABH-accredited. Call 071-22980073 to check eligibility.
+> cardiac & cancer surgery cashless. NABH-accredited. Call 0712-2980073 to check eligibility.
 
 **2 — Knee/Hip replacement**
 > 🦵 Knee or hip pain limiting your life? Dr. B.K. Murali (19+ yrs, 5,000+ surgeries) leads joint
 > replacement at NABH-accredited Hope Hospital, Nagpur — free under Ayushman Bharat for eligible
-> patients. Book: 071-22980073.
+> patients. Book: 0712-2980073.
 
 **3 — Kidney care**
 > 💧 Comprehensive kidney care in Nagpur — NephroPlus dialysis + kidney transplant at Hope
-> Hospital, Kamptee Road. Cashless under Ayushman Bharat. 24/7 nephrology support. Call 071-22980073.
+> Hospital, Kamptee Road. Cashless under Ayushman Bharat. 24/7 nephrology support. Call 0712-2980073.
 
 **4 — 24/7 emergency**
 > 🚑 24/7 emergency & critical care at Hope Hospital, Teka Naka, Nagpur — cardiac, stroke, trauma.
-> NABH-accredited ICU. In an emergency, call 071-22980073 now.
+> NABH-accredited ICU. In an emergency, call 0712-2980073 now.
 
 **5 — Maternity**
 > 👶 Safe deliveries at Hope Hospital, Nagpur — normal & C-section, NICU, painless delivery.
-> Cashless under Ayushman Bharat. Book your consultation: 071-22980073.
+> Cashless under Ayushman Bharat. Book your consultation: 0712-2980073.
 
 **6 — Trust/NABH**
 > ✅ Central India's first NABH-accredited super-specialty hospital, trusted by 5M+ patients since
-> 2004. Hope Hospital, Kamptee Road, Nagpur. 071-22980073.
+> 2004. Hope Hospital, Kamptee Road, Nagpur. 0712-2980073.
 
 > For more posts on demand, use the **/gbp-post** skill.
 
@@ -82,7 +82,7 @@ Every post: 1 image + ~100 words + a CTA button (Call 071-22980073 / Book).
 
 **Negative (1–3★) — calm, accountable, move offline:**
 > We're sorry your experience didn't meet expectations, and we take this seriously. Please reach
-> us at 071-22980073 (or hopehospital.com/contact) so we can understand what happened and make it
+> us at 0712-2980073 (or hopehospital.com/contact) so we can understand what happened and make it
 > right. — Team Hope Hospital
 
 > Never argue, never share patient health details in a public reply (privacy). Acknowledge,

@@ -19,4 +19,4 @@ warm, in English, with no patient/medical details disclosed.
 - 3★ (neutral): thank them, acknowledge the feedback, offer to improve, give the
   hospital contact to discuss.
 - 1–2★ (critical): acknowledge sincerely, never argue, never disclose any patient
-  or medical detail, move specifics to a private channel (071-22980073).
+  or medical detail, move specifics to a private channel (0712-2980073).

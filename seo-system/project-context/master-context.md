@@ -7,7 +7,7 @@ who Hope Hospital is, what matters, and the rules that must never be broken.
 - **Hope Hospital**, Teka Naka, Kamptee Road, Nagpur – 440026, Maharashtra.
 - Central India's first **NABH-accredited** super-specialty hospital. Est. 2004,
   NABH since 2012. 200+ beds, 30 ICU beds, 3 modular OTs.
-- Phone: 071-22980073 / +91-9823555053. Site: https://www.hopehospital.com
+- Phone: 0712-2980073 / +91-9823555053. Site: https://www.hopehospital.com
 - **Google rating: 3.9★ / 402 reviews** (the true figure — never overstate it).
 - Led by **Dr. B.K. Murali** (MS Ortho, founder, 5000+ surgeries). Other named
   doctors include Dr. Akshay Akulwar (colorectal).
