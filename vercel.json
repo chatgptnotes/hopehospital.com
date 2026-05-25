@@ -28,6 +28,8 @@
     { "source": "/contact-us", "destination": "/contact", "permanent": true },
     { "source": "/contact-us/", "destination": "/contact", "permanent": true },
     { "source": "/news", "destination": "/blog", "permanent": true },
+    { "source": "/blog/best-maternity-hospital-nagpur", "destination": "/services/maternity-hospital-nagpur", "permanent": true },
+    { "source": "/blog/best-maternity-hospital-nagpur/", "destination": "/services/maternity-hospital-nagpur", "permanent": true },
 
     { "source": "/neurosurgery", "destination": "/departments/neurosurgery", "permanent": true },
     { "source": "/neurosurgery/", "destination": "/departments/neurosurgery", "permanent": true },

@@ -56,7 +56,7 @@ seo-system/
 - Medical content is **doctor-reviewed** before publish (YMYL/EEAT).
 - **No Hindi** on the website. **No new location/branch pages** without an ask.
 - **No review/aggregateRating schema on blog articles.**
-- Rating is **3.9★ / 402 reviews**. **No commit/push without explicit approval.**
+- Rating is **3.9★ / 406 reviews**. **No commit/push without explicit approval.**
 
 ## Phase status
 1 Foundation ✅ · 2 Reporting ✅ · 3 GEO ✅ · 4 Automation ✅ · 5 AI workflows ✅ ·

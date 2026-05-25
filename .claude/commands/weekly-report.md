@@ -28,5 +28,5 @@ personalised vs the true GSC average.
 
 ## Rules
 - Use **only true numbers** from the export — never fabricate metrics.
-- Rating is **3.9 / 402**. **No Hindi.**
+- Rating is **3.9 / 406**. **No Hindi.**
 - Generate only — don't commit or render to PDF until the user approves.

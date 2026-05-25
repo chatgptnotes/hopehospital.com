@@ -23,7 +23,7 @@ business.google.com) plus ready-to-publish content. NAP must match the site exac
       Dr. B.K. Murali, we offer orthopedics, cardiology, neurosurgery, nephrology & kidney
       transplant (NephroPlus), oncology, gastroenterology, maternity and 24/7 critical care.
       Empanelled under Ayushman Bharat (PM-JAY), MJPJAY, CGHS, ECHS and 20+ schemes for cashless
-      treatment. Rated 3.9★ by 402 patients."
+      treatment. Rated 3.9★ by 406 patients."
 - [ ] **Photos:** upload regularly (exterior, reception, OT, ICU, equipment, doctors, NABH
       certificate, awards). Profiles with fresh photos rank better; aim for a few new ones weekly.
 - [ ] **Products/Services with photos** for the flagship procedures.

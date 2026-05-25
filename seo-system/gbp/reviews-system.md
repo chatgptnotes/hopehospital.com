@@ -1,6 +1,6 @@
 # Reviews Generation System — Hope Hospital
 
-**Goal:** lift the Google rating from **3.9★ (402 reviews)** toward **4.3★+**, the band where
+**Goal:** lift the Google rating from **3.9★ (406 reviews)** toward **4.3★+**, the band where
 competitors (Wockhardt, Max, NewEra: 4.3–4.5) sit and where Google's local pack and AI
 assistants start surfacing you. This is the single highest-impact local-SEO lever.
 
@@ -26,7 +26,7 @@ assistants start surfacing you. This is the single highest-impact local-SEO leve
    Replying signals an active business to Google and to prospective patients.
 
 ## Volume target (realistic)
-At ~402 reviews / 3.9★, you lift the average fastest with **consistent new 5★ reviews**:
+At ~406 reviews / 3.9★, you lift the average fastest with **consistent new 5★ reviews**:
 - **Target: 15–25 new genuine reviews/week.** At that pace the visible average climbs over
   6–10 weeks (older low reviews get diluted).
 - Track weekly in `seo-system/reports/` alongside the SEO KPIs.
