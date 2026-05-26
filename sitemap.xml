@@ -169,8 +169,26 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.hopehospital.com/doctors</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.hopehospital.com/doctors/dr-bk-murali</loc>
     <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hopehospital.com/doctors/dr-nikhil-khobragade</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hopehospital.com/doctors/dr-dheeraj-gupta</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
