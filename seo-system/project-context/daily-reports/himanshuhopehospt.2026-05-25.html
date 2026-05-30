@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Work Report – Hope Hospital | 25 May 2026</title>
+<style>
+  @media print {
+    body { margin: 0; background: #fff; }
+    .no-print { display: none; }
+    .wrapper { box-shadow: none; }
+    .section { page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #1a1a2e; font-size: 13px; }
+  .wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 36px 48px 48px; box-shadow: 0 4px 24px rgba(0,0,0,.10); }
+  .report-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #1B365D; padding-bottom: 18px; margin-bottom: 24px; }
+  .report-header h1 { font-size: 22px; color: #1B365D; font-weight: 800; line-height: 1.3; }
+  .report-header .meta { text-align: right; font-size: 12px; color: #555; line-height: 1.8; }
+  .report-header .meta strong { color: #1B365D; }
+  .logo-text { font-size: 26px; font-weight: 900; color: #D31211; letter-spacing: -1px; }
+  .logo-text span { color: #1B365D; }
+  .summary-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #f0f4ff; border-radius: 10px; padding: 14px 16px; text-align: center; border-top: 4px solid #1B365D; }
+  .summary-card.green { border-top-color: #16a34a; background: #f0fdf4; }
+  .summary-card.blue { border-top-color: #1d4ed8; background: #eff6ff; }
+  .summary-card.orange { border-top-color: #ea580c; background: #fff7ed; }
+  .summary-card .num { font-size: 26px; font-weight: 800; color: #1B365D; line-height: 1.1; }
+  .summary-card.green .num { color: #16a34a; }
+  .summary-card.blue .num { color: #1d4ed8; }
+  .summary-card.orange .num { color: #ea580c; }
+  .summary-card .label { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .section { margin-bottom: 26px; }
+  .section-title { font-size: 14px; font-weight: 800; color: #fff; background: #1B365D; padding: 8px 14px; border-radius: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .6px; }
+  .section-title.red { background: #D31211; }
+  .section-title.green { background: #16a34a; }
+  .section-title.blue { background: #1a6fa8; }
+  .section-title.orange { background: #ea580c; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #f0f4ff; color: #1B365D; font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid #d0d8ef; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.55; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .badge.done { background: #dcfce7; color: #15803d; }
+  .badge.pushed { background: #dbeafe; color: #1d4ed8; }
+  .badge.fixed { background: #fce7f3; color: #9d174d; }
+  .badge.live { background: #d1fae5; color: #065f46; }
+  .badge.win { background: #fef9c3; color: #854d0e; }
+  .badge.pending { background: #fef3c7; color: #92400e; }
+  .metric-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 6px; }
+  .metric-box { background: #f8fafc; border-radius: 8px; padding: 10px 12px; border-left: 4px solid #1B365D; }
+  .metric-box .v { font-size: 18px; font-weight: 800; color: #1B365D; }
+  .metric-box .k { font-size: 10.5px; color: #555; font-weight: 600; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 11.5px; color: #1e40af; }
+  .note { font-size: 11.5px; color: #555; line-height: 1.6; margin-top: 8px; }
+  .pdfbtn { background: #1B365D; color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; margin: 16px auto; display: block; }
+  .footer { text-align: center; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; margin-top: 18px; padding-top: 16px; }
+</style>
+</head>
+<body>
+<button class="pdfbtn no-print" onclick="window.print()">🖨️  Save as PDF  (Ctrl + P → Save as PDF)</button>
+<div class="wrapper">
+
+  <div class="report-header">
+    <div>
+      <div class="logo-text">Hope<span>Hospital</span></div>
+      <h1>Daily Work Report — SEO &amp; Digital</h1>
+    </div>
+    <div class="meta">
+      <strong>Date:</strong> 25 May 2026<br>
+      <strong>Scope:</strong> On-page SEO, Schema, GBP, Footer/UX<br>
+      <strong>Status:</strong> 1 commit (66 files) pushed to live site
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="summary-card blue"><div class="num">66</div><div class="label">Files Changed</div></div>
+    <div class="summary-card green"><div class="num">402 → 406</div><div class="label">Review Count Synced</div></div>
+    <div class="summary-card orange"><div class="num">24</div><div class="label">Pages — Footer Unified</div></div>
+    <div class="summary-card green"><div class="num">0 / 0</div><div class="label">SEO Audit Issues</div></div>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-title">1 · On-Page SEO — Homepage Title &amp; Meta</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Title (keyword-first)</td><td>Set home title to <code>Best Hospital in Nagpur | Hope Hospital – NABH Accredited</code> (57 chars) — exact keyword front-loaded</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Meta description</td><td>Trust-loaded: "Central India's first NABH-accredited super-specialty hospital… 200+ beds, 24/7 emergency… ☎ 0712-2980073"</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Social tags</td><td>Mirrored new title/description into <code>og:</code> and <code>twitter:</code> tags</td><td><span class="badge done">Done</span></td></tr>
+    </table>
+    <div class="note">Goal: protect the winning branded query while improving CTR on branded/near-branded impressions.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-title green">2 · Review Count Accuracy (402 → 406)</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Schema reviewCount</td><td>Updated <code>aggregateRating</code> on all pages 402 → 406 to match live Google Business Profile</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Visible "402+" stats</td><td>Updated all on-page review counts (doctor profile, blogs) to 406</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Source of truth</td><td>Bumped <code>master-context.md</code> + audit <code>EXPECTED_REVIEWS</code> = 406 (37 files total)</td><td><span class="badge done">Done</span></td></tr>
+    </table>
+    <div class="note">Rating stays accurate at 3.9★ — never inflated. Historical records (ledger, dated reports) deliberately untouched.</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-title blue">3 · Structured Data — MedicalClinic Schema</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Coverage gap closed</td><td>Added <code>MedicalClinic</code> schema to 5 missing department pages: nephrology, colorectal, gastroenterology, minimal-invasive, mother-child</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Now consistent</td><td>All <strong>10/10 department pages</strong> carry MedicalClinic with department-specific procedures + NAP</td><td><span class="badge done">Done</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-title red">4 · Blog NAP / E-E-A-T Fixes</div>
+    <table>
+      <tr><th>Page</th><th>Fix</th><th>Status</th></tr>
+      <tr><td>choosing-best-hospital (ranks #7)</td><td>Stale "50+ Google reviews" → 406; "established 2005" → <strong>2004</strong>; pincode 440017 → <strong>440026</strong></td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Internal link</td><td>Added homepage link in conclusion to funnel authority to the home page</td><td><span class="badge done">Done</span></td></tr>
+    </table>
+    <div class="note">Strengthens the page Google already favours for "best hospital" intent; fixes NAP inconsistency (a local-SEO signal).</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-title orange">5 · Content Cleanup — Maternity Blog Removed</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Page deleted</td><td>Removed <code>/blog/best-maternity-hospital-nagpur</code> (≈0 GSC traffic)</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>References cleaned</td><td>Removed sitemap entry + blog cards on home page &amp; blog index</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>301 redirect</td><td>Old URL → <code>/services/maternity-hospital-nagpur</code> (vercel.json) — preserves equity, no 404</td><td><span class="badge live">Live</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-title">6 · Footer Redesign — Sitewide Consistency</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Treatments column</td><td>Split overloaded column → clean <strong>5-column footer</strong> (4→5 col grid) across all pages</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Orphan pages styled</td><td>Injected the footer CSS into 9 pages that had footer markup but no styles (blog index, press release, 8 disease pages)</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>Alignment &amp; layout</td><td>Left-aligned columns; flush navy footer (removed old gray band + gap); synced "Get Directions" button + logo size; added mobile responsive collapse</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>Root-cause fix</td><td>Footer text was falling back to system font — pages declared <code>Inter</code> but never loaded it; set footer to loaded <strong>Open Sans</strong> to match homepage</td><td><span class="badge win">Root cause</span></td></tr>
+    </table>
+    <div class="note">Result: every page's footer (home, blog, departments, services, diseases) now renders identically.</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-title blue">7 · Competitor Research &amp; Strategy</div>
+    <table>
+      <tr><th>Finding</th><th>Detail</th></tr>
+      <tr><td>Why Max ranks #1</td><td>"best hospital in nagpur" #1 = Max (national chain, ~42 doctors, 4.3★); #2 CARE (4.4★/2,747 reviews). Gap is authority + reviews + medical team — not on-page copy.</td></tr>
+      <tr><td>Biggest on-site gap</td><td>Hope shows <strong>1 doctor profile</strong> vs competitors' dozens. Building the real medical team (Physician schema + "Our Doctors") is the top E-E-A-T lever.</td></tr>
+      <tr><td>Action plan written</td><td><code>best-hospital-nagpur-action-plan-2026-05-25.md</code> — sequenced off-site roadmap (reviews 3.9→4.3★, GBP, citations, backlinks)</td></tr>
+    </table>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+    <div class="section-title orange">8 · GBP — Reviews</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>New 5★ reviews</td><td>Drafted warm, distinct reply templates for 2 new reviews (Shubham Mendhekar, Salman Maladhari)</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>Rating movement</td><td>Google count rose 402 → 406 reviews (still 3.9★) — reviews drive is working</td><td><span class="badge win">Win</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 9 -->
+  <div class="section">
+    <div class="section-title">9 · Git Commit (pushed to live site)</div>
+    <table>
+      <tr><th>Hash</th><th>Change</th></tr>
+      <tr><td><code>b151c58</code></td><td>seo + footer: keyword-first home title, 402→406 reviews, dept schema, unified footer (66 files, +295 / −195)</td></tr>
+    </table>
+    <div class="note">Pushed to <code>main</code> → auto-deploys to live site via Vercel.</div>
+  </div>
+
+  <!-- 10 -->
+  <div class="section">
+    <div class="section-title orange">10 · Pending / Next Steps</div>
+    <table>
+      <tr><th>Action</th><th>Owner</th><th>Status</th></tr>
+      <tr><td>Provide real doctor details (name, qualifications, specialty, photo) for medical-team build-out</td><td>Hospital</td><td><span class="badge pending">Awaiting</span></td></tr>
+      <tr><td>Build doctor profiles + Physician schema + homepage "Our Doctors" section</td><td>SEO</td><td><span class="badge pending">Queued</span></td></tr>
+      <tr><td>Reply to the 2 new reviews in GBP; keep running reviews SOP (3.9★ → 4.3★)</td><td>Front desk / Marketing</td><td><span class="badge pending">In progress</span></td></tr>
+      <tr><td>GSC URL Inspection → Request Indexing (home + redirected maternity URL)</td><td>SEO</td><td><span class="badge pending">Pending</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    Hope Hospital · Teka Naka, Kamptee Road, Nagpur – 440026 · 0712-2980073 · hopehospital.com<br>
+    Daily Work Report · 25 May 2026 · To save as PDF: open in Chrome → Ctrl + P → "Save as PDF"
+  </div>
+
+</div>
+</body>
+</html>

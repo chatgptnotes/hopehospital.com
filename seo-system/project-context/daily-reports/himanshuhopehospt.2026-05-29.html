@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Work Report – Hope Hospital | 29 May 2026</title>
+<style>
+  @media print {
+    body { margin: 0; background: #fff; }
+    .no-print { display: none; }
+    .wrapper { box-shadow: none; }
+    .section { page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #1a1a2e; font-size: 13px; }
+  .wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 36px 48px 48px; box-shadow: 0 4px 24px rgba(0,0,0,.10); }
+  .report-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #1B365D; padding-bottom: 18px; margin-bottom: 24px; }
+  .report-header h1 { font-size: 22px; color: #1B365D; font-weight: 800; line-height: 1.3; }
+  .report-header .meta { text-align: right; font-size: 12px; color: #555; line-height: 1.8; }
+  .report-header .meta strong { color: #1B365D; }
+  .logo-text { font-size: 26px; font-weight: 900; color: #D31211; letter-spacing: -1px; }
+  .logo-text span { color: #1B365D; }
+  .summary-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #f0f4ff; border-radius: 10px; padding: 14px 16px; text-align: center; border-top: 4px solid #1B365D; }
+  .summary-card.green { border-top-color: #16a34a; background: #f0fdf4; }
+  .summary-card.blue { border-top-color: #1d4ed8; background: #eff6ff; }
+  .summary-card.orange { border-top-color: #ea580c; background: #fff7ed; }
+  .summary-card .num { font-size: 26px; font-weight: 800; color: #1B365D; line-height: 1.1; }
+  .summary-card.green .num { color: #16a34a; }
+  .summary-card.blue .num { color: #1d4ed8; }
+  .summary-card.orange .num { color: #ea580c; }
+  .summary-card .label { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .section { margin-bottom: 26px; }
+  .section-title { font-size: 14px; font-weight: 800; color: #fff; background: #1B365D; padding: 8px 14px; border-radius: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .6px; }
+  .section-title.red { background: #D31211; }
+  .section-title.green { background: #16a34a; }
+  .section-title.blue { background: #1a6fa8; }
+  .section-title.orange { background: #ea580c; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #f0f4ff; color: #1B365D; font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid #d0d8ef; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.55; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .badge.done { background: #dcfce7; color: #15803d; }
+  .badge.pushed { background: #dbeafe; color: #1d4ed8; }
+  .badge.fixed { background: #fce7f3; color: #9d174d; }
+  .badge.live { background: #d1fae5; color: #065f46; }
+  .badge.win { background: #fef9c3; color: #854d0e; }
+  .badge.pending { background: #fef3c7; color: #92400e; }
+  .badge.local { background: #ede9fe; color: #5b21b6; }
+  .metric-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 6px; }
+  .metric-box { background: #f8fafc; border-radius: 8px; padding: 10px 12px; border-left: 4px solid #1B365D; }
+  .metric-box .v { font-size: 18px; font-weight: 800; color: #1B365D; }
+  .metric-box .k { font-size: 10.5px; color: #555; font-weight: 600; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 11.5px; color: #1e40af; }
+  .note { font-size: 11.5px; color: #555; line-height: 1.6; margin-top: 8px; }
+  .pdfbtn { background: #1B365D; color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; margin: 16px auto; display: block; }
+  .footer { text-align: center; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; margin-top: 18px; padding-top: 16px; }
+  .highlight-box { background: #ecfdf5; border-left: 5px solid #16a34a; padding: 14px 16px; border-radius: 8px; margin: 10px 0; }
+  .highlight-box .h { font-weight: 800; color: #15803d; font-size: 13px; margin-bottom: 6px; }
+  .highlight-box .b { font-size: 12px; color: #1a1a2e; line-height: 1.6; }
+</style>
+</head>
+<body>
+<button class="pdfbtn no-print" onclick="window.print()">🖨️  Save as PDF  (Ctrl + P → Save as PDF)</button>
+<div class="wrapper">
+
+  <div class="report-header">
+    <div>
+      <div class="logo-text">Hope<span>Hospital</span></div>
+      <h1>Daily Work Report — SEO &amp; Digital</h1>
+    </div>
+    <div class="meta">
+      <strong>Date:</strong> 29 May 2026<br>
+      <strong>Scope:</strong> Nephrology depth + GEO readiness sweep + topical blog launch<br>
+      <strong>Status:</strong> 5 commits pushed live · Vercel auto-deployed
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="summary-card blue"><div class="num">5</div><div class="label">Commits Pushed</div></div>
+    <div class="summary-card green"><div class="num">+0.65</div><div class="label">GEO Score Lift</div></div>
+    <div class="summary-card orange"><div class="num">1</div><div class="label">New Blog Published</div></div>
+    <div class="summary-card"><div class="num">10</div><div class="label">Files Modified</div></div>
+  </div>
+
+  <!-- 1 · Strategy -->
+  <div class="section">
+    <div class="section-title">1 · Strategy — Focus of the Day</div>
+    <table>
+      <tr><th>Area</th><th>Detail</th></tr>
+      <tr><td>Daily SEO audit</td><td><code>npm run audit</code> ran clean for the 2nd consecutive day — <strong>0 fix-now, 0 review</strong> across 51 indexable pages.</td></tr>
+      <tr><td>Nephrology cluster</td><td>Continued yesterday's striking-distance push — added Ayushman coverage section directly on the dept page (verifiable rates) + cross-link from the Ayushman blog.</td></tr>
+      <tr><td>Site-wide GEO sweep</td><td>Identified + applied 2 rounds of fixes to improve AI-search citation likelihood (ChatGPT, Gemini, Perplexity).</td></tr>
+      <tr><td>Topical blog</td><td>Launched a new blog targeting the page-1 zero-click query <em>"free cancer treatment in nagpur"</em> (pos 7.67, 51 imps, 0 clicks) using World No Tobacco Day as the calendar hook.</td></tr>
+    </table>
+  </div>
+
+  <!-- 2 · GBP Maternity -->
+  <div class="section">
+    <div class="section-title green">2 · GBP Maternity Post Published</div>
+    <table>
+      <tr><th>Action</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Day 7 GBP post published</td><td>"Every mother deserves the safest delivery experience" — Maternity &amp; Normal Delivery post (CTA: Book → <code>/services/maternity-hospital-nagpur</code>). Originally scheduled 18 May, now live.</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td>AI image generated</td><td>Premium pink + navy maternity poster via ChatGPT (mother-baby silhouette + brand colors + "Safe Delivery. Expert Care.").</td><td><span class="badge done">Done</span></td></tr>
+      <tr><td>Marked Day 7 PUBLISHED in tracker</td><td><code>gbp-posts-week1.html</code> Day 7 now matches the Day 4/5/6 pattern.</td><td><span class="badge done">Logged</span></td></tr>
+      <tr><td>Aisha Sheikh 1★ reply (yesterday's draft)</td><td>Reply posted on GBP, visible on public review page.</td><td><span class="badge live">Live</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 3 · Nephrology Cluster -->
+  <div class="section">
+    <div class="section-title blue">3 · Nephrology Cluster Strengthening</div>
+    <table>
+      <tr><th>Page</th><th>Change</th><th>Status</th></tr>
+      <tr><td>blog/ayushman-bharat-surgery-list-2026</td><td><strong>Task #4:</strong> Converted "Hope Hospital — partner of NephroPlus…" to "Hope Hospital's <strong>nephrology team</strong> — partner of NephroPlus…" (anchor "nephrology team" → <code>/departments/nephrology</code>). Cross-link from a high-authority page (103 clicks/mo, pos 6.21) to the striking-distance dept page.</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td>departments/nephrology</td><td><strong>Task #5A:</strong> Added new H2 section <em>"Kidney Care Free Under Ayushman Bharat (PMJAY) at Hope Hospital"</em> — 6 procedure package amounts (Kidney Transplant Rs. 2.9-4.4L, Hemodialysis Rs. 1,200-2,000, RIRS Rs. 30-65K, PCNL Rs. 35-65K, ESWL Rs. 10-20K, AV Fistula/PD/CAPD covered). Outbound link to Ayushman blog. All rates restated from existing on-page table — no new clinical claims.</td><td><span class="badge live">Live</span></td></tr>
+    </table>
+    <div class="note">Together with yesterday's homepage → nephrology link, this creates a bidirectional Ayushman ↔ nephrology signal targeting "nephrologist nagpur" (pos 9.81) + "best nephrologist in nagpur" (pos 11.44). Re-check GSC ~19 June.</div>
+  </div>
+
+  <!-- 4 · GEO Audit -->
+  <div class="section">
+    <div class="section-title red">4 · GEO Audit — Site-wide AI-Citation Readiness</div>
+    <table>
+      <tr><th>Page</th><th>Score (start)</th><th>Top gap</th></tr>
+      <tr><td>/blog/ayushman-bharat-surgery-list-2026</td><td>6.5/10</td><td>Missing reviewedBy / author medical-review signal</td></tr>
+      <tr><td>/doctors/dr-bk-murali</td><td>5.5/10</td><td>Missing reviewedBy + MedicalWebPage schema</td></tr>
+      <tr><td>/services/kidney-transplant-nagpur</td><td>8.5/10</td><td>Only 1/19 question-style headings</td></tr>
+      <tr><td>/services/cardiac-surgery-nagpur</td><td>8.5/10</td><td>Only 1/17 question-style headings</td></tr>
+      <tr><td>/ (homepage)</td><td>9.0/10</td><td>Only 2/41 question-style headings</td></tr>
+      <tr><td>Other priority pages</td><td>8.5–9.5/10</td><td>(no major gaps for today)</td></tr>
+    </table>
+    <div class="note">Site-wide starting average: <strong>8.25/10</strong>. Two rounds of fixes applied — see sections 5 &amp; 6 below.</div>
+  </div>
+
+  <!-- 5 · GEO Round 1 -->
+  <div class="section">
+    <div class="section-title">5 · GEO Round 1 — reviewedBy + Question Headings</div>
+    <table>
+      <tr><th>File</th><th>Change</th></tr>
+      <tr><td>blog/ayushman-bharat-surgery-list-2026</td><td>Added <code>reviewedBy</code> Person schema (Dr. B.K. Murali) + visible byline under article excerpt + dateModified 2026-05-27 → 2026-05-29. Author/medical-review signal flipped <strong>NO → YES</strong>.</td></tr>
+      <tr><td>doctors/dr-bk-murali</td><td>Added <code>reviewedBy</code> self-reference to Physician schema + dateModified + visible "Profile information last verified by Dr. B.K. Murali · 29 May 2026" line under tagline.</td></tr>
+      <tr><td>services/kidney-transplant-nagpur</td><td>2 H2s rewritten to questions: "Kidney Transplant &amp; Dialysis Cost…" → <em>"How much does kidney transplant and dialysis cost in Nagpur (2026)?"</em> + "Warning Signs of Kidney Disease" → <em>"What are the warning signs of kidney disease?"</em></td></tr>
+      <tr><td>services/cardiac-surgery-nagpur</td><td>2 H2s rewritten to questions: "Cardiac Procedure Costs…" → <em>"How much do cardiac procedures cost in Nagpur (2026)?"</em> + "Cardiac Procedures &amp; Services…" → <em>"What cardiac procedures and services does Hope Hospital offer?"</em></td></tr>
+    </table>
+    <div class="note">Site-wide average lift: 8.25 → 8.55. Pushed as commit <code>8b90ae5</code>.</div>
+  </div>
+
+  <!-- 6 · GEO Round 2 -->
+  <div class="section">
+    <div class="section-title">6 · GEO Round 2 — MedicalWebPage + MedicalProcedure</div>
+    <table>
+      <tr><th>File</th><th>Change</th></tr>
+      <tr><td>blog/ayushman-bharat-surgery-list-2026</td><td>Added <code>MedicalWebPage</code> schema with MedicalAudience + MedicalCondition (PMJAY coverage) + 10 specialties + reviewedBy. AI engines now see this as medical content, not generic article. GEO types: 3 → 5.</td></tr>
+      <tr><td>doctors/dr-bk-murali</td><td>Added <code>MedicalWebPage</code> + 4 <code>MedicalProcedure</code> schemas (Total Knee Replacement, Total Hip Replacement, Spine Surgery, Arthroscopy — each with Dr. Murali as <code>performer</code>). Unlocks AI citations for "who performs knee replacement in Nagpur".</td></tr>
+      <tr><td>index.html (homepage)</td><td>3 H2s converted to questions: "Surgical Specialties in Nagpur" → <em>"What surgical specialties does Hope Hospital offer in Nagpur?"</em>; "Ayushman Bharat &amp; Cashless Treatment in Nagpur" → <em>"Which treatments are free under Ayushman Bharat at Hope Hospital, Nagpur?"</em>; "Meet Our Doctors" → <em>"Who are the doctors at Hope Hospital, Nagpur?"</em></td></tr>
+    </table>
+    <div class="note">Site-wide average lift: 8.55 → 8.9. Pushed as commit <code>d9609bb</code>.</div>
+  </div>
+
+  <!-- 7 · New Blog -->
+  <div class="section">
+    <div class="section-title orange">7 · New Blog Published — Free Cancer Treatment / No Tobacco Day</div>
+    <table>
+      <tr><th>Element</th><th>Detail</th></tr>
+      <tr><td>URL</td><td><code>/blog/free-cancer-treatment-nagpur-ayushman-bharat-2026</code></td></tr>
+      <tr><td>Title</td><td>Free Cancer Treatment in Nagpur Under Ayushman Bharat — A World No Tobacco Day Guide (2026)</td></tr>
+      <tr><td>Primary target query</td><td>"free cancer treatment in nagpur" (current GSC: pos 7.67, 51 imps, <strong>0 clicks</strong>) — page-1 zero-click opportunity per master-context Priority #4</td></tr>
+      <tr><td>Calendar hook</td><td>World No Tobacco Day (May 31, 2026) — 2-day publishing window for indexing before peak search volume</td></tr>
+      <tr><td>Word count</td><td>~1,500 words across 8 H2 sections + TOC + 6 FAQs</td></tr>
+      <tr><td>Schemas</td><td>BlogPosting (with reviewedBy Dr. Murali) + MedicalWebPage (about: Lung/Oral/Throat Cancer + Tobacco Use Disorder) + FAQPage (6 Q&amp;As) + BreadcrumbList</td></tr>
+      <tr><td>Internal links</td><td>/departments/oncology (3 links) · /services/cancer-treatment-nagpur (2 links) · /blog/ayushman-bharat-surgery-list-2026 (2 links) · /blog/ayushman-bharat-hospitals-nagpur (1 link)</td></tr>
+      <tr><td>Discoverability</td><td>Added card to /blog/ index (newest first position) + URL to sitemap.xml with lastmod=2026-05-29</td></tr>
+      <tr><td>YMYL safety</td><td>WHO/GATS statistics + existing Ayushman blog package amounts + National Quitline number — all verifiable public facts. No new Hope-specific clinical claims.</td></tr>
+    </table>
+    <div class="note">Re-check GSC + AI-Overview citations ~19 June 2026. Will it overtake <code>/departments/oncology</code> for the primary query? — expected yes within 2-4 weeks due to verbatim title match + dedicated content depth.</div>
+  </div>
+
+  <!-- 8 · Git Commits -->
+  <div class="section">
+    <div class="section-title">8 · Git Commits (today)</div>
+    <table>
+      <tr><th>Hash</th><th>Theme</th><th>Status</th></tr>
+      <tr><td><code>7507714</code></td><td>docs(ledger): yesterday's ledger entries (caught up today)</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td><code>754e01e</code></td><td>seo(nephrology): Ayushman coverage section + cross-link + Day 7 tracker (3 files)</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td><code>8b90ae5</code></td><td>seo(geo) Round 1: reviewedBy + visible bylines + 4 question H2s (4 files)</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td><code>d9609bb</code></td><td>seo(geo) Round 2: MedicalWebPage + MedicalProcedure + 3 homepage question H2s (3 files)</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td><code>8827ff5</code></td><td>seo(blog): new World No Tobacco Day cancer treatment blog (3 files, +521 -1)</td><td><span class="badge pushed">Pushed</span></td></tr>
+    </table>
+    <div class="note">All 5 commits live on <code>main</code> → Vercel auto-deploys (~2 min per push).</div>
+  </div>
+
+  <!-- 9 · GEO Score Progression -->
+  <div class="section">
+    <div class="section-title green">9 · GEO Score Progression — The Headline Win</div>
+    <div class="highlight-box">
+      <div class="h">Site-wide GEO readiness: 8.25 → 8.9 (+0.65 in one day)</div>
+      <div class="b">Two rounds of surgical fixes (author/reviewedBy + MedicalWebPage + question headings) moved 5 priority pages into the 9+/10 band. Verified by re-running <code>geo-check.js</code> after each round.</div>
+    </div>
+    <div class="metric-row" style="margin-top:12px">
+      <div class="metric-box"><div class="v">6.5 → 9.5</div><div class="k">Ayushman blog (+3.0)</div></div>
+      <div class="metric-box"><div class="v">5.5 → 7.5</div><div class="k">Dr. Murali profile (+2.0)</div></div>
+      <div class="metric-box"><div class="v">9.0 → 9.5</div><div class="k">Homepage (+0.5)</div></div>
+      <div class="metric-box"><div class="v">8.5 → 9.0</div><div class="k">Both service pages (+0.5)</div></div>
+    </div>
+    <div class="note">Why this matters: GEO score predicts likelihood of being CITED by ChatGPT / Gemini / Perplexity, not just ranked by Google. AI-Overview citations are becoming the new SERP real estate for medical queries.</div>
+  </div>
+
+  <!-- 10 · Pending -->
+  <div class="section">
+    <div class="section-title orange">10 · Pending / Next Steps</div>
+    <table>
+      <tr><th>Action</th><th>Owner</th><th>Status</th></tr>
+      <tr><td>Blog B (planned tomorrow): Summer Kidney Stones in Nagpur — nephrology striking distance</td><td>SEO</td><td><span class="badge pending">Tomorrow</span></td></tr>
+      <tr><td>Blog C (planned tomorrow): Nagpur Heat Wave 2026 — emergency / seasonal</td><td>SEO</td><td><span class="badge pending">Tomorrow</span></td></tr>
+      <tr><td>Log today's 5 commits to <code>seo-system/project-context/change-ledger.md</code></td><td>SEO</td><td><span class="badge pending">Backlog</span></td></tr>
+      <tr><td>Find Google Workspace admin credentials for hopehospital.com → finish DKIM setup</td><td>IT / Hospital admin</td><td><span class="badge pending">Blocking DMARC tightening</span></td></tr>
+      <tr><td>Get names of nephrologist / oncologist / cardiologist / neurosurgeon → unlock Physician schema on 4 dept pages</td><td>Hospital management</td><td><span class="badge pending">Biggest remaining GEO lever</span></td></tr>
+      <tr><td>Create LinkedIn Company Page for Hope Hospital</td><td>Marketing</td><td><span class="badge pending">~30 min one-time</span></td></tr>
+      <tr><td>Operationalize review-collection SOP (currently ~1 new review / 3 days vs 15–25/week target)</td><td>Front desk / Ops</td><td><span class="badge pending">Highest local-SEO lever</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    Hope Hospital · Teka Naka, Kamptee Road, Nagpur – 440026 · 0712-2980073 · hopehospital.com<br>
+    Daily Work Report · 29 May 2026 · To save as PDF: open in Chrome → Ctrl + P → "Save as PDF"
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Work Report – Hope Hospital | 26 May 2026</title>
+<style>
+  @media print {
+    body { margin: 0; background: #fff; }
+    .no-print { display: none; }
+    .wrapper { box-shadow: none; }
+    .section { page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #1a1a2e; font-size: 13px; }
+  .wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 36px 48px 48px; box-shadow: 0 4px 24px rgba(0,0,0,.10); }
+  .report-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #1B365D; padding-bottom: 18px; margin-bottom: 24px; }
+  .report-header h1 { font-size: 22px; color: #1B365D; font-weight: 800; line-height: 1.3; }
+  .report-header .meta { text-align: right; font-size: 12px; color: #555; line-height: 1.8; }
+  .report-header .meta strong { color: #1B365D; }
+  .logo-text { font-size: 26px; font-weight: 900; color: #D31211; letter-spacing: -1px; }
+  .logo-text span { color: #1B365D; }
+  .summary-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #f0f4ff; border-radius: 10px; padding: 14px 16px; text-align: center; border-top: 4px solid #1B365D; }
+  .summary-card.green { border-top-color: #16a34a; background: #f0fdf4; }
+  .summary-card.blue { border-top-color: #1d4ed8; background: #eff6ff; }
+  .summary-card.orange { border-top-color: #ea580c; background: #fff7ed; }
+  .summary-card .num { font-size: 26px; font-weight: 800; color: #1B365D; line-height: 1.1; }
+  .summary-card.green .num { color: #16a34a; }
+  .summary-card.blue .num { color: #1d4ed8; }
+  .summary-card.orange .num { color: #ea580c; }
+  .summary-card .label { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .section { margin-bottom: 26px; }
+  .section-title { font-size: 14px; font-weight: 800; color: #fff; background: #1B365D; padding: 8px 14px; border-radius: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .6px; }
+  .section-title.red { background: #D31211; }
+  .section-title.green { background: #16a34a; }
+  .section-title.blue { background: #1a6fa8; }
+  .section-title.orange { background: #ea580c; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #f0f4ff; color: #1B365D; font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid #d0d8ef; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.55; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .badge.done { background: #dcfce7; color: #15803d; }
+  .badge.pushed { background: #dbeafe; color: #1d4ed8; }
+  .badge.fixed { background: #fce7f3; color: #9d174d; }
+  .badge.live { background: #d1fae5; color: #065f46; }
+  .badge.win { background: #fef9c3; color: #854d0e; }
+  .badge.pending { background: #fef3c7; color: #92400e; }
+  .metric-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 6px; }
+  .metric-box { background: #f8fafc; border-radius: 8px; padding: 10px 12px; border-left: 4px solid #1B365D; }
+  .metric-box .v { font-size: 18px; font-weight: 800; color: #1B365D; }
+  .metric-box .k { font-size: 10.5px; color: #555; font-weight: 600; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 11.5px; color: #1e40af; }
+  .note { font-size: 11.5px; color: #555; line-height: 1.6; margin-top: 8px; }
+  .pdfbtn { background: #1B365D; color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; margin: 16px auto; display: block; }
+  .footer { text-align: center; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; margin-top: 18px; padding-top: 16px; }
+</style>
+</head>
+<body>
+<button class="pdfbtn no-print" onclick="window.print()">🖨️  Save as PDF  (Ctrl + P → Save as PDF)</button>
+<div class="wrapper">
+
+  <div class="report-header">
+    <div>
+      <div class="logo-text">Hope<span>Hospital</span></div>
+      <h1>Daily Work Report — SEO &amp; Digital</h1>
+    </div>
+    <div class="meta">
+      <strong>Date:</strong> 26 May 2026<br>
+      <strong>Scope:</strong> Medical-team E-E-A-T build-out<br>
+      <strong>Status:</strong> 1 commit (10 files) pushed to live site
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="summary-card blue"><div class="num">3</div><div class="label">New Doctor Pages</div></div>
+    <div class="summary-card green"><div class="num">2</div><div class="label">Real Profiles Built</div></div>
+    <div class="summary-card orange"><div class="num">+3</div><div class="label">Sitemap URLs</div></div>
+    <div class="summary-card green"><div class="num">0 / 0</div><div class="label">SEO Audit Issues</div></div>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-title">1 · Strategy — Why Doctors Matter</div>
+    <table>
+      <tr><th>Finding</th><th>Detail</th></tr>
+      <tr><td>Competitor research</td><td>"best hospital in nagpur" #1 = Max (national chain, ~42 doctors); #2 CARE (4.4★/2,747). Their edge = authority + reviews + a deep, credentialed medical team.</td></tr>
+      <tr><td>Our biggest on-site gap</td><td>Hope had <strong>only 1 doctor profile</strong> (Dr. Murali). Specialty pages were "reviewed by" a generic team — weak E-E-A-T for a YMYL/medical site.</td></tr>
+      <tr><td>Plan</td><td>Build real, credentialed doctor profiles + a team directory + per-specialty named reviewers. (2026 healthcare-SEO: named physician authors are a ranking factor.)</td></tr>
+    </table>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-title green">2 · New Doctor Profiles (real data)</div>
+    <table>
+      <tr><th>Doctor</th><th>Specialty &amp; Credentials</th><th>Status</th></tr>
+      <tr><td>Dr. Nikhil K. Khobragade</td><td>Gastroenterologist, Hepatologist &amp; Therapeutic Endoscopist — MBBS, MD, DM (Gastro), 30+ yrs</td><td><span class="badge done">Built</span></td></tr>
+      <tr><td>Dr. Dheeraj Gupta</td><td>Orthopaedic / Joint Replacement Surgeon — MBBS, MS (Ortho), Fellowship, 13+ yrs</td><td><span class="badge done">Built</span></td></tr>
+    </table>
+    <div class="note">Each page: hero, stats, specialization cards, education, FAQ, CTA + <code>Physician</code>, <code>FAQPage</code> &amp; <code>BreadcrumbList</code> schema. <strong>No invented ratings/counts</strong>; official NAP only. Real photos sourced from theayushmanhospital.com (your approval) and hosted locally on hopehospital.com.</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-title blue">3 · Our Doctors Directory + Homepage</div>
+    <table>
+      <tr><th>Task</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>/doctors page (new)</td><td>Card-grid directory of all 3 doctors with <code>ItemList</code> schema</td><td><span class="badge done">Built</span></td></tr>
+      <tr><td>Homepage "Meet Our Doctors"</td><td>New section above patient reviews — 3 doctor cards linking to profiles + "View All Doctors"</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td>Sitemap</td><td>Added <code>/doctors</code> + both profile URLs (3 total)</td><td><span class="badge done">Done</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-title red">4 · E-E-A-T — Named Specialty Reviewer</div>
+    <table>
+      <tr><th>Page</th><th>Change</th><th>Status</th></tr>
+      <tr><td>departments/gastroenterology</td><td>Reviewer: generic "Gastroenterology Team" → named <strong>Dr. Nikhil Khobragade</strong> (schema <code>reviewedBy</code> + visible linked byline)</td><td><span class="badge fixed">Fixed</span></td></tr>
+      <tr><td>services/gastroenterology-nagpur</td><td>Same — schema <code>reviewedBy</code> now a named Physician with profile link</td><td><span class="badge fixed">Fixed</span></td></tr>
+    </table>
+    <div class="note">Named, credentialed reviewers strengthen medical-page trust signals far more than a generic "team".</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-title">5 · Git Commit (pushed to live site)</div>
+    <table>
+      <tr><th>Hash</th><th>Change</th></tr>
+      <tr><td><code>ece2b0f</code></td><td>doctors: add real specialist profiles + Our Doctors directory + homepage team section (10 files, +176 / −5)</td></tr>
+    </table>
+    <div class="note">Pushed to <code>main</code> → auto-deploys to live site via Vercel. Audit clean (0 fix-now / 0 review) throughout.</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-title orange">6 · Pending / Next Steps</div>
+    <table>
+      <tr><th>Action</th><th>Owner</th><th>Status</th></tr>
+      <tr><td>Doctor sign-off on the 2 bios + experience figures before treating as final</td><td>Hospital / Doctors</td><td><span class="badge pending">Awaiting</span></td></tr>
+      <tr><td>Higher-res headshot for Dr. Khobragade (current 150×150) — 1-line swap</td><td>Marketing</td><td><span class="badge pending">Optional</span></td></tr>
+      <tr><td>Provide doctors for Cardiology, Nephrology, Neurosurgery, Oncology, Mother &amp; Child — to build profiles + fix those pages' reviewer</td><td>Hospital</td><td><span class="badge pending">Pending</span></td></tr>
+      <tr><td>GSC URL Inspection → Request Indexing for /doctors + 2 profiles</td><td>SEO</td><td><span class="badge pending">Pending</span></td></tr>
+      <tr><td>Keep reviews drive running (3.9★ → 4.3★) — the decisive lever for "best hospital in nagpur"</td><td>Front desk / Marketing</td><td><span class="badge pending">In progress</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    Hope Hospital · Teka Naka, Kamptee Road, Nagpur – 440026 · 0712-2980073 · hopehospital.com<br>
+    Daily Work Report · 26 May 2026 · To save as PDF: open in Chrome → Ctrl + P → "Save as PDF"
+  </div>
+
+</div>
+</body>
+</html>

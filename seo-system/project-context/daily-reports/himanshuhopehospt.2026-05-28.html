@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Work Report – Hope Hospital | 28 May 2026</title>
+<style>
+  @media print {
+    body { margin: 0; background: #fff; }
+    .no-print { display: none; }
+    .wrapper { box-shadow: none; }
+    .section { page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #1a1a2e; font-size: 13px; }
+  .wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 36px 48px 48px; box-shadow: 0 4px 24px rgba(0,0,0,.10); }
+  .report-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #1B365D; padding-bottom: 18px; margin-bottom: 24px; }
+  .report-header h1 { font-size: 22px; color: #1B365D; font-weight: 800; line-height: 1.3; }
+  .report-header .meta { text-align: right; font-size: 12px; color: #555; line-height: 1.8; }
+  .report-header .meta strong { color: #1B365D; }
+  .logo-text { font-size: 26px; font-weight: 900; color: #D31211; letter-spacing: -1px; }
+  .logo-text span { color: #1B365D; }
+  .summary-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #f0f4ff; border-radius: 10px; padding: 14px 16px; text-align: center; border-top: 4px solid #1B365D; }
+  .summary-card.green { border-top-color: #16a34a; background: #f0fdf4; }
+  .summary-card.blue { border-top-color: #1d4ed8; background: #eff6ff; }
+  .summary-card.orange { border-top-color: #ea580c; background: #fff7ed; }
+  .summary-card .num { font-size: 26px; font-weight: 800; color: #1B365D; line-height: 1.1; }
+  .summary-card.green .num { color: #16a34a; }
+  .summary-card.blue .num { color: #1d4ed8; }
+  .summary-card.orange .num { color: #ea580c; }
+  .summary-card .label { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .section { margin-bottom: 26px; }
+  .section-title { font-size: 14px; font-weight: 800; color: #fff; background: #1B365D; padding: 8px 14px; border-radius: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .6px; }
+  .section-title.red { background: #D31211; }
+  .section-title.green { background: #16a34a; }
+  .section-title.blue { background: #1a6fa8; }
+  .section-title.orange { background: #ea580c; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #f0f4ff; color: #1B365D; font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid #d0d8ef; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.55; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .badge.done { background: #dcfce7; color: #15803d; }
+  .badge.pushed { background: #dbeafe; color: #1d4ed8; }
+  .badge.fixed { background: #fce7f3; color: #9d174d; }
+  .badge.live { background: #d1fae5; color: #065f46; }
+  .badge.win { background: #fef9c3; color: #854d0e; }
+  .badge.pending { background: #fef3c7; color: #92400e; }
+  .badge.local { background: #ede9fe; color: #5b21b6; }
+  .metric-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 6px; }
+  .metric-box { background: #f8fafc; border-radius: 8px; padding: 10px 12px; border-left: 4px solid #1B365D; }
+  .metric-box .v { font-size: 18px; font-weight: 800; color: #1B365D; }
+  .metric-box .k { font-size: 10.5px; color: #555; font-weight: 600; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 11.5px; color: #1e40af; }
+  .note { font-size: 11.5px; color: #555; line-height: 1.6; margin-top: 8px; }
+  .pdfbtn { background: #1B365D; color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; margin: 16px auto; display: block; }
+  .footer { text-align: center; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; margin-top: 18px; padding-top: 16px; }
+  .highlight-box { background: #ecfdf5; border-left: 5px solid #16a34a; padding: 14px 16px; border-radius: 8px; margin: 10px 0; }
+  .highlight-box .h { font-weight: 800; color: #15803d; font-size: 13px; margin-bottom: 6px; }
+  .highlight-box .b { font-size: 12px; color: #1a1a2e; line-height: 1.6; }
+</style>
+</head>
+<body>
+<button class="pdfbtn no-print" onclick="window.print()">🖨️  Save as PDF  (Ctrl + P → Save as PDF)</button>
+<div class="wrapper">
+
+  <div class="report-header">
+    <div>
+      <div class="logo-text">Hope<span>Hospital</span></div>
+      <h1>Daily Work Report — SEO &amp; Digital</h1>
+    </div>
+    <div class="meta">
+      <strong>Date:</strong> 28 May 2026<br>
+      <strong>Scope:</strong> Ayushman long-tail + nephrology link + DNS email auth + GBP<br>
+      <strong>Status:</strong> 3 commits pushed live · Vercel auto-deployed
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="summary-card blue"><div class="num">3</div><div class="label">Commits Pushed</div></div>
+    <div class="summary-card green"><div class="num">3</div><div class="label">DNS Records Fixed</div></div>
+    <div class="summary-card orange"><div class="num">+4</div><div class="label">New H3 Sections</div></div>
+    <div class="summary-card"><div class="num">+5.7×</div><div class="label">Clicks vs 90-day avg</div></div>
+  </div>
+
+  <!-- 1 · Strategy -->
+  <div class="section">
+    <div class="section-title">1 · Strategy — Focus of the Day</div>
+    <table>
+      <tr><th>Area</th><th>Detail</th></tr>
+      <tr><td>Daily SEO audit</td><td><code>npm run audit</code> ran clean — <strong>0 fix-now, 0 review</strong> across 51 indexable pages. Opportunity-driven plan instead of bug-driven.</td></tr>
+      <tr><td>Top growth lever</td><td>Ayushman long-tail expansion — added 4 deep H3 sub-sections targeting striking-distance queries (pos 6–10).</td></tr>
+      <tr><td>Striking distance</td><td>Strengthened homepage → <code>/departments/nephrology</code> link (anchor "nephrology team") to support <em>nephrologist nagpur</em> queries.</td></tr>
+      <tr><td>Email deliverability</td><td>Fixed broken SPF (Google Workspace was unauthorized) and added DMARC monitoring record — closed audit-tool DMARC warning.</td></tr>
+    </table>
+  </div>
+
+  <!-- 2 · Ayushman Long-Tail -->
+  <div class="section">
+    <div class="section-title green">2 · Ayushman Blog — Long-Tail Expansion</div>
+    <table>
+      <tr><th>New anchor</th><th>Target GSC query (current pos)</th><th>Status</th></tr>
+      <tr><td><code>#angioplasty-package</code></td><td>"angioplasty package in ayushman bharat" (pos 6.2)</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td><code>#orthopedic-package-list</code></td><td>"ayushman bharat orthopedic package list" (pos 9.82)</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td><code>#knee-replacement-package</code></td><td>"ayushman bharat knee replacement package" (pos 8.13)</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td><code>#rirs-ayushman</code></td><td>"rirs surgery in ayushman card" (pos 7.57)</td><td><span class="badge live">Live</span></td></tr>
+    </table>
+    <div class="note">Also: 4 visible Q&amp;As added to FAQ section (matching each anchor) + 4 JSON-LD <code>FAQPage</code> mainEntity entries + 1 new Quick Navigation link. Rates restated from existing on-page table (no new medical claims). Re-check GSC ~18 June 2026.</div>
+  </div>
+
+  <!-- 3 · Homepage Nephrology Link -->
+  <div class="section">
+    <div class="section-title blue">3 · Homepage → Nephrology Contextual Link</div>
+    <table>
+      <tr><th>Page</th><th>Change</th><th>Status</th></tr>
+      <tr><td>index (home) — kidney-care FAQ</td><td>Converted naked phrase "Our nephrology team provides complete kidney care…" into a contextual link <code>/departments/nephrology</code>. Anchor text "nephrology team" matches striking-distance queries (<em>nephrologist nagpur</em> pos 9.81, <em>best nephrologist in nagpur</em> pos 11.44).</td><td><span class="badge live">Live</span></td></tr>
+    </table>
+    <div class="note">Previously, the only homepage link to the nephrology department was in the nav grid with weak anchor "Nephrology". The new contextual link inside a topical Q&amp;A about kidney care carries stronger weight than nav-grid links.</div>
+  </div>
+
+  <!-- 4 · Footer Contrast Fix -->
+  <div class="section">
+    <div class="section-title orange">4 · Footer Accessibility Fix</div>
+    <table>
+      <tr><th>Asset</th><th>Change</th><th>Status</th></tr>
+      <tr><td>css/styles.min.css — footer column headings</td><td>Bumped contrast <code>#3BA1D7 → #AED6F1</code> on the navy footer. Ratio went <strong>4.28:1 → 7.74:1</strong> (fails WCAG AA → passes AAA). Fixes PageSpeed Insights accessibility flag on QUICK LINKS / DEPARTMENTS / TREATMENTS / FIND US labels.</td><td><span class="badge live">Live</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 5 · DNS / Email Auth -->
+  <div class="section">
+    <div class="section-title red">5 · DNS / Email Authentication Fix</div>
+    <table>
+      <tr><th>Record</th><th>Change</th><th>Status</th></tr>
+      <tr><td>SPF (TXT @ hopehospital.com)</td><td>Was <code>v=spf1 include:secureserver.net -all</code> → only authorized GoDaddy. Replaced with <code>v=spf1 include:_spf.google.com include:secureserver.net -all</code> — now Google Workspace + GoDaddy both authorized. Fixes a pre-existing issue: Google-sent emails were failing SPF.</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td>DMARC (TXT @ _dmarc.hopehospital.com)</td><td>Added monitoring-only DMARC record: <code>v=DMARC1; p=none; rua=mailto:info@hopehospital.com; pct=100; adkim=r; aspf=r</code>. Closes audit-tool DMARC warning. Tighten to <code>p=quarantine</code> after DKIM is added and 2–3 weeks of clean reports.</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td>DKIM (Google Workspace)</td><td>Not set up. Requires Google Workspace admin credentials (chatgptnotes@gmail.com is personal Gmail, not Workspace admin). Need to find original Workspace admin for hopehospital.com.</td><td><span class="badge pending">Pending — needs admin access</span></td></tr>
+    </table>
+    <div class="note">Verified live across 3 independent tools: Cloudflare DNS, Google DNS, Vercel authoritative NS — all confirm correct records. External validators (MxToolbox SuperTool + dmarcian DMARC Inspector) both show all-green SPF + DMARC found.</div>
+  </div>
+
+  <!-- 6 · Git Commits -->
+  <div class="section">
+    <div class="section-title">6 · Git Commits</div>
+    <table>
+      <tr><th>Hash</th><th>Change</th><th>Status</th></tr>
+      <tr><td><code>327df58</code></td><td>a11y(footer): column-heading contrast to AA (#3BA1D7 → #AED6F1)</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td><code>616467b</code></td><td>seo(ayushman): long-tail H3 sections + 4 FAQs for striking-distance queries</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td><code>35a139f</code></td><td>seo(home): add contextual /departments/nephrology link in kidney-care FAQ</td><td><span class="badge pushed">Pushed</span></td></tr>
+      <tr><td><code>7507714</code></td><td>docs(ledger): log 2026-05-28 work — Ayushman, footer, DNS auth (3 rows added)</td><td><span class="badge local">Local only (not pushed)</span></td></tr>
+    </table>
+    <div class="note">All 3 production commits auto-deployed to live site via Vercel. Ledger commit kept local intentionally — internal SEO tracking, will piggyback on next push.</div>
+  </div>
+
+  <!-- 7 · Google Business Profile -->
+  <div class="section">
+    <div class="section-title green">7 · Google Business Profile Work</div>
+    <table>
+      <tr><th>Action</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Published Day 6 GBP post</td><td>Stroke Emergency Awareness post (FAST method, 24/7 neurosurgery emergency) — published manually to GBP. Visible in "Your posts" panel.</td><td><span class="badge live">Live</span></td></tr>
+      <tr><td>Marked Day 6 as ✅ PUBLISHED in tracker</td><td><code>gbp-posts-week1.html</code> Day 6 badge updated (matches Day 4/5 pattern).</td><td><span class="badge done">Done (local)</span></td></tr>
+      <tr><td>Stroke awareness image design</td><td>Iterated through Canva + ChatGPT + Gemini AI image generators. Settled on premium navy + red brand poster with FAST acronym blocks and dedicated logo overlay area.</td><td><span class="badge done">Image generated</span></td></tr>
+      <tr><td>Drafted 3 GBP posts for 28 May</td><td>New file <code>seo-system/gbp/gbp-posts-2026-05-28.md</code>: (1) Ayushman package amounts, (2) Nephrology/kidney care, (3) World No Tobacco Day (31 May). All with image ideas + CTAs. Plus 3 review-reply templates (5★ / 3★ / 1–2★).</td><td><span class="badge pending">Ready to publish</span></td></tr>
+      <tr><td>Drafted reply to Aisha Sheikh 1★ review</td><td>Empathetic reply in English (per official-channel rule), routes complainant to 0712-2980073 patient-care lead, no medical specifics disclosed.</td><td><span class="badge pending">Ready to post</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 8 · Daily Audit & Change Ledger -->
+  <div class="section">
+    <div class="section-title blue">8 · SEO-System Updates</div>
+    <table>
+      <tr><th>File</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>seo-system/project-context/change-ledger.md</td><td>Logged 3 new rows for outcome review: (1) Ayushman long-tail expansion, (2) Footer contrast a11y, (3) DNS SPF/DMARC fix.</td><td><span class="badge done">Logged</span></td></tr>
+      <tr><td>seo-system/reports/seo-audit-2026-05-28.md</td><td>Daily audit report generated — clean (0 issues across 51 pages).</td><td><span class="badge done">Generated</span></td></tr>
+      <tr><td>memory/feedback_stay_in_seo_lane.md</td><td>New feedback memory: do not redirect SEO sessions to billing/admin/ops issues (e.g. Vercel payment banner) even if visible — user handles those separately.</td><td><span class="badge done">Saved</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 9 · GSC Growth Observation -->
+  <div class="section">
+    <div class="section-title green">9 · Google Search Console — Growth Trend (real win)</div>
+    <div class="highlight-box">
+      <div class="h">SEO is accelerating — 5.7× clicks vs 90-day baseline</div>
+      <div class="b">Last 24 hours generated more clicks than the 90-day average week. The recent Ayushman + doctor + internal-link work is compounding fast.</div>
+    </div>
+    <div class="metric-row" style="margin-top:12px">
+      <div class="metric-box"><div class="v">6 → 35</div><div class="k">Clicks/day (90d → 24h)</div></div>
+      <div class="metric-box"><div class="v">260 → 1,670</div><div class="k">Impressions/day (90d → 24h)</div></div>
+      <div class="metric-box"><div class="v">8.0 → 7.0</div><div class="k">Avg position (90d → 24h)</div></div>
+      <div class="metric-box"><div class="v">2.3% → 2.4%</div><div class="k">CTR holding steady</div></div>
+    </div>
+    <div class="note">Today's commits haven't reached GSC yet (Google takes 3–7 days to fully reflect). So the curve should continue climbing through next 2 weeks as Ayushman long-tail + nephrology link land in the index.</div>
+  </div>
+
+  <!-- 10 · Pending / Next Steps -->
+  <div class="section">
+    <div class="section-title orange">10 · Pending / Next Steps</div>
+    <table>
+      <tr><th>Action</th><th>Owner</th><th>Status</th></tr>
+      <tr><td>Reply to Aisha Sheikh 1★ review (Hinglish, alleged neglect) — within 48h</td><td>Marketing / Patient Care</td><td><span class="badge pending">Draft ready</span></td></tr>
+      <tr><td>Publish 28-May GBP posts (Ayushman / Nephrology / No Tobacco Day) — stagger over 2–3 days</td><td>Marketing</td><td><span class="badge pending">To publish</span></td></tr>
+      <tr><td>Find Google Workspace admin credentials for hopehospital.com → finish DKIM setup</td><td>IT / Hospital admin</td><td><span class="badge pending">Blocking DMARC tightening</span></td></tr>
+      <tr><td>Create LinkedIn Company Page for Hope Hospital (E-E-A-T + recruitment + B2B)</td><td>Marketing</td><td><span class="badge pending">~30 min one-time task</span></td></tr>
+      <tr><td>Operationalize the review-collection SOP (currently +1 review / 3 days vs 15–25/week target)</td><td>Front desk / Ops</td><td><span class="badge pending">Highest-leverage local-SEO lever</span></td></tr>
+      <tr><td>Start <code>/departments/nephrology</code> content depth (procedures, dialysis modes, named nephrologist, FAQs)</td><td>SEO + Doctors</td><td><span class="badge pending">Next big lever</span></td></tr>
+      <tr><td>PageSpeed Mobile perf at 78 — image/font optimization (deferrable)</td><td>SEO/Dev</td><td><span class="badge pending">Low priority</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    Hope Hospital · Teka Naka, Kamptee Road, Nagpur – 440026 · 0712-2980073 · hopehospital.com<br>
+    Daily Work Report · 28 May 2026 · To save as PDF: open in Chrome → Ctrl + P → "Save as PDF"
+  </div>
+
+</div>
+</body>
+</html>
