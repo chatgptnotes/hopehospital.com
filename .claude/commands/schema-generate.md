@@ -32,6 +32,6 @@ exactly where to insert it in the page.
 - Use **only true facts**. Do **not** invent doctor names, credentials, ratings,
   or medical claims. Where real data is missing (e.g. a named oncologist), **stop
   and flag** "needs real data + doctor sign-off" rather than guessing.
-- Org-level rating, where used, is **3.9 / 406**. **No Hindi.**
+- Org-level rating, where used, is **3.9 / 415**. **No Hindi.**
 - **Generate only** — do not edit the live file or commit until the user approves.
   After approved edits, remind them to log it to `change-ledger.md`.

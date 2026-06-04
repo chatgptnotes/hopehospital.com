@@ -22,7 +22,7 @@ review replies — for the user to publish manually.
 
 ## Rules
 - **Only true facts** — no invented services, doctors, stats, or claims. Rating is
-  3.9/406. **No Hindi.**
+  3.9/415. **No Hindi.**
 - Reviews involve real patients: be empathetic, **never disclose any patient or
   medical detail**, and route specifics to a private channel.
 - Draft only — the user publishes to GBP manually. Save drafts under `seo-system/gbp/`.

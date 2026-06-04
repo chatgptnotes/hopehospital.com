@@ -30,5 +30,5 @@ Perplexity) — not just ranked by Google.
 
 ## Rules
 - Respect hard constraints: **no review schema on blog articles**; medical content
-  needs **doctor sign-off**; **no Hindi**; rating is 3.9/406.
+  needs **doctor sign-off**; **no Hindi**; rating is 3.9/415.
 - Plan only — do **not** edit files or commit until the user approves.
