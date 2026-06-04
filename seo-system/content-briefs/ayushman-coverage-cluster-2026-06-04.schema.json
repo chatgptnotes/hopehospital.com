@@ -1,0 +1,23 @@
+// Ayushman "Is X covered?" cluster — 6 NEW FAQ entries
+// Companion to: ayushman-coverage-cluster-2026-06-04.md
+// Status: GENERATE-ONLY. Do NOT publish until (1) the visible "Quick Checker" Q&A
+//   section is added to the page (FAQ schema must match visible content), and
+//   (2) the package figures are confirmed with Dr. Murali / the PMJAY desk.
+//
+// MERGE target: the EXISTING FAQPage <script type="application/ld+json"> on
+//   blog/ayushman-bharat-surgery-list-2026.html  →  append these to its
+//   "mainEntity" array (14 -> 20 questions). Do NOT create a second FAQPage.
+//   Adjust comma placement when pasting after the current last entry.
+//
+// Constraints: qualifier-safe ("covered / cashless for eligible cardholders").
+//   No aggregateRating/Review (blog rule). No Hindi. Figures reuse the page's
+//   existing package table + the gastro/maternity/nephrology service pages.
+
+[
+  {"@type":"Question","name":"Is endoscopy, colonoscopy or ERCP covered under Ayushman Bharat?","acceptedAnswer":{"@type":"Answer","text":"Yes. Diagnostic and therapeutic upper GI endoscopy, colonoscopy (including polyp removal) and ERCP (bile-duct stone removal) are covered under Ayushman Bharat (PM-JAY) and MJPJAY at empaneled hospitals like Hope Hospital, Nagpur. Indicative package amounts are approximately Rs. 3,000-6,000 for endoscopy, Rs. 5,000-10,000 for colonoscopy, and Rs. 25,000-60,000 for ERCP — cashless for eligible cardholders."}},
+  {"@type":"Question","name":"Is laparoscopic gallbladder, hernia or appendix surgery covered under Ayushman Bharat?","acceptedAnswer":{"@type":"Answer","text":"Yes. Laparoscopic (keyhole) gallbladder removal (cholecystectomy), hernia repair and appendectomy are covered under PM-JAY and MJPJAY. Indicative package amounts at Nagpur are approximately Rs. 20,000-35,000 for laparoscopic cholecystectomy and Rs. 15,000-30,000 for mesh hernia repair — cashless for eligible cardholders at Hope Hospital."}},
+  {"@type":"Question","name":"Is normal delivery and C-section covered under Ayushman Bharat or MJPJAY?","acceptedAnswer":{"@type":"Answer","text":"Yes. Normal (vaginal) delivery, caesarean section (LSCS) and newborn NICU care are covered under Ayushman Bharat (PM-JAY) and MJPJAY. Indicative package amounts are approximately Rs. 5,000-9,000 for normal delivery and Rs. 9,000-15,000 for a C-section — cashless for eligible cardholders. Hope Hospital's maternity unit has an on-site NICU."}},
+  {"@type":"Question","name":"Is hysterectomy (uterus removal) covered under Ayushman Bharat?","acceptedAnswer":{"@type":"Answer","text":"Yes. Hysterectomy (uterus removal), both open and laparoscopic, is covered under PM-JAY and MJPJAY with an indicative package of approximately Rs. 25,000-50,000 — cashless for eligible cardholders at Hope Hospital, Nagpur."}},
+  {"@type":"Question","name":"Is cataract surgery covered under PMJAY (Ayushman Bharat)?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cataract surgery (phacoemulsification with intraocular lens) is covered under Ayushman Bharat (PM-JAY) and MJPJAY, with an indicative package of approximately Rs. 6,500-25,000 depending on the lens used — cashless for eligible cardholders."}},
+  {"@type":"Question","name":"Is dialysis covered under Ayushman Bharat?","acceptedAnswer":{"@type":"Answer","text":"Yes. Maintenance haemodialysis is covered under Ayushman Bharat (PM-JAY) and MJPJAY at an indicative rate of approximately Rs. 1,200-2,000 per session, and Maharashtra's MJPJAY provides additional cover for renal care. Hope Hospital (with its NephroPlus partnership) offers cashless dialysis for eligible cardholders."}}
+]
