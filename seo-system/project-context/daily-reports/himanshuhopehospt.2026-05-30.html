@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Work Report – Hope Hospital | 30 May 2026</title>
+<style>
+  @media print {
+    body { margin: 0; background: #fff; }
+    .no-print { display: none; }
+    .wrapper { box-shadow: none; }
+    .section { page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #1a1a2e; font-size: 13px; }
+  .wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 36px 48px 48px; box-shadow: 0 4px 24px rgba(0,0,0,.10); }
+  .report-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #1B365D; padding-bottom: 18px; margin-bottom: 24px; }
+  .report-header h1 { font-size: 22px; color: #1B365D; font-weight: 800; line-height: 1.3; }
+  .report-header .meta { text-align: right; font-size: 12px; color: #555; line-height: 1.8; }
+  .report-header .meta strong { color: #1B365D; }
+  .logo-text { font-size: 26px; font-weight: 900; color: #D31211; letter-spacing: -1px; }
+  .logo-text span { color: #1B365D; }
+  .summary-bar { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #f0f4ff; border-radius: 10px; padding: 14px 16px; text-align: center; border-top: 4px solid #1B365D; }
+  .summary-card.green { border-top-color: #16a34a; background: #f0fdf4; }
+  .summary-card.blue { border-top-color: #1d4ed8; background: #eff6ff; }
+  .summary-card.orange { border-top-color: #ea580c; background: #fff7ed; }
+  .summary-card .num { font-size: 26px; font-weight: 800; color: #1B365D; line-height: 1.1; }
+  .summary-card.green .num { color: #16a34a; }
+  .summary-card.blue .num { color: #1d4ed8; }
+  .summary-card.orange .num { color: #ea580c; }
+  .summary-card .label { font-size: 11px; color: #555; margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .section { margin-bottom: 26px; }
+  .section-title { font-size: 14px; font-weight: 800; color: #fff; background: #1B365D; padding: 8px 14px; border-radius: 6px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .6px; }
+  .section-title.red { background: #D31211; }
+  .section-title.green { background: #16a34a; }
+  .section-title.blue { background: #1a6fa8; }
+  .section-title.orange { background: #ea580c; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #f0f4ff; color: #1B365D; font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid #d0d8ef; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.55; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .badge.done { background: #dcfce7; color: #15803d; }
+  .badge.pushed { background: #dbeafe; color: #1d4ed8; }
+  .badge.fixed { background: #fce7f3; color: #9d174d; }
+  .badge.live { background: #d1fae5; color: #065f46; }
+  .badge.win { background: #fef9c3; color: #854d0e; }
+  .badge.pending { background: #fef3c7; color: #92400e; }
+  .badge.local { background: #ede9fe; color: #5b21b6; }
+  .metric-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 6px; }
+  .metric-box { background: #f8fafc; border-radius: 8px; padding: 10px 12px; border-left: 4px solid #1B365D; }
+  .metric-box .v { font-size: 18px; font-weight: 800; color: #1B365D; }
+  .metric-box .k { font-size: 10.5px; color: #555; font-weight: 600; }
+  code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 11.5px; color: #1e40af; }
+  .note { font-size: 11.5px; color: #555; line-height: 1.6; margin-top: 8px; }
+  .pdfbtn { background: #1B365D; color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; margin: 16px auto; display: block; }
+  .footer { text-align: center; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; margin-top: 18px; padding-top: 16px; }
+  .highlight-box { background: #ecfdf5; border-left: 5px solid #16a34a; padding: 14px 16px; border-radius: 8px; margin: 10px 0; }
+  .highlight-box .h { font-weight: 800; color: #15803d; font-size: 13px; margin-bottom: 6px; }
+  .highlight-box .b { font-size: 12px; color: #1a1a2e; line-height: 1.6; }
+</style>
+</head>
+<body>
+<button class="pdfbtn no-print" onclick="window.print()">🖨️  Save as PDF  (Ctrl + P → Save as PDF)</button>
+<div class="wrapper">
+
+  <div class="report-header">
+    <div>
+      <div class="logo-text">Hope<span>Hospital</span></div>
+      <h1>Daily Work Report — SEO &amp; Digital</h1>
+    </div>
+    <div class="meta">
+      <strong>Date:</strong> 30 May 2026 (Saturday)<br>
+      <strong>Scope:</strong> New RIRS blog + YMYL compliance sweep + ops infrastructure<br>
+      <strong>Status:</strong> 4 commits pushed live · Vercel auto-deployed
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="summary-card blue"><div class="num">4</div><div class="label">Commits Pushed</div></div>
+    <div class="summary-card green"><div class="num">13</div><div class="label">YMYL Claims Softened</div></div>
+    <div class="summary-card orange"><div class="num">1</div><div class="label">New Blog (GEO 9.5)</div></div>
+    <div class="summary-card"><div class="num">28</div><div class="label">Reports Backed Up</div></div>
+  </div>
+
+  <!-- 1 · Strategy -->
+  <div class="section">
+    <div class="section-title">1 · Strategy — Focus of the Day</div>
+    <table>
+      <tr><th>Area</th><th>Detail</th></tr>
+      <tr><td>Daily SEO audit</td><td><code>npm run audit</code> ran 2 review flags this morning (both on the new cancer blog from yesterday); cleaned both during Task #1.</td></tr>
+      <tr><td>Content velocity</td><td>Shipped blog #2 of the week — RIRS surgery / summer kidney stones — targeting striking-distance nephrology cluster.</td></tr>
+      <tr><td>YMYL compliance sweep</td><td>User pushback identified unqualified "FREE under Ayushman" claims as legal/credibility risk. Audited all live pages, softened 13 instances across 4 files.</td></tr>
+      <tr><td>Operations infrastructure</td><td>Reorganized 28 daily report files into <code>seo-system/project-context/daily-reports/</code> with ISO date naming; updated .gitignore so historical PDFs back up to GitHub.</td></tr>
+      <tr><td>Memory rules</td><td>5 new persistent feedback rules saved to prevent today's mistakes from recurring.</td></tr>
+    </table>
+  </div>
+
+  <!-- 2 · RIRS Blog -->
+  <div class="section">
+    <div class="section-title orange">2 · New Blog — RIRS Surgery / Summer Kidney Stones</div>
+    <table>
+      <tr><th>Element</th><th>Detail</th></tr>
+      <tr><td>URL</td><td><code>/blog/rirs-surgery-nagpur-kidney-stones-2026</code></td></tr>
+      <tr><td>Title (≤60 chars)</td><td>RIRS Surgery in Nagpur: Free Kidney Stone Treatment 2026 (56 chars)</td></tr>
+      <tr><td>Primary target query</td><td>"rirs surgery in ayushman card" (current GSC: pos 7.57, 7 imps) — niche high-intent. Also broader: kidney stone queries + nephrologist Nagpur cluster.</td></tr>
+      <tr><td>Calendar hook</td><td>Summer kidney-stone spike in Nagpur (30% higher in May-June due to heat/dehydration).</td></tr>
+      <tr><td>Word count</td><td>~1,700 words across 8 H2 sections + Quick Navigation TOC + 6 FAQs.</td></tr>
+      <tr><td>Schemas</td><td>BlogPosting (reviewedBy Dr. Murali) + MedicalWebPage (about: Kidney Stones, Renal Calculi, RIRS, PCNL, ESWL) + FAQPage (6 Q&amp;As) + BreadcrumbList</td></tr>
+      <tr><td>Comparison table</td><td>RIRS vs PCNL vs ESWL — best-for / anaesthesia / hospital stay / Ayushman package amount</td></tr>
+      <tr><td>Internal-link cluster</td><td>/departments/nephrology (3) + /blog/ayushman-bharat-surgery-list-2026#rirs-ayushman (2) + /diseases/kidney-stones (2) + /services/kidney-transplant-nagpur (1) + /blog/free-cancer-treatment-nagpur-ayushman-bharat-2026 (1)</td></tr>
+      <tr><td>Discoverability</td><td>Card added to <code>/blog/</code> index + URL in sitemap.xml with lastmod=2026-05-30</td></tr>
+    </table>
+    <div class="note">Also tightened yesterday's cancer blog: title 81 → 54 chars, meta description 194 → 141 chars (both audit flags cleared). Re-check GSC ~2026-06-20.</div>
+  </div>
+
+  <!-- 3 · YMYL Sweep -->
+  <div class="section">
+    <div class="section-title red">3 · YMYL Sweep — Unqualified "FREE" Claims Softened</div>
+    <table>
+      <tr><th>File</th><th>Change</th></tr>
+      <tr><td>blog/best-cancer-hospital-nagpur.html</td><td>4 instances (meta description + og + twitter + 1 schema): "Cancer surgery FREE under Ayushman Bharat &amp; MJPJAY" → "covered ... for eligible cardholders"</td></tr>
+      <tr><td>blog/best-heart-hospital-nagpur.html</td><td>4 instances (3 meta + 1 schema): "cardiac care / bypass surgery FREE under Ayushman" → "covered ... for eligible cardholders"</td></tr>
+      <tr><td>blog/hope-hospital-nagpur-press-release-2026.html</td><td>4 instances (3 meta + 1 other): "all/transplant free under Ayushman Bharat" → "covered for eligible cardholders"</td></tr>
+      <tr><td>index.html</td><td>2 instances (visible + JSON-LD): "Neurosurgery is covered free under Ayushman" → "covered for eligible cardholders"</td></tr>
+    </table>
+    <div class="note">Trigger: user flagged YMYL/credibility exposure. Patients without Ayushman cards seeing unqualified "FREE" in SERP snippets and arriving expecting zero cost = potential complaint/litigation risk. All other live pages (oncology, ortho, neurosurgery, all named-doctor profiles, ayushman/cancer/kidney/knee blogs) already had qualifiers nearby — sweep complete. New <code>feedback_ayushman_free_qualifier.md</code> memory rule prevents future drafts repeating the issue.</div>
+  </div>
+
+  <!-- 4 · Operations -->
+  <div class="section">
+    <div class="section-title blue">4 · Operations Infrastructure</div>
+    <table>
+      <tr><th>Action</th><th>Detail</th></tr>
+      <tr><td>Daily reports reorganized</td><td>28 <code>himanshuhopehospt.*.html/pdf</code> files moved from repo root + parent folder into <code>seo-system/project-context/daily-reports/</code> alongside change-ledger.md. Renamed to ISO format <code>himanshuhopehospt.YYYY-MM-DD.ext</code> for chronological sort (was alphabetical = wrong order).</td></tr>
+      <tr><td>gitignore updated</td><td>Changed <code>himanshuhopehospt.*.pdf</code> → <code>/himanshuhopehospt.*.pdf</code> (root-only). 19 historical PDFs now tracked + backed up to GitHub (~1.5 MB).</td></tr>
+      <tr><td>Ledger catch-up</td><td>5 new rows added to <code>change-ledger.md</code> for: nephrology depth (754e01e), GEO Round 1 (8b90ae5), GEO Round 2 (d9609bb), cancer blog launch (8827ff5), RIRS blog launch (aaa408f). Plus 1 row for today's YMYL sweep.</td></tr>
+      <tr><td>Two GBP planning PDFs created</td><td><code>gbp-posts-jun-01-07-2026.html</code> (7 posts for next week) + <code>gbp-post-no-tobacco-day-may31-2026.html</code> (single post for tomorrow). Both cleaned for phone-in-body + Ayushman qualifier rules.</td></tr>
+    </table>
+  </div>
+
+  <!-- 5 · Memory Rules -->
+  <div class="section">
+    <div class="section-title">5 · New Memory Rules Saved (Persistent)</div>
+    <table>
+      <tr><th>Rule</th><th>Reason</th></tr>
+      <tr><td><code>feedback_gbp_no_phone_in_post_body</code></td><td>Phone numbers in GBP post body get flagged by Google. Phone belongs in the Call CTA only.</td></tr>
+      <tr><td><code>feedback_ayushman_free_qualifier</code></td><td>Always say "for eligible cardholders" with FREE claims, or use "covered"/"cashless" framing. Never unqualified.</td></tr>
+      <tr><td><code>feedback_auto_log_to_change_ledger</code></td><td>After every SEO change, DRAFT a ledger row and ASK the user before writing. Don't auto-write silently.</td></tr>
+      <tr><td>(same rule, part 2)</td><td>Don't auto-generate daily report PDFs — user controls when to create them.</td></tr>
+      <tr><td><code>feedback_daily_report_naming_convention</code></td><td>Daily reports use ISO format <code>himanshuhopehospt.YYYY-MM-DD.ext</code> in <code>seo-system/project-context/daily-reports/</code>.</td></tr>
+    </table>
+  </div>
+
+  <!-- 6 · GBP Work -->
+  <div class="section">
+    <div class="section-title green">6 · Google Business Profile</div>
+    <table>
+      <tr><th>Action</th><th>Detail</th><th>Status</th></tr>
+      <tr><td>Summer Kidney Stones post published</td><td>Drives traffic to today's new RIRS blog. Includes seasonal hook + "covered under Ayushman for eligible cardholders" qualifier from the start. CTA: Learn more → RIRS blog.</td><td><span class="badge live">Published</span></td></tr>
+      <tr><td>World No Tobacco Day post scheduled</td><td>Scheduled for tomorrow May 31. Image: Ideogram-generated navy poster (broken cigarette + prohibition + Hope Hospital banner). Post body edited mid-day to remove phone number + add eligibility qualifier.</td><td><span class="badge done">Scheduled 31 May</span></td></tr>
+      <tr><td>Jun 1-7 batch PDF drafted</td><td>7 posts spanning Mon-Sun: Milk Day → Kidney Stones → Ayushman → Heart Attack → Environment Day → NABH → Food Safety Day. All cleaned for phone + qualifier rules.</td><td><span class="badge pending">Ready to schedule</span></td></tr>
+      <tr><td>5★ review reply: Shreyansh Waghmare</td><td>"Hospital service very good and staff are helping" — replied personalised, credited team.</td><td><span class="badge live">Posted</span></td></tr>
+      <tr><td>5★ review reply: Ananta Ingole</td><td>"Hospital cleaning are good and staff behaviour is good" — replied personalised, credited housekeeping + care teams.</td><td><span class="badge live">Posted</span></td></tr>
+    </table>
+  </div>
+
+  <!-- 7 · Git Commits -->
+  <div class="section">
+    <div class="section-title">7 · Git Commits Today (4 pushed)</div>
+    <table>
+      <tr><th>Hash</th><th>Theme</th></tr>
+      <tr><td><code>aaa408f</code></td><td>seo(blog): RIRS blog launch + cancer blog title/meta tightening + footer 5-col fix (4 files)</td></tr>
+      <tr><td><code>3696077</code></td><td>docs(ledger): 5 SEO catch-up entries + daily reports reorganized to ISO format (10 files, +988 insertions)</td></tr>
+      <tr><td><code>f2144b9</code></td><td>docs(daily-reports): gitignore tweak + 19 historical PDFs backed up to GitHub (20 files)</td></tr>
+      <tr><td><code>e341f68</code></td><td>seo(ymyl): softened 13 unqualified FREE claims across 4 pages + ledger row (5 files)</td></tr>
+    </table>
+  </div>
+
+  <!-- 8 · GEO Validation -->
+  <div class="section">
+    <div class="section-title green">8 · GEO Score Validation — Template Working</div>
+    <div class="highlight-box">
+      <div class="h">New RIRS blog scored 9.5/10 — same ceiling as yesterday's cancer blog</div>
+      <div class="b">Two consecutive new blogs (different topics) hit the 9.5/10 GEO score using the same schema + content template. The system is reliably producing publishable-quality AI-citation-ready content without rework.</div>
+    </div>
+    <div class="metric-row" style="margin-top:12px">
+      <div class="metric-box"><div class="v">6/7</div><div class="k">GEO-relevant schema types</div></div>
+      <div class="metric-box"><div class="v">11/18</div><div class="k">Question-style H2s (61%)</div></div>
+      <div class="metric-box"><div class="v">160</div><div class="k">Entity mentions (Nagpur/Ayushman/NABH/Hope)</div></div>
+      <div class="metric-box"><div class="v">~2,222</div><div class="k">Visible word count</div></div>
+    </div>
+    <div class="note">Only missing the Physician schema slot — would need a named urologist/nephrologist. Same blocker as the 4 specialty dept pages.</div>
+  </div>
+
+  <!-- 9 · Pending -->
+  <div class="section">
+    <div class="section-title orange">9 · Pending / Next Steps</div>
+    <table>
+      <tr><th>Action</th><th>Owner</th><th>Status</th></tr>
+      <tr><td>Schedule the 7 Jun 1-7 GBP posts (one per day)</td><td>Marketing</td><td><span class="badge pending">PDF ready, batch in GBP</span></td></tr>
+      <tr><td>Find Google Workspace admin credentials → finish DKIM setup</td><td>IT / Hospital admin</td><td><span class="badge pending">Blocks DMARC tightening</span></td></tr>
+      <tr><td>Get names of nephrologist / oncologist / cardiologist / urologist / neurosurgeon — unlock Physician schema across 4 dept pages + new blogs</td><td>Hospital management</td><td><span class="badge pending">Biggest remaining GEO lever</span></td></tr>
+      <tr><td>Create LinkedIn Company Page for Hope Hospital</td><td>Marketing</td><td><span class="badge pending">~30 min one-time task</span></td></tr>
+      <tr><td>Operationalize review-collection SOP (currently ~1 new review / 3 days vs 15-25/week target)</td><td>Front desk / Ops</td><td><span class="badge pending">Highest local-SEO lever</span></td></tr>
+      <tr><td>Next blog (TBD topic) — keep the velocity</td><td>SEO</td><td><span class="badge pending">Tomorrow or Monday</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    Hope Hospital · Teka Naka, Kamptee Road, Nagpur – 440026 · 0712-2980073 · hopehospital.com<br>
+    Daily Work Report · 30 May 2026 · To save as PDF: open in Chrome → Ctrl + P → "Save as PDF"
+  </div>
+
+</div>
+</body>
+</html>
