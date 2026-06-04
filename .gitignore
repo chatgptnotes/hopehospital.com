@@ -50,3 +50,6 @@ gbp-assets/
 # Raw GSC exports (keep the folder, ignore the data)
 seo-system/data/*
 !seo-system/data/.gitkeep
+
+# Internal GBP post print sheets (kept local, not deployed)
+gbp-posts-jun-01-07-2026.html
