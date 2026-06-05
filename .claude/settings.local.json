@@ -152,7 +152,22 @@
       "PowerShell($t1 = \"Brain Tumor & Spine Surgery in Nagpur | Cost 2026\"; $t2 = \"Brain Tumor & Spine Surgery in Nagpur | Hope Hospital\"; $m = \"Brain tumor & spine surgery, stroke & neurovascular care in Nagpur at NABH Hope Hospital — covered under Ayushman Bharat for eligible cardholders. 24/7 emergency.\"; $og = \"Brain tumor surgery, spine surgery & neurovascular treatment at NABH-accredited Hope Hospital Nagpur — covered under Ayushman Bharat for eligible cardholders.\"; \"t1: $\\($t1.Length\\)\"; \"t2: $\\($t2.Length\\)\"; \"meta: $\\($m.Length\\)\"; \"og: $\\($og.Length\\)\")",
       "PowerShell($m = \"Brain tumor & spine surgery, stroke & neurovascular care in Nagpur at NABH Hope Hospital — covered under Ayushman Bharat for eligible cardholders.\"; \"meta: $\\($m.Length\\)\")",
       "PowerShell($kt = \"Knee Replacement in Nagpur | Dr. B.K. Murali | Hope Hospital\"; $km = \"Best knee replacement in Nagpur at NABH Hope Hospital — Dr. B.K. Murali, 5000+ surgeries. Covered under Ayushman Bharat for eligible cardholders.\"; $ko = \"Expert knee replacement surgery in Nagpur by Dr. B.K. Murali at NABH-accredited Hope Hospital — covered under Ayushman Bharat for eligible patients.\"; $nt = \"Best Nephrologist & Kidney Specialist in Nagpur\"; \"knee title: $\\($kt.Length\\)\"; \"knee meta: $\\($km.Length\\)\"; \"knee og: $\\($ko.Length\\)\"; \"neph title: $\\($nt.Length\\)\")",
-      "PowerShell(Start-Process \"https://www.hopehospital.com/doctors\")"
+      "PowerShell(Start-Process \"https://www.hopehospital.com/doctors\")",
+      "PowerShell(git ls-remote *)",
+      "PowerShell(git fetch *)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\gbp-posts-jun-01-07-2026.html\")",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\hope4\\\\Documents\\\\gbp-posts-jun-01-07-2026.pdf\")",
+      "PowerShell(node seo-system/scripts/gsc-insights.js)",
+      "Bash(git --no-pager diff -- blog/hope-hospital-nagpur-press-release-2026.html)",
+      "PowerShell(git status --short | Where-Object { $_ -notmatch '\\\\?\\\\?' })",
+      "PowerShell(node seo-system/scripts/outcome-check.js)",
+      "Bash(sed -n '148,152p' services/hip-replacement-nagpur.html)",
+      "Bash(sed -n '235,239p' services/knee-replacement-nagpur.html)",
+      "Bash(git diff *)",
+      "Bash(file _tmp-dheeraj.png _tmp-nikhil.jpg)",
+      "Bash(rm -f _tmp-dheeraj.png _tmp-nikhil.jpg)",
+      "Bash(cd \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\")",
+      "Bash(ls images/_tmp-*)"
     ]
   }
 }

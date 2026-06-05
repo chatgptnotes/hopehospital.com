@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Daily Work Report - Hope Hospital SEO - 04 June 2026</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;color:#1f2937;line-height:1.5;font-size:12px}
+.wrap{padding:0 4px}
+.head{border-bottom:4px solid #C10D0D;padding-bottom:12px;margin-bottom:14px}
+.head h1{font-size:22px;color:#1B365D}
+.head .meta{color:#6b7280;font-size:12px;margin-top:6px}
+h2{font-size:14px;color:#fff;background:#1B365D;padding:6px 11px;border-radius:5px;margin:18px 0 9px}
+.sum{background:#EEF7FD;border-left:4px solid #3BA1D7;padding:9px 13px;border-radius:0 6px 6px 0;margin-bottom:6px}
+ul{margin:0 0 4px 18px}li{margin-bottom:4px}
+.task{font-weight:600;color:#1B365D}
+.out{color:#166534;font-weight:600}
+table{width:100%;border-collapse:collapse;margin:6px 0 10px;font-size:11px}
+th{background:#1B365D;color:#fff;text-align:left;padding:5px 9px}
+td{padding:5px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top}
+tr:nth-child(2n) td{background:#f9fafb}
+code{background:#eef2f7;color:#1B365D;padding:1px 4px;border-radius:3px;font-family:Consolas,monospace;font-size:10px}
+.footer{margin-top:20px;padding-top:9px;border-top:1px solid #e5e7eb;color:#9ca3af;font-size:10px;text-align:center}
+</style></head><body><div class="wrap">
+
+<div class="head">
+  <h1>Daily Work Report &mdash; Hope Hospital SEO</h1>
+  <div class="meta">04 June 2026 &nbsp;&middot;&nbsp; hopehospital.com &nbsp;&middot;&nbsp; Prepared for Dr. B. K. Murali</div>
+</div>
+
+<div class="sum"><strong>Summary:</strong> A heavy, full-surface day. Completed the entire <strong>keyword-cannibalization cleanup</strong> (5 fixes), an <strong>AI-search (GEO) pass</strong>, <strong>accuracy/trust fixes</strong> (review count synced to 3.9&#9733;/415, removed an inaccurate NABH year, swept unqualified "free" claims), crawl hygiene, a published GBP post, and several SEO-system documents. Caught &amp; fixed a file-corruption issue from an editor setting. <strong>14 commits pushed live; technical audit clean (0 urgent, 0 review).</strong></div>
+
+<h2>1. Keyword Cannibalization &mdash; Full Cleanup (pages were competing with each other)</h2>
+<table>
+  <tr><th style="width:34%">Fix</th><th>What &amp; why</th></tr>
+  <tr><td><span class="task">/nagpur duplicate</span></td><td>A thin clone of the homepage targeting the same "best/multispeciality hospital in Nagpur" term was <strong>301-redirected to the homepage</strong> and removed. <span class="out">Stops splitting the #1 priority term.</span></td></tr>
+  <tr><td><span class="task">Cancer (oncology vs blog)</span></td><td>Oncology dept and a blog were both titled "Free Cancer Treatment in Nagpur." Dept retargeted to specialist intent; the blog is now the single page for that query, with the dept linking to it. <span class="out">Signals consolidated.</span></td></tr>
+  <tr><td><span class="task">Neurosurgery (dept vs service)</span></td><td>Near-identical "Brain &amp; Spine" titles. Service retargeted to procedure/cost intent ("Brain Tumor &amp; Spine Surgery &mdash; Cost"). <span class="out">No more overlap.</span></td></tr>
+  <tr><td><span class="task">Knee &amp; Kidney titles</span></td><td>Dropped "Cost" from the knee <em>service</em> title (cost-blog owns price intent) and "Transplant &amp; Dialysis" from the nephrology <em>dept</em> title (service owns it). <span class="out">Clean intent split.</span></td></tr>
+</table>
+
+<h2>2. AI-Search / GEO (being the cited answer in ChatGPT, Gemini, Perplexity)</h2>
+<ul>
+  <li><span class="task">Converted 19 section headings on 7 treatment pages to question form</span> ("How much does X cost in Nagpur?", "What are the warning signs?") so AI engines can lift them into answers. Question-style headings rose from ~1 to 3&ndash;4 per page. <span class="out">No new medical claims.</span></li>
+</ul>
+
+<h2>3. Accuracy &amp; Trust</h2>
+<ul>
+  <li><span class="task">Review count synced 406 &rarr; 415</span> across 37 files (schema + visible stats) to match the live Google rating of <strong>3.9&#9733; / 415 reviews</strong>. Rating unchanged. <span class="out">Honest, accurate snippets.</span></li>
+  <li><span class="task">Removed an inaccurate "NABH Accredited Since 2005"</span> title on the About page (NABH is since 2012, hospital est. 2004) &mdash; dropped the year. <span class="out">Accuracy fixed.</span></li>
+  <li><span class="task">Swept 4 unqualified "FREE under Ayushman" claims</span> &rarr; "covered for eligible cardholders" (knee &amp; neurosurgery pages). <span class="out">Avoids misleading patients.</span></li>
+</ul>
+
+<h2>4. Crawl Hygiene</h2>
+<ul>
+  <li><span class="task">Two internal GBP post print-sheets set to <code>noindex</code></span> (No-Tobacco-Day + June sheet) so they aren't indexed as thin pages; cleared the only audit red flag.</li>
+  <li><span class="task">Removed the June GBP sheet from the public site</span> (404 + gitignored) and exported it as a device-only PDF, per request.</li>
+</ul>
+
+<h2>5. Google Business Profile</h2>
+<ul>
+  <li><span class="task">Drafted 6 review replies</span> for new 5&#9733; reviews (published by the team).</li>
+  <li><span class="task">"Golden Hour" cardiac-emergency post published</span> &mdash; heart-attack warning signs + Zion Cardiac Centre 24/7 cath lab. Phone-free body, Ayushman "free" qualified. <span class="out">Live on GBP.</span></li>
+</ul>
+
+<h2>6. SEO Operating System (internal docs &mdash; not on the public site)</h2>
+<ul>
+  <li><span class="task">Weekly performance report</span> generated from real Search Console data.</li>
+  <li><span class="task">Content brief + ready-to-paste FAQ schema</span> for expanding the Ayushman hub with an "Is X covered?" cluster (parked pending PMJAY-desk figure sign-off).</li>
+  <li><span class="task">AEO (Answer Engine Optimization) checklist</span> added to the system.</li>
+  <li><span class="task">Learning loop reviewed</span> &mdash; closed 4 accuracy/technical changes as n/a; flagged 4 ranking changes as awaiting a fresh data export.</li>
+</ul>
+
+<h2>7. Issue Caught &amp; Fixed</h2>
+<ul>
+  <li><span class="task">An editor auto-save setting was silently corrupting two files</span> (a "4&rarr;0" swap that broke the analytics ID and the 440026 pincode). Both files were restored from backup and the auto-save setting disabled. <span class="out">Caught before going live.</span></li>
+</ul>
+
+<h2>Result &amp; Status</h2>
+<ul>
+  <li>Technical audit: <span class="out">0 urgent issues, 0 review issues</span> (clean all day).</li>
+  <li><strong>14 commits</strong> reviewed and pushed live across the day.</li>
+  <li>Google rating accurate at <strong>3.9&#9733; / 415 reviews</strong> everywhere.</li>
+  <li>Every change logged to the change-ledger for outcome measurement.</li>
+</ul>
+
+<h2>Next Steps</h2>
+<ul>
+  <li>Drop a fresh Search Console export (~25 June) so this period's changes can be measured.</li>
+  <li>Confirm specialist doctors (cardiology, neurosurgery) as named medical reviewers &mdash; the biggest remaining ranking lever.</li>
+  <li>Publish the Ayushman "Is X covered?" expansion once package figures are confirmed.</li>
+</ul>
+
+<div class="footer">Hope Hospital &mdash; Daily SEO Work Report &nbsp;&middot;&nbsp; 04 June 2026 &nbsp;&middot;&nbsp; Internal document</div>
+
+</div></body></html>
