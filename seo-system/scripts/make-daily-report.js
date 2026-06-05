@@ -94,7 +94,7 @@ const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><style>
   <ul>
     <li>Technical audit now clean: <span class="out">0 urgent issues</span> (down from 10 found this morning).</li>
     <li>All work <strong>committed and pushed to the live site</strong> across the day.</li>
-    <li>Google rating accurate at <strong>3.9★ / 415 reviews</strong> everywhere.</li>
+    <li>Google rating accurate at <strong>3.9★ / 416 reviews</strong> everywhere.</li>
   </ul>
 
   <h2>Next Steps</h2>
