@@ -172,7 +172,9 @@
       "PowerShell($c = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue; if \\($c\\) { $c | Select-Object LocalAddress,LocalPort,OwningProcess | Format-Table -AutoSize; $c.OwningProcess | Sort-Object -Unique | ForEach-Object { Get-Process -Id $_ -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,Path } } else { \"Port 3000 is FREE\" })",
       "PowerShell(Start-Process \"http://localhost:3000/doctors\")",
       "Bash(rm -f _gen-doctors2.js)",
-      "Bash(python -c \"import xml.dom.minidom; xml.dom.minidom.parse\\('sitemap.xml'\\); print\\('XML OK'\\)\")"
+      "Bash(python -c \"import xml.dom.minidom; xml.dom.minidom.parse\\('sitemap.xml'\\); print\\('XML OK'\\)\")",
+      "Bash(python -c ' *)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\hope4\\\\Documents\\\\hopehospital\\\\hopehospital.com\\\\images\\\\gbp-world-environment-day-2026-06-05.png\")"
     ]
   }
 }
