@@ -16,6 +16,18 @@ doesn't work and doubles down on what does.
   sub-queries this page nearly ranks for, give each its own H2/anchor/FAQ.**
 - ⚠️ **Concentration risk (corollary):** ~90% of site clicks ride on this one URL. Compounding it is
   high-ROI, but a second pillar (nephrology is the candidate — see below) is needed to derisk.
+- ✅ **Real named doctor profiles (Physician schema + bio) rank and earn — repeatable lever.** 28-day
+  export: dr-nikhil-khobragade **16 clicks / pos 5.24**, dr-bk-murali **12 / 4.87**, Gupta & Nikose ranking
+  pos 5–9. Named, credentialed profiles are a reliable traffic + E-E-A-T play. **Keep building + cross-linking
+  them**, and prefer a named `Physician` reviewer over a generic "Team" (validated: gastro→Khobragade,
+  nephrology→Dekate). Now scaled to 23 profiles.
+- 📌 **Emerging theme — the bottleneck is shifting from ranking to CTR.** Multiple pages now sit page-1 but
+  barely clicked: nephrology dept (1,745 impr, 0.8% CTR), free-cancer blog (pos 5–7, 0 clicks), the Ayushman
+  blog's section anchors (2,000+ impr each, ~0% CTR). Next-cycle lever = title/meta/snippet/FAQ CTR work on
+  page-1/low-click pages, not chasing new rankings.
+- 🔻 **Cancer head terms are not responding — deprioritize.** Despite retitles, a new blog, and cannibalization
+  fixes, oncology dept sits pos ~17 and sub-terms (esophageal/ovarian cancer) pos 40+. Freeze further
+  head-term investment here until there's a doctor-backed content plan; redirect effort to Ayushman + nephrology.
 
 ## Working hypotheses (not yet proven)
 - **Nephrology as pillar #2 → early-positive.** 28-day export: "kidney specialist in nagpur" **16.8 → 10.8**
