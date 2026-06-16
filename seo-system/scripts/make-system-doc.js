@@ -124,7 +124,7 @@ const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
       <li><strong>No Hindi / Devanagari</strong> text on the website.</li>
       <li><strong>No new location / branch pages</strong> without an explicit request.</li>
       <li><strong>No review / aggregateRating schema on blog articles.</strong></li>
-      <li>Google rating is <strong>3.9★ / 416 reviews</strong> — never inflated.</li>
+      <li>Google rating is <strong>3.9★ / 427 reviews</strong> — never inflated.</li>
       <li><strong>No commit or push without explicit approval</strong> (the site is live).</li>
     </ul>
   </div>
