@@ -28,6 +28,16 @@ doesn't work and doubles down on what does.
 - 🔻 **Cancer head terms are not responding — deprioritize.** Despite retitles, a new blog, and cannibalization
   fixes, oncology dept sits pos ~17 and sub-terms (esophageal/ovarian cancer) pos 40+. Freeze further
   head-term investment here until there's a doctor-backed content plan; redirect effort to Ayushman + nephrology.
+- 🏁 **Compete on INTENT, not PRESTIGE — "best hospital in nagpur" is a losing battle.** (2026-06-16 competitor
+  scan.) The head term is dominated by domain authority Hope can't match: **Meditrina** (#6, stronger backlinks)
+  and now **Max Super Speciality Hospital Nagpur** — a national listed chain (19 hospitals / 4,000 beds; it's
+  the rebranded ex-**Alexis**, Byramji Town) whose single Nagpur page inherits maxhealthcare.in's national
+  authority. A single local hospital cannot out-authority a national chain on a browse term. **Strategy:** stop
+  chasing "best hospital in nagpur" (vanity, low-intent, slow); own the high-intent, scheme-specific, local
+  long-tail national chains won't localize for — **Ayushman/PMJAY package & cost queries, named local doctors,
+  dialysis/kidney cost, "free X under Ayushman"**. That's the durable moat (Hope ranks #1–6 there; Max/Meditrina
+  templates don't target it). Hope's edge vs national chains = **speed + local focus**, not authority. Keep the
+  homepage clean (de-stuffed 2026-06-16) and let `authority-building-checklist.md` grind in the background.
 
 ## Working hypotheses (not yet proven)
 - **Nephrology as pillar #2 → early-positive.** 28-day export: "kidney specialist in nagpur" **16.8 → 10.8**
