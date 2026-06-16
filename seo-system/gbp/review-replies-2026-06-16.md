@@ -36,6 +36,9 @@ GBP at time of drafting: **3.9★ / 427 reviews** (was 416 sitewide — see note
 10. **Tara G. Singh** (5★ — all staff good)
 > Thank you, Tara! It means a great deal to hear our whole staff made a good impression. We're proud of our team and grateful for your kind words.
 
+11. **Javedkhan khan** (5★)
+> Thank you, Javed! We're glad you had a good experience at Hope Hospital. Your kind words mean a lot to our whole team. Wishing you good health.
+
 ---
 
 **⚠️ Follow-up (separate task):** GBP now shows **3.9★ / 427 reviews**; the website schema/visible counts are at 416. A sitewide accuracy update (427) is warranted — needs user go-ahead before editing + pushing.
