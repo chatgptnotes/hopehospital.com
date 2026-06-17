@@ -4,7 +4,6 @@
   "outputDirectory": ".",
   "installCommand": null,
   "framework": null,
-  "public": false,
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
