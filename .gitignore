@@ -53,3 +53,16 @@ seo-system/data/*
 
 # Internal GBP post print sheets (kept local, not deployed)
 gbp-posts-jun-01-07-2026.html
+
+# Per-machine Claude Code settings (local only; untracked via `git rm --cached`)
+.claude/settings.local.json
+
+# GBP post draft graphics (already posted to Google Business Profile, not used on the site)
+images/dr-murali-gbp-post*.png
+
+# Generated daily SEO report exports (kept local — .md reports stay tracked)
+seo-system/project-context/daily-reports/*.pdf
+seo-system/project-context/daily-reports/*.html
+
+# Raw GSC export archives (keep the .md insights tracked, ignore the zips)
+seo-system/reports/*.zip
