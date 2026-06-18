@@ -23,6 +23,7 @@ const EXPECTED_REVIEWS = '430';
 const STALE_MONTHS = 6;
 const TITLE_MIN = 30;
 const TITLE_MAX = 60;
+const DESC_MIN = 70;
 const DESC_MAX = 160;
 
 const SKIP_DIRS = new Set(['node_modules', 'build', '.git', 'scripts', 'seo-system', '.vercel']);
@@ -107,6 +108,7 @@ try {
 } catch (_) { add('yellow', 'Sitemap', null, 'sitemap.xml not found'); }
 
 const titleMap = new Map();
+const descMap = new Map();
 let scanned = 0;
 
 for (const file of allFiles) {
@@ -154,9 +156,37 @@ for (const file of allFiles) {
     if (t.length < TITLE_MIN) add('yellow', 'Title/Meta', file, `title short (${t.length}): "${t}"`);
     if (t.length > TITLE_MAX) add('yellow', 'Title/Meta', file, `title long (${t.length}): "${t}"`);
   }
-  const dm = html.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i);
-  if (!dm || !dm[1].trim()) add('red', 'Title/Meta', file, 'missing meta description');
-  else if (dm[1].length > DESC_MAX) add('yellow', 'Title/Meta', file, `meta description long (${dm[1].length}, aim <=${DESC_MAX})`);
+  // NOTE: capture by matching delimiter ((["'])...\1) — a plain [^"']* class stops
+  // at the first apostrophe inside the text (e.g. "Central India's"), which silently
+  // under-counts the length and hides over-long descriptions. Decode &amp;/entities
+  // so the length reflects what Google actually renders.
+  const dm = html.match(/<meta\s+name=["']description["']\s+content=(["'])([\s\S]*?)\1/i);
+  if (!dm || !dm[2].trim()) add('red', 'Title/Meta', file, 'missing meta description');
+  else {
+    const d = dm[2].trim();
+    const dlen = d.replace(/&amp;/g, '&').replace(/&[a-z]+;/gi, 'x').length;
+    const dnorm = d.toLowerCase().replace(/\s+/g, ' ');
+    if (!descMap.has(dnorm)) descMap.set(dnorm, []);
+    descMap.get(dnorm).push(r);
+    if (dlen > DESC_MAX) add('yellow', 'Title/Meta', file, `meta description long (${dlen}, aim <=${DESC_MAX})`);
+    else if (dlen < DESC_MIN) add('yellow', 'Title/Meta', file, `meta description short (${dlen}, aim >=${DESC_MIN})`);
+  }
+
+  // 4b. Headings — exactly one H1 per page
+  const h1count = (html.match(/<h1\b[^>]*>/gi) || []).length;
+  if (h1count === 0) add('red', 'Headings', file, 'no <h1> on page');
+  else if (h1count > 1) add('yellow', 'Headings', file, `${h1count} <h1> tags (use exactly 1)`);
+
+  // 4c. Canonical link
+  if (!/<link\b[^>]*rel=["']canonical["']/i.test(html)) add('yellow', 'Canonical', file, 'no rel="canonical" link');
+
+  // 4d. Social cards (Open Graph + Twitter)
+  if (!/property=["']og:title["']/i.test(html) || !/property=["']og:image["']/i.test(html))
+    add('yellow', 'Social', file, 'incomplete Open Graph (need og:title + og:image)');
+  if (!/name=["']twitter:card["']/i.test(html)) add('yellow', 'Social', file, 'no twitter:card');
+
+  // 4e. <html lang> attribute
+  if (!/<html\b[^>]*\blang=/i.test(html)) add('yellow', 'Lang', file, 'missing <html lang> attribute');
 
   // 5. Images missing alt
   const imgs = html.match(/<img\b[^>]*>/gi) || [];
@@ -190,9 +220,13 @@ for (const file of allFiles) {
 for (const [title, files] of titleMap) {
   if (files.length > 1) add('red', 'Duplicate Title', null, `${files.length} pages share title "${title}": ${files.join(', ')}`);
 }
+// 4f. Duplicate meta descriptions
+for (const [, files] of descMap) {
+  if (files.length > 1) add('yellow', 'Duplicate Desc', null, `${files.length} pages share one meta description: ${files.join(', ')}`);
+}
 
 // ---- Report ----------------------------------------------------------------
-const CHECKS = ['Review', 'Dates', 'Title/Meta', 'Duplicate Title', 'Images', 'Links', 'Schema', 'Sitemap'];
+const CHECKS = ['Review', 'Dates', 'Title/Meta', 'Duplicate Title', 'Duplicate Desc', 'Headings', 'Canonical', 'Social', 'Lang', 'Images', 'Links', 'Schema', 'Sitemap'];
 const ICON = { red: '🔴', yellow: '🟡' };
 const pad = (n) => String(n).padStart(2, '0');
 const stamp = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
