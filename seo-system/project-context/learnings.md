@@ -14,8 +14,17 @@ doesn't work and doubles down on what does.
   sitewide (104 clicks, pos 4.94)** — targeting an exact named sub-query and adding the matching on-page
   section/anchor reliably converts to clicks. **Playbook: find adjacent package/PDF/rate/scheme/state
   sub-queries this page nearly ranks for, give each its own H2/anchor/FAQ.**
-- ⚠️ **Concentration risk (corollary):** ~90% of site clicks ride on this one URL. Compounding it is
-  high-ROI, but a second pillar (nephrology is the candidate — see below) is needed to derisk.
+- ⚠️ **Concentration risk (corollary):** ~87–90% of site clicks ride on this one URL. Compounding it is
+  high-ROI, but a second pillar (nephrology — now confirmed, see below) is needed to derisk.
+- ✅ **Nephrology IS pillar #2 — CONFIRMED. The CTR-conversion playbook works on a page-1, low-CTR page.**
+  GSC 28-day to 2026-06-19 (Insights): nephrology dept = **18 clicks, ↑1,700%**, up from ~0 clicks (it sat
+  at 1,745 impressions / 0.8% CTR with the rankings already there). The 2026-06-16 pass — keyword-first
+  title + brand/Ayushman-hook meta + named credentialed reviewer (Dr. Milind Dekate) + MedicalCondition
+  schema — converted latent impressions into clicks **without new ranking work**. This is the proof of the
+  "bottleneck is CTR, not ranking" thesis below: when a page is page-1 but barely clicked, a title/meta/
+  reviewer/snippet pass is the lever. **Playbook: find page-1, sub-1.5% CTR pages with real impression
+  volume and run this exact pass.** Next nephrology lever = the held depth content (now unblocked — doctor
+  data available) + cross-linking the urologist (Dr. Nikose) into the kidney+stone cluster.
 - ✅ **Real named doctor profiles (Physician schema + bio) rank and earn — repeatable lever.** 28-day
   export: dr-nikhil-khobragade **16 clicks / pos 5.24**, dr-bk-murali **12 / 4.87**, Gupta & Nikose ranking
   pos 5–9. Named, credentialed profiles are a reliable traffic + E-E-A-T play. **Keep building + cross-linking
@@ -40,7 +49,7 @@ doesn't work and doubles down on what does.
   homepage clean (de-stuffed 2026-06-16) and let `authority-building-checklist.md` grind in the background.
 
 ## Working hypotheses (not yet proven)
-- **Nephrology as pillar #2 → early-positive.** 28-day export: "kidney specialist in nagpur" **16.8 → 10.8**
+- **Nephrology as pillar #2 → NOW CONFIRMED (promoted to "Confirmed" above on 2026-06-19; dept = 18 clicks ↑1,700%).** 28-day export: "kidney specialist in nagpur" **16.8 → 10.8**
   (confirmed lift from the 2026-06-04 specialist-intent retitle). Broader cluster ("best nephrologist in
   nagpur" 11.4, "nephrologist in nagpur" 11.2) flat on 28-day avg but climbing hard in the trailing days
   (24h: best-neph **6.8**, kidney-specialist **10.05**) — real but too recent to confirm. The dept page
