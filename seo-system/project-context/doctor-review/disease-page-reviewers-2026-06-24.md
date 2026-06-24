@@ -15,22 +15,26 @@ assistants (ChatGPT/Gemini), and it's proven to lift these pages. No content rew
 > Nothing is published until you sign. We will not put any doctor's name on a page without your approval.
 
 ## Please confirm the reviewer for each page
-*(Suggested doctor is based on specialty — change any you like. The doctor named should be comfortable
-that the page's general health information is accurate.)*
+*(Each reviewer below is matched to that doctor's specialty exactly as listed on **theayushmanhospital.com**
+— so these are assignments to **confirm (✅)**, not choices. Change any only if you wish. The named doctor
+should be comfortable that the page's general health information is accurate.)*
 
-| # | Disease page | Suggested reviewer (specialty) | Confirm / change | Reviewed on |
-|--:|---|---|---|---|
-| 1 | **Arthritis & joint pain** | Dr. Dheeraj Gupta *(Joint Replacement)* or Dr. B.K. Murali *(Ortho)* | __________________ | ____ |
-| 2 | **Back pain & slipped disc** | Dr. B.K. Murali *(Ortho/Spine)* or Dr. Ritesh Nawkhare *(Neurosurgery)* | __________________ | ____ |
-| 3 | **Diabetes** | Dr. Afzal Sheikh *(General Physician)* | __________________ | ____ |
-| 4 | **Gallbladder stones** | Dr. Nikhil Khobragade *(Gastroenterology)* or Dr. Vishal Nandagawali *(Laparoscopic)* | __________________ | ____ |
-| 5 | **Heart attack** | Dr. Akshay Dalal *(Cardiologist)* | __________________ | ____ |
-| 6 | **High blood pressure (hypertension)** | Dr. Akshay Dalal *(Cardiology)* or Dr. Milind Dekate *(Nephrology)* | __________________ | ____ |
-| 7 | **Kidney stones** | Dr. Jayant Nikose *(Urology)* | __________________ | ____ |
-| 8 | **Stroke (brain attack)** | Dr. Ritesh Nawkhare *(Neurosurgery)* | __________________ | ____ |
+| # | Disease page | Reviewer — specialty (per theayushmanhospital.com) | Confirm | Reviewed on |
+|--:|---|---|:--:|---|
+| 1 | **Arthritis & joint pain** | **Dr. Afzal Sheikh** — Rheumatologist | ☐ | ____ |
+| 2 | **Back pain & slipped disc** | **Dr. B.K. Murali** — Orthopaedic & Spine Surgeon | ☐ | ____ |
+| 3 | **Diabetes** | **Dr. Afzal Sheikh** — General Medicine Physician | ☐ | ____ |
+| 4 | **Gallbladder stones** | **Dr. Nikhil Khobragade** — Gastroenterologist | ☐ | ____ |
+| 5 | **Heart attack** | **Dr. Akshay Dalal** — Cardiology | ☐ | ____ |
+| 6 | **High blood pressure (hypertension)** | **Dr. Akshay Dalal** — Cardiology | ☐ | ____ |
+| 7 | **Kidney stones** | **Dr. Jayant Nikose** — Urology | ☐ | ____ |
+| 8 | **Stroke (brain attack)** | **Dr. Ritesh Nawkhare** — Neurosurgeon | ☐ | ____ |
 
-**One credential check (pages 5 & 6):** please confirm Dr. Akshay Dalal's cardiology qualification as it
-should appear (e.g. MBBS, MD, DM Cardiology) — or name a different cardiologist for the heart pages.
+*Note: Dr. Afzal Sheikh covers arthritis (as Rheumatologist) and diabetes (as General Physician); Dr. Dalal
+covers both heart pages — exactly as their specialties appear on theayushmanhospital.com.*
+
+**One credential check (pages 5 & 6):** theayushmanhospital.com lists Dr. Akshay Dalal under *Cardiology
+(19 yrs)*. Please confirm his exact cardiology qualification as it should appear (e.g. MBBS, MD, DM Cardiology).
 
 ## Sign-off
 - [ ] **Reviewers assigned as above / as edited** — Dr. _______________  Date _______
