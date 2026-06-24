@@ -1,7 +1,7 @@
 # Kidney-Care Content — Medical Review Packet (one-pass sign-off)
 
 **For:** Dr. B.K. Murali (CMD) / Dr. Milind Dekate (Nephrologist)
-**Prepared:** 16 June 2026
+**Prepared:** 16 June 2026 · **Updated:** 24 June 2026 (added Section D — RIRS reviewer)
 **Why one packet:** three pieces of website content are ready but waiting on medical review. Reviewing them together is faster. Please confirm the facts, edit any wording, and sign at the bottom. **Nothing is published until you sign.**
 
 > Supersedes the earlier standalone file `nephrology-depth-content-2026-06-16.md` (same content, now bundled with the dialysis items).
@@ -62,6 +62,26 @@ Dialysis starts immediately, no surgery/donor needed. Transplant offers a fuller
 2. **"No waiting period for CKD/ESRD under PMJAY"** — still accurate? [ ] Yes [ ] No
 3. **PD/CAPD** — see Section A.
 4. **Reviewer/byline:** Dr. Milind Dekate (already the named nephrology reviewer on the site) — OK to use here too? [ ] Yes [ ] No
+
+---
+
+# SECTION D — RIRS / kidney-stone blog: who should be the named reviewer?
+*(Page: hopehospital.com/blog/rirs-surgery-nagpur-kidney-stones-2026 — our guide to laser kidney-stone surgery)*
+
+This article currently shows "medically reviewed by **Dr. B.K. Murali**" — but Dr. Murali is an
+orthopaedic surgeon, and kidney-stone surgery (RIRS / PCNL / ESWL) is **urology**. For both accuracy
+and trust (Google and AI assistants give more weight to a topic-matched specialist), the reviewer
+should be the urologist.
+
+**❓ Please confirm:**
+1. Is **Dr. Jayant Nikose (Urologist, MCh Urology)** the right person to be named as the medical
+   reviewer of our kidney-stone-surgery content? [ ] Yes [ ] No
+2. Does Dr. Nikose perform **RIRS, PCNL and ESWL** at Hope Hospital?
+   [ ] Yes [ ] No — _if any differ, note which: ___________________
+3. Is the already-published package figure **RIRS ₹30,000–65,000 (Ayushman, Nagpur Tier-2)** still
+   accurate? [ ] Yes [ ] No
+
+*If yes, we simply change the byline/credit from Dr. Murali to Dr. Nikose — no other wording changes.*
 
 ---
 
