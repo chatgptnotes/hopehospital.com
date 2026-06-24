@@ -4,7 +4,7 @@
 
 **Why this matters:** the Hope-vs-Meditrina comparison (2026-06-16) showed Hope's *on-page* is already stronger (exact-match title, 2,240 words, rating schema). The gap is **off-page authority** — backlinks, citations, domain trust. On-page tweaks won't close it; this list will, over weeks/months.
 
-**Ground rules:** NAP must be IDENTICAL everywhere → **Hope Hospital, Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur – 440026, Maharashtra. Phone 0712-2980073 / +91-9823555053. https://www.hopehospital.com**. No Hindi on listings. Rating 3.9★ / 427 (don't inflate).
+**Ground rules:** NAP must be IDENTICAL everywhere → **Hope Hospital, Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur – 440026, Maharashtra. Phone 0712-2980073 / +91-9823555053. https://www.hopehospital.com**. No Hindi on listings. Rating 4.0★ / 433 (don't inflate).
 
 ---
 
