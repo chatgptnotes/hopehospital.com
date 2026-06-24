@@ -35,7 +35,7 @@ MedicalProcedure/Condition (+1) · ≥30% question-form headings (+1) · entity 
 ## Rules
 - **Generate/plan only** — do not edit pages or commit until the user approves.
 - Respect hard constraints: **no review/aggregateRating schema on blog articles**; medical
-  content needs **doctor sign-off**; **no Hindi**; rating 4.0/430. Only true facts — never
+  content needs **doctor sign-off**; **no Hindi**; rating 4.0/433. Only true facts — never
   invent a doctor/reviewer/procedure; where real data is missing, **flag for doctor sign-off**.
 - After approved edits, remind the user to log each to `change-ledger.md`. Site auto-deploys
   on push to `main`, so keep edits local + verified until approved.

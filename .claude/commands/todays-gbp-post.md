@@ -71,7 +71,7 @@ Then a one-line reminder of which logo file to attach + that the PDF is now open
 - Honor all GBP/site constraints: **no phone number on the image or in post body**
   (Call CTA button only — [[feedback_gbp_no_phone_in_post_body]]); Ayushman "free"
   always qualified ("for eligible cardholders" / "covered" / "cashless" —
-  [[feedback_ayushman_free_qualifier]]); **no Hindi**; rating **4.0★ / 430**.
+  [[feedback_ayushman_free_qualifier]]); **no Hindi**; rating **4.0★ / 433**.
 - Only true facts — don't invent post copy; today's post comes from the weekly sheet.
 - Draft/prompt only — the user generates the image in ChatGPT and publishes to GBP
   manually.
