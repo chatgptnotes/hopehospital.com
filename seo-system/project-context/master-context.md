@@ -4,11 +4,11 @@ Every SEO workflow reads this file first. It is the single source of truth for
 who Hope Hospital is, what matters, and the rules that must never be broken.
 
 ## The hospital
-- **Hope Hospital**, Teka Naka, Kamptee Road, Nagpur – 440026, Maharashtra.
+- **Hope Hospital**, Plot no: 2, Kamptee Rd, Teka Naka, Nagpur, Maharashtra 440026.
 - Central India's first **NABH-accredited** super-specialty hospital. Est. 2004,
   NABH since 2012. 200+ beds, 30 ICU beds, 3 modular OTs.
-- Phone: 0712-2980073 / +91-9823555053. Site: https://www.hopehospital.com
-- **Google rating: 4.0★ / 433 reviews** (the true figure — never overstate it).
+- Phone: +91-9823555053 / 0712-2980073. Site: https://www.hopehospital.com
+- **Google rating: 4.0★ / 434 reviews** (the true figure — never overstate it).
 - Led by **Dr. B.K. Murali** (MS Ortho, founder, 5000+ surgeries). Other named
   doctors include Dr. Akshay Akulwar (colorectal).
 
@@ -47,7 +47,7 @@ Score every candidate task:
   explicit ask — even if an audit suggests it.
 - **No review/aggregateRating schema on blog articles** (Google self-serving-review
   policy). Articles legitimately show no stars.
-- **Rating is 4.0★ / 433 reviews** everywhere — never inflate.
+- **Rating is 4.0★ / 434 reviews** everywhere — never inflate.
 - **No commit or push without the user's explicit instruction** (site is live).
 
 ## How the daily workflow runs

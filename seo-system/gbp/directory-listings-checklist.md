@@ -8,9 +8,9 @@ everywhere, character-for-character.**
 ## 📋 The canonical NAP — copy-paste this exactly on every platform
 ```
 Name:     Hope Hospital
-Address:  Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur, Maharashtra 440026
-Phone:    0712-2980073        (primary / landline)
-Mobile:   +91 9823555053      (also WhatsApp)
+Address:  Plot no: 2, Kamptee Rd, Teka Naka, Nagpur, Maharashtra 440026
+Phone:    +91 9823555053      (primary / WhatsApp)
+Landline: 0712-2980073        (secondary)
 Website:  https://www.hopehospital.com
 Category: Private hospital / Multispeciality hospital
 Hours:    24 hours (Emergency) — set OPD hours separately
@@ -22,7 +22,7 @@ Founded:  2004 · NABH-accredited since 2012
 ## ✅ Priority listings (work top-down)
 
 ### Tier 1 — do these first (highest impact)
-- [ ] **Google Business Profile** — claimed ✓. Verify: phone `0712-2980073` primary, category, photos, posts, reply to reviews. *(see other GBP docs)*
+- [ ] **Google Business Profile** — claimed ✓. Verify: phone `+91 9823555053` primary and `0712-2980073` secondary, category, photos, posts, reply to reviews. *(see other GBP docs)*
 - [ ] **Practo** — claim/create the hospital + doctor profiles (Dr. B.K. Murali). Practo is heavily cited by AI answers. Add specialties, photos, timings.
 - [ ] **Justdial** — claim the listing; fix NAP; add categories & photos. (Top source for Nagpur local search.)
 - [ ] **Lybrate** — hospital + doctor profile; specialties, NAP.
@@ -44,7 +44,7 @@ Founded:  2004 · NABH-accredited since 2012
 
 ## For EACH listing, complete:
 - [ ] Exact NAP (block above)
-- [ ] Correct primary category + relevant secondaries (Orthopedic surgeon, Neurosurgeon, Cardiologist, Nephrologist, Maternity hospital, Emergency room, Dialysis center)
+- [ ] Correct primary category + relevant secondaries (Orthopedic surgeon, Neurosurgeon, Cardiologist, Nephrologist, Maternity hospital, Emergency care service, Dialysis center)
 - [ ] Specialties & key procedures (knee/hip replacement, kidney transplant, angioplasty, cancer surgery, delivery, dialysis)
 - [ ] Photos (exterior, OT, ICU, doctors, NABH certificate)
 - [ ] Website link + "Ayushman Bharat / cashless" mention

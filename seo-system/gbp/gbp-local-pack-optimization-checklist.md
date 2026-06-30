@@ -6,8 +6,8 @@ ABOVE the blue links.** Winning the pack is *far* more achievable than the #1 or
 by your **Google Business Profile**, not homepage HTML. This is the single highest-ROI lever for the head term.
 
 **Canonical NAP (must match the website + every citation exactly):**
-> Hope Hospital · Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur – 440026, Maharashtra
-> Phone 0712-2980073 / +91-9823555053 · https://www.hopehospital.com · Rating 4.0★ / 433 (don't inflate)
+> Hope Hospital · Plot no: 2, Kamptee Rd, Teka Naka, Nagpur, Maharashtra 440026
+> Phone +91-9823555053 / 0712-2980073 · https://www.hopehospital.com · Rating 4.0★ / 434 (don't inflate)
 
 The local pack is ranked on **Relevance · Distance · Prominence.** You can't change distance — so maximize
 relevance (categories, services, content) and prominence (reviews, citations, links).
@@ -15,14 +15,14 @@ relevance (categories, services, content) and prominence (reviews, citations, li
 ---
 
 ## 1. Categories — the #1 GBP ranking factor (check first)
-- [ ] **Primary category = "Hospital"** (or "General hospital"). This single field hugely affects which searches you appear for.
-- [ ] **Secondary categories** for every real specialty: Orthopedic surgeon, Cardiologist, Nephrologist, Neurosurgeon, Gastroenterologist, Oncologist, Maternity hospital, Emergency room, Dialysis center, Urologist.
+- [ ] **Primary category = "Private hospital"** (current GBP). If Google offers Hospital or General hospital and it keeps relevance, test that as primary later.
+- [ ] **Secondary categories** for every real specialty: Orthopedic surgeon, Cardiologist, Nephrologist, Neurosurgeon, Gastroenterologist, Oncologist, Maternity hospital, Emergency care service, Dialysis center, Urologist.
 - [ ] Do NOT add categories for services you don't offer (Google can suspend for this).
 
 ## 2. Profile completeness (Google favors 100% complete profiles)
 - [ ] Business name = **"Hope Hospital"** only (no keyword stuffing like "Hope Hospital Best Hospital Nagpur" — that violates GBP guidelines and risks suspension).
 - [ ] Hours set + **special hours** for holidays; mark **24/7 emergency**.
-- [ ] Website = https://www.hopehospital.com ; phone = landline + mobile as above.
+- [ ] Website = https://www.hopehospital.com ; phone = mobile primary + landline secondary as above.
 - [ ] **Description** (750 chars): NABH-accredited super-specialty hospital, est. 2004, 200+ beds / 30 ICU / 3 modular OTs, Ayushman Bharat & 20+ schemes, named specialties. Natural language, no keyword stuffing.
 - [ ] **Opening date** = 2004 (longevity is a trust signal).
 
@@ -30,7 +30,7 @@ relevance (categories, services, content) and prominence (reviews, citations, li
 - [ ] Wheelchair-accessible entrance/parking/restroom · 24-hour service · Emergency · Has online care · Gender-neutral restroom · Identifies-as (if applicable). Tick every true attribute.
 
 ## 4. Reviews — the strongest pack-prominence signal
-- [ ] You're at **4.0★ / 433** — **keep review velocity up** (steady new reviews matter more than total). Ask satisfied patients at discharge (QR card / SMS link).
+- [ ] You're at **4.0★ / 434** — **keep review velocity up** (steady new reviews matter more than total). Ask satisfied patients at discharge (QR card / SMS link).
 - [ ] **Reply to EVERY review** (you've started — incl. Hindi replies to Hindi reviewers; that's fine for GBP). Replies are a ranking + trust signal.
 - [ ] Encourage reviews that **mention specialty + city naturally** ("great kidney treatment in Nagpur") — keyword-rich reviews help relevance. Never script/fake them.
 - [ ] Flag/report any spam or wrong-entity reviews.

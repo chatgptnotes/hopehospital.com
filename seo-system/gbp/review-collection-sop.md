@@ -1,7 +1,6 @@
 # Google Review Collection — Staff SOP (1 page, print this)
 
-**Why:** Our Google rating is **3.9★**. Competitors are 4.3–4.9. A higher rating brings more
-patients from Google and Google Maps. **Target: 15–25 new reviews every week.** Every team member helps.
+**Why:** Our Google rating is **4.0 stars / 434 reviews**. Competitors are often stronger on rating and review velocity. A higher rating brings more patients from Google and Google Maps. **Target: 15-25 new reviews every week.** Every team member helps.
 
 **The review link (put it on a QR code at every counter):**
 ## https://g.page/r/CXNeWp4Fw2cOEBM/review

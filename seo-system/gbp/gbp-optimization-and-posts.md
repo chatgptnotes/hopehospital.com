@@ -2,7 +2,7 @@
 
 Companion to `reviews-system.md`. These are **dashboard actions** (do them at
 business.google.com) plus ready-to-publish content. NAP must match the site exactly:
-**Hope Hospital · Near Go-Gas Auto LPG-2, Teka Naka, Kamptee Road, Nagpur 440026 · 0712-2980073.**
+**Hope Hospital · Plot no: 2, Kamptee Rd, Teka Naka, Nagpur, Maharashtra 440026 · 0712-2980073.**
 
 ## A. Profile optimization checklist (one-time, then maintain)
 - [ ] **Primary category:** set the most specific accurate one — **"Private hospital"** (or
