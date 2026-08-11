@@ -16,6 +16,8 @@ coverage/
 .secrets
 credentials.json
 secrets.json
+claude.setting.json
+claude.settings.json
 
 # Git credentials (IMPORTANT: Never commit tokens)
 .git-credentials

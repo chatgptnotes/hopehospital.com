@@ -5,6 +5,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://www.hopehospital.com/sitemap.xml
+Sitemap: https://www.hopehospital.com/image-sitemap.xml
 
 # Disallow admin and private areas (if any)
 Disallow: /admin/

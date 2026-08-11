@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage Images -->
+  <url>
+    <loc>https://www.hopehospital.com/</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/hospital.webp</image:loc>
+      <image:title>Hope Hospital Nagpur Exterior</image:title>
+      <image:caption>Hope Hospital Nagpur building exterior - NABH accredited super-specialty hospital in Nagpur</image:caption>
+      <image:geo_location>Nagpur, Maharashtra, India</image:geo_location>
+      <image:license>https://www.hopehospital.com/</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/dr-murali-bk.webp</image:loc>
+      <image:title>Dr. B.K. Murali - Best Orthopedic Surgeon in Nagpur</image:title>
+      <image:caption>Dr. B.K. Murali, MS Orthopedics - Joint replacement specialist with 30+ years experience at Hope Hospital Nagpur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/hope-hospital-logo.webp</image:loc>
+      <image:title>Hope Hospital Logo</image:title>
+      <image:caption>Hope Hospital Nagpur official logo - NABH accredited healthcare provider</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/hope-hospital-og1.webp</image:loc>
+      <image:title>Hope Hospital Nagpur Healthcare Team</image:title>
+      <image:caption>Hope Hospital medical team providing quality healthcare services in Nagpur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page Images -->
+  <url>
+    <loc>https://www.hopehospital.com/about</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/hospital.webp</image:loc>
+      <image:title>Hope Hospital Nagpur Building</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/dr-murali-hero.webp</image:loc>
+      <image:title>Dr. B.K. Murali Orthopedic Surgeon</image:title>
+    </image:image>
+  </url>
+
+  <!-- Department Pages Images -->
+  <url>
+    <loc>https://www.hopehospital.com/departments/orthopedics</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/DR-MURALI-3.webp</image:loc>
+      <image:title>Orthopedic Surgery at Hope Hospital</image:title>
+      <image:caption>Advanced orthopedic surgery including knee replacement, hip replacement, and spine surgery</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.hopehospital.com/departments/cardiology</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/HOPE-5.webp</image:loc>
+      <image:title>Cardiology Department Hope Hospital</image:title>
+      <image:caption>Zion Cardiac Hospital at Hope Hospital - complete cardiac care including angioplasty and bypass surgery</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.hopehospital.com/departments/neurosurgery</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/HOPE-4.webp</image:loc>
+      <image:title>Neurosurgery Department Hope Hospital</image:title>
+      <image:caption>Hope Neurology - Brain and spine surgery including brain tumor removal and stroke treatment</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.hopehospital.com/departments/critical-care</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/HOPE-3.webp</image:loc>
+      <image:title>ICU and Critical Care Hope Hospital</image:title>
+      <image:caption>30-bed ICU with 24/7 critical care and advanced monitoring systems</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Doctor Profile Images -->
+  <url>
+    <loc>https://www.hopehospital.com/doctors/dr-nikhil-khobragade</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/dr-nikhil-khobragade.webp</image:loc>
+      <image:title>Dr. Nikhil Khobragade Gastroenterologist</image:title>
+      <image:caption>Dr. Nikhil Khobragade, DM Gastroenterology - Digestive care specialist at Hope Hospital Nagpur</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.hopehospital.com/doctors/dr-dheeraj-gupta</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/dr-dheeraj-gupta.webp</image:loc>
+      <image:title>Dr. Dheeraj Gupta Joint Replacement Surgeon</image:title>
+      <image:caption>Dr. Dheeraj Gupta, MS Orthopedics - Joint replacement specialist at Hope Hospital</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Service Pages Images -->
+  <url>
+    <loc>https://www.hopehospital.com/services/knee-replacement-nagpur</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/DR-MURALI-2.webp</image:loc>
+      <image:title>Knee Replacement Surgery Nagpur</image:title>
+      <image:caption>Advanced knee replacement surgery with NABH accredited facilities and expert orthopedic surgeons</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.hopehospital.com/services/hip-replacement-nagpur</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/DR MURALI-5.webp</image:loc>
+      <image:title>Hip Replacement Surgery Nagpur</image:title>
+      <image:caption>Total hip replacement surgery with modern implants and experienced orthopedic team</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Page Images -->
+  <url>
+    <loc>https://www.hopehospital.com/contact</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/hope-hospital-logo-horizontal.webp</image:loc>
+      <image:title>Hope Hospital Contact Information</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog Images -->
+  <url>
+    <loc>https://www.hopehospital.com/blog/total-knee-replacement-surgery-nagpur</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/KRSBlog_Image.webp</image:loc>
+      <image:title>Knee Replacement Surgery Guide</image:title>
+      <image:caption>Comprehensive guide to knee replacement surgery, costs, and recovery in Nagpur</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.hopehospital.com/blog/total-hip-replacement-surgery-nagpur</loc>
+    <image:image>
+      <image:loc>https://www.hopehospital.com/images/ABHBlog_Image.webp</image:loc>
+      <image:title>Hip Replacement Surgery Guide</image:title>
+      <image:caption>Detailed guide to hip replacement surgery procedure and recovery</image:caption>
+    </image:image>
+  </url>
+</urlset>

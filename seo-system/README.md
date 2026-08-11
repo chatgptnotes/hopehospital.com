@@ -10,6 +10,11 @@ loop. Lives under `seo-system/` and is excluded from the public site via
 (and a doctor, for medical claims) approves.** Build one workflow well before
 scaling. It's a hospital (YMYL) — accuracy and doctor review beat speed and scale.
 
+## Operating framework
+The [SEO Framework](docs/seo-framework.md) defines the six pillars, prioritisation
+model, page lifecycle, safeguards, and daily/weekly/monthly cadence used by this
+system.
+
 ## Layout
 ```
 seo-system/

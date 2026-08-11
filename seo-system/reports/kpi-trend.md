@@ -1,11 +1,35 @@
-# KPI Trend — Hope Hospital — 2026-05-21
+# KPI Trend — Hope Hospital — 2026-08-11
 
 ## Technical health (from seo-audit-*.md)
 | Date | 🔴 fix-now | 🟡 review |
 |---|--:|--:|
 | 2026-05-21 | 0 | 53 |
+| 2026-05-22 | 0 | 0 |
+| 2026-05-25 | 0 | 0 |
+| 2026-05-26 | 0 | 0 |
+| 2026-05-27 | 0 | 0 |
+| 2026-05-28 | 0 | 0 |
+| 2026-05-29 | 0 | 0 |
+| 2026-05-30 | 0 | 0 |
+| 2026-06-04 | 0 | 0 |
+| 2026-06-05 | 0 | 4 |
+| 2026-06-16 | 0 | 4 |
+| 2026-06-17 | 0 | 5 |
+| 2026-06-18 | 0 | 0 |
+| 2026-06-19 | 0 | 0 |
+| 2026-06-20 | 0 | 0 |
+| 2026-06-23 | 0 | 0 |
+| 2026-06-24 | 0 | 0 |
+| 2026-06-30 | 0 | 0 |
+| 2026-08-11 | 0 | 0 |
 
 ## Search performance (from gsc-insights-*.md)
-_no GSC insights yet — add an export to seo-system/data/ and run npm run gsc_
+| Date | Clicks | Impressions | CTR% |
+|---|--:|--:|--:|
+| 2026-05-22 | 152 | 4918 | 3.1 |
+| 2026-05-27 | 152 | 4918 | 3.1 |
+| 2026-06-04 | 152 | 4918 | 3.1 |
+| 2026-06-16 | 657 | 16353 | 4.0 |
+| 2026-06-23 | 863 | 21615 | 4.0 |
 
-_1 data point(s) so far. The trend becomes meaningful as you run the system over time._
+_24 data point(s) so far. The trend becomes meaningful as you run the system over time._
