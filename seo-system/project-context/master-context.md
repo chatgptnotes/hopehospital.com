@@ -8,7 +8,7 @@ who Hope Hospital is, what matters, and the rules that must never be broken.
 - Central India's first **NABH-accredited** super-specialty hospital. Est. 2004,
   NABH since 2012. 200+ beds, 30 ICU beds, 3 modular OTs.
 - Phone: +91-9823555053 / 0712-2980073. Site: https://www.hopehospital.com
-- **Google rating: 4.0★ / 434 reviews** (the true figure — never overstate it).
+- **Google rating: 4.0★ / 472 reviews** (updated quarterly - check Google Business Profile for current count).
 - Led by **Dr. B.K. Murali** (MS Ortho, founder, 5000+ surgeries). Other named
   doctors include Dr. Akshay Akulwar (colorectal).
 
